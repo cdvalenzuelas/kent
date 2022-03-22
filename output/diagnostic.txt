@@ -1,0 +1,826 @@
+ITEM 1
+---------------------------------------
+* El TYPE no coincide, en el mto es "SP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "MANGUERA FLEXIBLE" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "-" y en el piping_class es "nan". 
+
+ITEM 2
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Ball Valve with integral welded 2 Nipples, Full Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, Ends as per Mnf Std, AISI 316 Ball, AISI 316 Stem, 2 or 3 Pcs Split Body Side Entry, Bolted Connection, A193 Gr.B7/A194 Gr.2H, Stem Seal: Graphite, Seat Rings: RPTFE, Fire Safe as per API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "20.0" y en el piping_class es "6.1". 
+
+ITEM 3
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "5.44" y en el piping_class es "nan". 
+
+ITEM 4
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 120" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 120". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "54.21" y en el piping_class es "0.0". 
+
+ITEM 5
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.96" y en el piping_class es "0.0". 
+
+ITEM 6
+---------------------------------------
+* El TYPE no coincide, en el mto es "FT" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "NIPPLE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 160" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "160" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.09" y en el piping_class es "nan". 
+
+ITEM 7
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.48" y en el piping_class es "0.0". 
+
+ITEM 8
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELDOLET, CS, ASTM A694 Gr.F65, IMPACT TEST PARA. 423.2.3 ASME B 31.4, MSS SP-97, BW, SCH 120" y en el piping_class es "WELD-O-LET, CS, ASTM A694 Gr.F65, MSS SP-97, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 120". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "6.2" y en el piping_class es "0.0". 
+
+ITEM 9
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "BLIND FLANGE, CS, ASTM A694 Gr.F65, ASME B16.5, CLASS 900, RF" y en el piping_class es "FLG BLIND, CS, ASTM A105, ASME B16.5, CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "51.26" y en el piping_class es "0.0". 
+
+ITEM 10
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKETWELD FLANGE, CS, ASTM A105, ASME B16.5, CLASS 1500, RF" y en el piping_class es "FLG SW, CS, ASTM A105, ASME B16.5, CLASS 1500, RF". 
+
+ITEM 11
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "49.9" y en el piping_class es "48.57". 
+
+ITEM 12
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "29.0" y en el piping_class es "9.76". 
+
+ITEM 13
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/(1/2" NPTF OUTLET), B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS04/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". 
+
+ITEM 14
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, API TRIM NO 8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM: OS & Y/RSRO, HO" y en el piping_class es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW SS304/GRAPH, PKG GRAPH, TRIM #8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM OS&Y/RSRO, HO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "15.2" y en el piping_class es "10.87". 
+
+ITEM 15
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.08" y en el piping_class es "0.098". 
+
+ITEM 16
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+
+ITEM 17
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.94" y en el piping_class es "0.89". 
+
+ITEM 18
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.5" y en el piping_class es "1.439". 
+
+ITEM 19
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 120" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 120". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "54.21" y en el piping_class es "0.0". 
+
+ITEM 20
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.96" y en el piping_class es "0.0". 
+
+ITEM 21
+---------------------------------------
+* El TYPE no coincide, en el mto es "FT" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "NIPPLE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 160" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "160" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.09" y en el piping_class es "nan". 
+
+ITEM 22
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.48" y en el piping_class es "0.0". 
+
+ITEM 23
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELDOLET, CS, ASTM A694 Gr.F65, IMPACT TEST PARA. 423.2.3 ASME B 31.4, MSS SP-97, BW, SCH 120" y en el piping_class es "WELD-O-LET, CS, ASTM A694 Gr.F65, MSS SP-97, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 120". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "6.2" y en el piping_class es "0.0". 
+
+ITEM 24
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "BLIND FLANGE, CS, ASTM A694 Gr.F65, ASME B16.5, CLASS 900, RF" y en el piping_class es "FLG BLIND, CS, ASTM A105, ASME B16.5, CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "51.26" y en el piping_class es "0.0". 
+
+ITEM 25
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKETWELD FLANGE, CS, ASTM A105, ASME B16.5, CLASS 1500, RF" y en el piping_class es "FLG SW, CS, ASTM A105, ASME B16.5, CLASS 1500, RF". 
+
+ITEM 26
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "49.9" y en el piping_class es "48.57". 
+
+ITEM 27
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "29.0" y en el piping_class es "9.76". 
+
+ITEM 28
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/(1/2" NPTF OUTLET), B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS04/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". 
+
+ITEM 29
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, API TRIM NO 8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM: OS & Y/RSRO, HO" y en el piping_class es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW SS304/GRAPH, PKG GRAPH, TRIM #8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM OS&Y/RSRO, HO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "15.2" y en el piping_class es "10.87". 
+
+ITEM 30
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.08" y en el piping_class es "0.098". 
+
+ITEM 31
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+
+ITEM 32
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.94" y en el piping_class es "0.89". 
+
+ITEM 33
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.5" y en el piping_class es "1.439". 
+
+ITEM 34
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.733". 
+
+ITEM 35
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.22" y en el piping_class es "0.0". 
+
+ITEM 36
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.733". 
+
+ITEM 37
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.22" y en el piping_class es "0.0". 
+
+ITEM 38
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.733". 
+
+ITEM 39
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.22" y en el piping_class es "0.0". 
+
+ITEM 40
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.84" y en el piping_class es "0.733". 
+
+ITEM 41
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.64" y en el piping_class es "0.0". 
+
+ITEM 42
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.84" y en el piping_class es "0.733". 
+
+ITEM 43
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.64" y en el piping_class es "0.0". 
+
+ITEM 44
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.94" y en el piping_class es "0.957". 
+
+ITEM 45
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.11" y en el piping_class es "0.0". 
+
+ITEM 46
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.733". 
+
+ITEM 47
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.22" y en el piping_class es "0.0". 
+
+ITEM 48
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.733". 
+
+ITEM 49
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Soft Iron 90 BHN Max., Ring joint Gasket, Oval Type, ASME B16.20, RTJ Faces as per ASME B16.5" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.22" y en el piping_class es "0.0". 
+
+ITEM 50
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 120" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 160". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "160". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "7.55" y en el piping_class es "0.0". 
+
+ITEM 51
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELDOLET, CS, ASTM A694 Gr.F65, IMPACT TEST PARA. 423.2.3 ASME B 31.4, MSS SP-97, BW, SCH 120" y en el piping_class es "WELD-O-LET, CS, ASTM A694 Gr.F65, MSS SP-97, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 160". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "160". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.8" y en el piping_class es "0.0". 
+
+ITEM 52
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 150, RTJ, SCH 120" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 1500, RTJ, SCH 160". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "160". 
+* El RATING no coincide, en el mto es "150" y en el piping_class es "1500". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.79" y en el piping_class es "0.0". 
+
+ITEM 53
+---------------------------------------
+* El TYPE no coincide, en el mto es "VL" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RTJ/(3/4" NPTF OUTLET), B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "RTJ" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "1500" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "11.4" y en el piping_class es "nan". 
+
+ITEM 54
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.72" y en el piping_class es "0.733". 
+
+ITEM 55
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 120" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "7.55" y en el piping_class es "7.48". 
+
+ITEM 56
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELDOLET, CS, ASTM A694 Gr.F65, IMPACT TEST PARA. 423.2.3 ASME B 31.4, MSS SP-97, BW, SCH 120" y en el piping_class es "WELD-O-LET, CS, ASTM A694 Gr.F65, MSS SP-97, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.8" y en el piping_class es "0.0". 
+
+ITEM 57
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 150, RRF, SCH 120" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 1500, RF, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El RATING no coincide, en el mto es "150" y en el piping_class es "1500". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.79" y en el piping_class es "11.0". 
+
+ITEM 58
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/(3/4" NPTF OUTLET), B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS04/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". 
+
+ITEM 59
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.72" y en el piping_class es "0.733". 
+
+ITEM 60
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.72". 
+
+ITEM 61
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.44" y en el piping_class es "0.216". 
+
+ITEM 62
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.72". 
+
+ITEM 63
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.44" y en el piping_class es "0.216". 
+
+ITEM 64
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.65" y en el piping_class es "0.72". 
+
+ITEM 65
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.02" y en el piping_class es "0.069". 
+
+ITEM 66
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.669". 
+
+ITEM 67
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.44" y en el piping_class es "0.069". 
+
+ITEM 68
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.36" y en el piping_class es "0.733". 
+
+ITEM 69
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El RATING no coincide, en el mto es "900" y en el piping_class es "1500". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.09" y en el piping_class es "0.216". 
+
+ITEM 70
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.36" y en el piping_class es "0.733". 
+
+ITEM 71
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El RATING no coincide, en el mto es "900" y en el piping_class es "1500". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.09" y en el piping_class es "0.216". 
+
+ITEM 72
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H " y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.65" y en el piping_class es "0.72". 
+
+ITEM 73
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.02" y en el piping_class es "0.069". 
+
+ITEM 74
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.7" y en el piping_class es "0.72". 
+
+ITEM 75
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.44" y en el piping_class es "0.216". 
+
+ITEM 76
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 120" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "7.55" y en el piping_class es "7.48". 
+
+ITEM 77
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELDOLET, CS, ASTM A694 Gr.F65, IMPACT TEST PARA. 423.2.3 ASME B 31.4, MSS SP-97, BW, SCH 120" y en el piping_class es "WELD-O-LET, CS, ASTM A694 Gr.F65, MSS SP-97, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.8" y en el piping_class es "0.0". 
+
+ITEM 78
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 150, RRF, SCH 120" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 1500, RF, SCH 80". 
+* El SCH no coincide, en el mto es "120" y en el piping_class es "80". 
+* El RATING no coincide, en el mto es "150" y en el piping_class es "1500". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.79" y en el piping_class es "11.0". 
+
+ITEM 79
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/(3/4" NPTF OUTLET), B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 1500, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS04/GRAPH, PKG GRAPH, SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". 
+
+ITEM 80
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.72" y en el piping_class es "0.733". 
+
+ITEM 81
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.22" y en el piping_class es "nan". 
+
+ITEM 82
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "22.46" y en el piping_class es "22.32". 
+
+ITEM 83
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.24" y en el piping_class es "0.0". 
+
+ITEM 84
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.15" y en el piping_class es "0.0". 
+
+ITEM 85
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "23.13" y en el piping_class es "22.42". 
+
+ITEM 86
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.5" y en el piping_class es "3.68". 
+
+ITEM 87
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.38" y en el piping_class es "0.383". 
+
+ITEM 88
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.331". 
+
+ITEM 89
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.396". 
+
+ITEM 90
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "7.53" y en el piping_class es "7.48". 
+
+ITEM 91
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG LR, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "90 LR ELL, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.9" y en el piping_class es "0.0". 
+
+ITEM 92
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STRAIGHT TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.17" y en el piping_class es "0.0". 
+
+ITEM 93
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 300, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 300, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "3.5" y en el piping_class es "3.64". 
+
+ITEM 94
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "7.54" y en el piping_class es "7.48". 
+
+ITEM 95
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG LR, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "90 LR ELL, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9,  IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.9" y en el piping_class es "0.0". 
+
+ITEM 96
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 1500, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 1500, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.79" y en el piping_class es "11.0". 
+
+ITEM 97
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.2" y en el piping_class es "0.216". 
+
+ITEM 98
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.72" y en el piping_class es "0.681". 
+
+ITEM 99
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.72" y en el piping_class es "0.733". 
+
+ITEM 100
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.22" y en el piping_class es "nan". 
+
+ITEM 101
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "22.46" y en el piping_class es "22.32". 
+
+ITEM 102
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.24" y en el piping_class es "0.0". 
+
+ITEM 103
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.15" y en el piping_class es "0.0". 
+
+ITEM 104
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "23.13" y en el piping_class es "22.42". 
+
+ITEM 105
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.5" y en el piping_class es "3.68". 
+
+ITEM 106
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.38" y en el piping_class es "0.383". 
+
+ITEM 107
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.331". 
+
+ITEM 108
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.396". 
+
+ITEM 109
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.22" y en el piping_class es "nan". 
+
+ITEM 110
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "22.46" y en el piping_class es "22.32". 
+
+ITEM 111
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.24" y en el piping_class es "0.0". 
+
+ITEM 112
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.15" y en el piping_class es "0.0". 
+
+ITEM 113
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "23.13" y en el piping_class es "22.42". 
+
+ITEM 114
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.5" y en el piping_class es "3.68". 
+
+ITEM 115
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.38" y en el piping_class es "0.383". 
+
+ITEM 116
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.331". 
+
+ITEM 117
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.396". 
+
+ITEM 118
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.22" y en el piping_class es "nan". 
+
+ITEM 119
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BW, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "22.46" y en el piping_class es "22.32". 
+
+ITEM 120
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.24" y en el piping_class es "0.0". 
+
+ITEM 121
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKOLET, CS, ASTM A105, MSS SP-97, SW, CLASS 3000" y en el piping_class es "SOCK-O-LET, CS, ASTM A105, MSS-SP-97, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.15" y en el piping_class es "0.0". 
+
+ITEM 122
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80" y en el piping_class es "FLG WELD NECK, CS, ASTM A105, ASME B16.5, CLASS 900, RF, SCH 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "23.13" y en el piping_class es "22.42". 
+
+ITEM 123
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "10.5" y en el piping_class es "3.68". 
+
+ITEM 124
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.38" y en el piping_class es "0.383". 
+
+ITEM 125
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.331". 
+
+ITEM 126
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.38" y en el piping_class es "1.396". 
+
+ITEM 127
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.65" y en el piping_class es "0.72". 
+
+ITEM 128
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.02" y en el piping_class es "0.069". 
+
+ITEM 129
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.4" y en el piping_class es "0.448". 
+
+ITEM 130
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.01" y en el piping_class es "0.055". 
+
+ITEM 131
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "PIPE, SAWL/HFW, CS, API 5L Gr.X65 PSL2, ASME B36.10, BE, SCH XS" y en el piping_class es "PIPE, SAWL / HFW, CS, API 5L Gr.X65, ASME B36.10, PSL2, BW, SCH XS". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "140.1" y en el piping_class es "139.16". 
+
+ITEM 132
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "BLIND FLANGE, CS, ASTM A694 Gr.F65, ASME B16.5, CLASS 900, RF" y en el piping_class es "FLG BLIND, CS, ASTM A105, ASME B16.5, CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "399.16" y en el piping_class es "0.0". 
+
+ITEM 133
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "WELD NECK FLANGE, CS, ASTM A694 Gr.F65, MSS-SP-44, CLASS 900, RF, SCH XS" y en el piping_class es "FLG WELD NECK, CS, ASTM A694 Gr.F65, MSS-SP-44, CLASS 900, RF, SCH XS". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "419.12" y en el piping_class es "297.91". 
+
+ITEM 134
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.7" y en el piping_class es "2.704". 
+
+ITEM 135
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "6.84" y en el piping_class es "6.478". 
+
+ITEM 136
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "3.26" y en el piping_class es "3.24". 
+
+ITEM 137
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "5.44" y en el piping_class es "5.41". 
+
+ITEM 138
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.38" y en el piping_class es "0.35". 
+
+ITEM 139
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+
+ITEM 140
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 80" y en el piping_class es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 80 L= 100 mm". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.55" y en el piping_class es "0.541". 
+
+ITEM 141
+---------------------------------------
+* El SCH no coincide, en el mto es "80x80" y en el piping_class es "80 x 80". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.68" y en el piping_class es "0.53". 
+
+ITEM 142
+---------------------------------------
+* El TYPE no coincide, en el mto es "FT" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "CONCENTRIC SWAGE, CS, ASTM A234 Gr.WPB, MSS SP-95, BExPE, SCH 40x80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "40x80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "BExPE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.91" y en el piping_class es "nan". 
+
+ITEM 143
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STRAIGHT TEE, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "TEE, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+
+ITEM 144
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STRAIGHT TEE, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "TEE, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+
+ITEM 145
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STRAIGHT TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 40" y en el piping_class es "TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 40". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.85" y en el piping_class es "1.9". 
+
+ITEM 146
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKETWELD FLANGE, CS, ASTM A105,  ASME B16.5, CLASS 150, RF" y en el piping_class es "FLG SW, CS, ASTM A105, ASME B16.5, CLASS 150, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "1.13" y en el piping_class es "0.9". 
+
+ITEM 147
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "BALL VALVE, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/ 2 PE NIPPLES L=6", AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, STEM SEAL: GRAPHITE, SEAT RINGS: RPTFE, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "2.4" y en el piping_class es "3.5". 
+
+ITEM 148
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "BALL VALVE, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/ 2 PE NIPPLES L=6", AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, STEM SEAL: GRAPHITE, SEAT RINGS: RPTFE, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "4.5" y en el piping_class es "6.1". 
+
+ITEM 149
+---------------------------------------
+* El TYPE no coincide, en el mto es "VL" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "LIFT CHECK VALVE SW, API 602, A105, CL 800, INSTALLATION: HORIZONTAL OR VERTICAL, SW, B16.11, BOLTED COVER, SPW AISI 304/GRAPHITE, PISTON TYPE OBTURATOR, API TRIM NO 8" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "SW" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "800" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "9.1" y en el piping_class es "nan". 
+
+ITEM 150
+---------------------------------------
+* El TYPE no coincide, en el mto es "PP" y en el piping_class es "nan". 
+* La DESCRIPTION no coincide, en el mto es "PIPE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 80" y en el piping_class es "nan". 
+* El SCH no coincide, en el mto es "80" y en el piping_class es "nan". 
+* El FACE no coincide, en el mto es "PE" y en el piping_class es "nan". 
+* El RATING no coincide, en el mto es "-" y en el piping_class es "nan". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "5.44" y en el piping_class es "nan". 
+
+ITEM 151
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "ELBOW 90 DEG, CS, ASTM A105, ASME B16.11, SW, CLASS 3000" y en el piping_class es "90 ELL, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.96" y en el piping_class es "0.0". 
+
+ITEM 152
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "NIPPLE, SEAMLESS, CS, ASTM A333 Gr.6, ASME B36.10, PE, SCH 160" y en el piping_class es "-". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.73" y en el piping_class es "0.725". 
+
+ITEM 153
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SOCKETWELD FLANGE, CS, ASTM A105, ASME B16.5, CLASS 1500, RF" y en el piping_class es "FLG SW, CS, ASTM A105, ASME B16.5, CLASS 1500, RF". 
+
+ITEM 154
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el mto es "29.0" y en el piping_class es "9.76". 
+
+ITEM 155
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, API TRIM NO 8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM: OS & Y/RSRO, HO" y en el piping_class es "GLOBE VALVE SW, API 602, API 598, A105, CL 1500, SW, B16.11, BB, SPW SS304/GRAPH, PKG GRAPH, TRIM #8, RENEWABLE SEATS, SWIVEL PLUG DISC, STEM OS&Y/RSRO, HO". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "15.2" y en el piping_class es "10.87". 
+
+ITEM 156
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 1500, RF". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.08" y en el piping_class es "0.098". 
+
+ITEM 157
+---------------------------------------
+* La DESCRIPTION no coincide, en el mto es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". 
+* El WEIGHT_PER_UNIT no coincide, en el mto es "0.94" y en el piping_class es "0.89". 
+
