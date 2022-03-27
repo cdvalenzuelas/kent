@@ -1,10 +1,11 @@
+from numpy import number
 import pandas as pd
 import os
 
 
 # se hace un diagnśtico de los campos
 def mto_diagnostic(row):
-    item, line_num, spec, type_x, type_code, description_x, first_size, second_size, sch_x, face_x, rating_x, qty, units, weight_per_unit, total_weight, tag, common_index, type_y, order, description_y, short_description, first_size_number, second_size_number, sch_y, face_y, rating_y, weight, area, co, co_2_1, co_2_2, co_3_1, co_3_2 = row
+    item, line_num, spec, type_x, type_code, description_x, first_size, second_size, sch_x, face_x, rating_x, qty, units, weight_per_unit, total_weight, tag, common_index, type_y, order, description_y, short_description, first_size_number, second_size_number, sch_y, face_y, rating_y, weight, area = row
 
     mto_diagnostic = ''
 
@@ -28,17 +29,17 @@ def mto_diagnostic(row):
     if rating_x != rating_y:
         mto_diagnostic += f'* El RATING no coincide, en el mto es "{rating_x}" y en el piping_class es "{rating_y}". \n'
 
-    # PESOS UNITARIOS diqagnostic
-    if weight_per_unit != weight:
+    # PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
+    if weight_per_unit >= 1.05*float(weight) or weight_per_unit <= 0.95*float(weight):
         mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el mto es "{weight_per_unit}" y en el piping_class es "{weight}". \n'
 
-    # Display
-
+    # Escribir en el archivo
     if mto_diagnostic != '':
         mto_diagnostic = f'ITEM {item}\n---------------------------------------\n{mto_diagnostic}\n'
 
-    with open('./output/diagnostic.txt', mode='a') as f:
-        f.write(mto_diagnostic)
+    if str(type_y) != 'nan':
+        with open('./output/diagnostic.txt', mode='a') as f:
+            f.write(mto_diagnostic)
 
     return line_num
 
@@ -62,8 +63,7 @@ def define_diganostic(mto_df):
                                  'UNITS', 'WEIGHT_PER_UNIT', 'TOTAL_WEIGHT', 'TAG', 'common_index',
                                  'TYPE_y', 'ORDER', 'DESCRIPTION_y', 'SHORT_DESCRIPTION', 'FIRST_SIZE_NUMBER',
                                  'SECOND_SIZE_NUMBER', 'SCH_y', 'FACE_y', 'RATING_y',
-                                 'WEIGHT', 'AREA', 'CO', 'CO_2.1', 'CO_2.2', 'CO_3.1',
-                                 'CO_3.2']].apply(mto_diagnostic, axis=1)
+                                 'WEIGHT', 'AREA']].apply(mto_diagnostic, axis=1)
 
     mto_df.drop(['INDEX'], axis=1, inplace=True)
 

@@ -1,6 +1,3 @@
-from src.supply_items import supply_items
-from src.pre_manufacturing import pre_manufacturing
-from src.mto_exist.define_co import define_co
 from src.mto_exist.mto_diagnostic import define_diganostic
 from src.mto_exist.mto_cleaner import mto_cleaner
 

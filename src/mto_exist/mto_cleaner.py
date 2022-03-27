@@ -55,12 +55,22 @@ def modify_size(second_size):
     return size
 
 
+# Carbiar BW por BE
+def change_bw_by_be(description):
+    description = re.sub(' BW,', ' BE,', description)
+
+    return description
+
+
 def mto_cleaner():
     # Leer el MTO
     mto_df = pd.read_csv('mto.csv')
 
     # Rellenar espacios vacío
     mto_df.fillna('-', inplace=True)
+
+    # Carbiar BW por BE
+    mto_df['DESCRIPTION'] = mto_df['DESCRIPTION'].apply(change_bw_by_be)
 
     # Renombrando el first size del MTO entyregado
     mto_df['FIRST_SIZE'] = mto_df['FIRST_SIZE'].apply(modify_size)
@@ -76,6 +86,10 @@ def mto_cleaner():
     CS1SC2 = pd.read_csv('./CENIT/PIPING_CLASS/CS1SC2.csv')
 
     piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2])
+
+    # Carbiar BW por BE
+    piping_class['SHORT_DESCRIPTION'] = piping_class['SHORT_DESCRIPTION'].apply(
+        change_bw_by_be)
 
     # Se buscar los tags
     mto_df = define_tag(mto_df, piping_class)

@@ -20,7 +20,7 @@ def define_co(mto_df, piping_class):
             return '-'
 
     # Establecer el suministro de las cantidades de obra
-    mto_df['CO'] = mto_df[['TYPE_CODE', 'SPEC', 'RATING']].apply(
-        search_co, axis=1)
+    # mto_df['CO'] = mto_df[['TYPE_CODE', 'SPEC', 'RATING']].apply(
+        # search_co, axis=1)
 
     return mto_df
