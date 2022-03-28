@@ -1,5 +1,4 @@
 # Se deben buscar los datos que relacionan las cantidades de obra
-
 def define_co(mto_df, piping_class):
 
     def search_co(row):

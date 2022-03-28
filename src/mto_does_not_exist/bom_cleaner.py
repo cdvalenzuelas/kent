@@ -3,6 +3,7 @@ import re
 
 from src.mto_does_not_exist.pipes_modifier import pipe_qty
 from src.mto_does_not_exist.nipples_modifier import nipple_second_size, nipple_second_size_number
+from src.mto_does_not_exist.mto_diagnostic import define_diagnostic
 
 
 # Reemplaza los espacios por guines en los tamalños en pulgadas
@@ -42,8 +43,7 @@ def bom_cleaner():
     bom['RED_NOM'] = bom['RED_NOM'].apply(replace_spaces)
 
     # Eliminar columnas innecesarias
-    bom.drop(['MARK', 'THK_NOM', 'SIZE', 'WEIGHT', 'LENGTH',
-             'SHORT_DESC', 'DESCRIPTION'], axis=1, inplace=True)
+    bom.drop(['MARK', 'THK_NOM', 'SIZE', 'DESCRIPTION'], axis=1, inplace=True)
 
     # Se crean los índices del BOM y del piping class
     # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
@@ -67,15 +67,20 @@ def bom_cleaner():
     # Hacer un join entre el bom y el piping class para generar el mto
     mto_df = pd.merge(bom, piping_class, how='left', on='common_index')
 
+    # Por aqupí se hace la comparación OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+    define_diagnostic(mto_df)
+
     # Eliminando columnas innecesarias
-    mto_df.drop(['SPEC_FILE', 'DB_CODE', 'MAIN_NOM',
-                'RED_NOM', 'TAG_x', 'DESCRIPTION'], axis=1, inplace=True)
+    mto_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',
+                'MAIN_NOM', 'RED_NOM', 'TAG_x', 'DESCRIPTION'], axis=1, inplace=True)
 
     # Renombrando el SHORT_DESCRIPTION como DESCRIPTION
     mto_df.rename(
-        columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG'}, inplace=True)
+        columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
 
     # Creando la columna units
     mto_df['UNITS'] = mto_df['TYPE'].apply(units)
+
+    mto_df.to_csv('./temp.csv')
 
     return mto_df

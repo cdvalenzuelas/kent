@@ -6,7 +6,7 @@ from src.clean_csv import clean_csv
 
 
 if __name__ == '__main__':
-    mto_already_exist = True
+    mto_already_exist = False
 
     if not mto_already_exist:
         mto_does_not_exist()
@@ -14,6 +14,6 @@ if __name__ == '__main__':
         mto_exist()
 
     # co()
-    # summary()
-    # mr()
-    # clean_csv()
+    summary()
+    mr()
+    clean_csv()

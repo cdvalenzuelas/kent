@@ -6,7 +6,7 @@ def summary():
     mto_df = pd.read_csv('./output/mto.csv')
 
     # Eliminar columnas innecesarias
-    mto_df.drop(['LINE_NUM', 'SPEC', 'CO', 'SUPPLY'], axis=1, inplace=True)
+    mto_df.drop(['LINE_NUM', 'SPEC'], axis=1, inplace=True)
 
     # Convertir datos
     mto_df.convert_dtypes().dtypes

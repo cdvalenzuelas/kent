@@ -1,9 +1,15 @@
 import pandas as pd
+import re
 
 
 # Crea una columna comun entre el mto y los bolt
 def concat_bolt_index(row):
     first_size, rating, face = row
+
+    rating = str(rating)
+
+    rating = re.sub('[.]0', '', rating)
+
     return f'{first_size} {rating} {face}'
 
 
