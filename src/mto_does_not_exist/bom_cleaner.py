@@ -56,8 +56,9 @@ def bom_cleaner():
     CS5SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS5SA1.csv')
     CS6SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS6SA1.csv')
     CS1SC2 = pd.read_csv('./CENIT/PIPING_CLASS/CS1SC2.csv')
+    CS4SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS4SA1.csv')
 
-    piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2])
+    piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2, CS4SA1])
 
     # Se crean los índices del BOM y del piping class
     # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES

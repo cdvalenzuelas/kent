@@ -30,7 +30,8 @@ def mto_diagnostic(row):
 
     # PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
     if weight_per_unit >= 1.05*float(weight) or weight_per_unit <= 0.95*float(weight):
-        mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el mto es "{weight_per_unit}" y en el piping_class es "{weight}". \n'
+        if weight > 0:
+            mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el mto es "{weight_per_unit}" y en el piping_class es "{weight}". \n'
 
     # Escribir en el archivo
     if mto_diagnostic != '':
