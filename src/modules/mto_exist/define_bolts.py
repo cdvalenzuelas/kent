@@ -103,7 +103,7 @@ def bolts_short_description(row):
 # Regresa el mto con los bolts entregados
 def define_bolts(mto_df, piping_class):
     # Leer el archivo de bolts
-    bolts_df_1 = pd.read_csv('./utils/bolts_kent.csv')
+    bolts_df_1 = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
 
     # Eliminar las columnas innecesarias
     bolts_df_1.drop(['RATING', 'DIAMETER', 'DIAMETER_NUMBER', 'FACE',

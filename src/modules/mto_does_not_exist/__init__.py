@@ -1,6 +1,5 @@
-from src.supply_items import supply_items
-from src.mto_does_not_exist.bom_cleaner import bom_cleaner
-from src.mto_does_not_exist.bolts_modifier import bolts_modifier
+from src.modules.mto_does_not_exist.bom_cleaner import bom_cleaner
+from src.modules.mto_does_not_exist.bolts_modifier import bolts_modifier
 
 
 def mto_does_not_exist():
@@ -13,7 +12,7 @@ def mto_does_not_exist():
 
     mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
 
-    mto_df_na.to_csv('./output/mto_temp.csv', index=True)
+    mto_df_na.to_csv('./src/output/mto_temp.csv', index=True)
 
     # Modificación por pernos
     mto_df = bolts_modifier(mto_df=mto_df)
@@ -30,10 +29,6 @@ def mto_does_not_exist():
     # Eliminar columnas innecesarias
     mto_df.drop(['common_index'], axis=1, inplace=True)
 
-    # Agregar las cantidades de obra
-    mto_df['SUPPLY'] = mto_df[['DESCRIPTION', 'RATING',
-                               'SCH', 'FIRST_SIZE', 'SECOND_SIZE']].apply(supply_items, axis=1)
-
     # Agrupar y sumar por cantidad peso y area
     mto_df = mto_df.groupby(['LINE_NUM', 'SPEC', 'ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE', 'FIRST_SIZE_NUMBER',
                              'SECOND_SIZE', 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'UNITS', 'TAG', 'WEIGHT_PER_UNIT'])[['QTY', 'WEIGHT', 'AREA']].agg(
@@ -47,4 +42,4 @@ def mto_does_not_exist():
     mto_df.reset_index(drop=False)
 
     # Crear el archivo de MTO
-    mto_df.to_csv('./output/mto.csv', index=True)
+    mto_df.to_csv('./src/output/mto.csv', index=True)

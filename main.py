@@ -1,8 +1,8 @@
-from src.mto_exist.mto_exist import mto_exist
-from src.mto_does_not_exist import mto_does_not_exist
-from src.summary import summary
-from src.mr import mr
-from src.clean_csv import clean_csv
+from src.modules.mto_exist.mto_exist import mto_exist
+from src.modules.mto_does_not_exist import mto_does_not_exist
+from src.modules.summary import summary
+from src.modules.mr import mr
+from src.utils.clean_csv import clean_csv
 
 
 if __name__ == '__main__':

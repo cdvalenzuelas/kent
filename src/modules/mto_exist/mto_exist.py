@@ -1,5 +1,5 @@
-from src.mto_exist.mto_diagnostic import define_diganostic
-from src.mto_exist.mto_cleaner import mto_cleaner
+from src.modules.mto_exist.mto_diagnostic import define_diganostic
+from src.modules.mto_exist.mto_cleaner import mto_cleaner
 
 
 def mto_exist():
@@ -17,10 +17,10 @@ def mto_exist():
 
     mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
 
-    mto_df_na.to_csv('./output/mto_temp.csv', index=True)
+    mto_df_na.to_csv('./src/output/mto_temp.csv', index=True)
 
     # Eliminar columnas innecesarias
     mto_df.drop(['common_index'], axis=1, inplace=True)
 
     # Crear el archivo de MTO
-    mto_df.to_csv('./output/mto.csv', index=True)
+    mto_df.to_csv('./src/output/mto.csv', index=True)

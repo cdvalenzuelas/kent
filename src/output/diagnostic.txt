@@ -1,0 +1,584 @@
+ITEM 1: CS2SA1-1 1_2"-DRE-1-5-015 , BAL, 1-1/2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCSSPLIT BODY SIDE ENTRY, API 607, LO;" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 4.5kg (4.5kg totales) y en el piping_class es 6.1kg (6.1kg totales). Se deben revisar los isométricos 
+
+ITEM 7: CS2SA1-2"-ALV-1-5-013 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE WITH INTEGRAL WELDED 2 NIPPLES, FULL BORE, FLOATING BALL, API 608, SEAT LEAKAGE AS PER API 598, ASTM A105, CLASS 800, SW ENDS W/ 2 PE NIPPLES L=6" A106 GR.B SCH 80, ENDS AS PER MNF STD, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SI" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 2.6kg (5.2kg totales) y en el piping_class es 2.4kg (4.8kg totales). Se deben revisar los isométricos 
+
+ITEM 9: CS2SA1-2"-ALV-1-5-013 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 10: CS2SA1-2"-ALV-1-5-013 , CAP, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CAP, CS, ASTM ASTM A105 , ASME B16.11, THRD, CLASS 3000" y en el piping_class es "CAP, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.2kg (0.4kg totales) y en el piping_class es 0.14kg (0.28kg totales). Se deben revisar los isométricos 
+
+ITEM 11: CS2SA1-2"-ALV-1-5-013 , GAS, 1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.05kg (0.05kg totales) y en el piping_class es 0.047kg (0.047kg totales). Se deben revisar los isométricos 
+
+ITEM 12: CS2SA1-2"-ALV-1-5-013 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 14: CS2SA1-2"-ALV-1-5-013 , SW, 1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.13kg (1.13kg totales) y en el piping_class es 0.9kg (0.9kg totales). Se deben revisar los isométricos 
+
+ITEM 15: CS2SA1-2"-ALV-1-5-013 , TEE, 2"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.85kg (0.85kg totales) y en el piping_class es 1.9kg (1.9kg totales). Se deben revisar los isométricos 
+
+ITEM 17: CS2SA1-2"-ALV-1-5-013 , BOLT, 7/8"x140mm (1", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 18: CS2SA1-2"-ALV-1-5-013 , BOLT, 7/8"x160mm (2", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 21: CS2SA1-2"-ALV-1-5-014 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE WITH INTEGRAL WELDED 2 NIPPLES, FULL BORE, FLOATING BALL, API 608, SEAT LEAKAGE AS PER API 598, ASTM A105, CLASS 800, SW ENDS W/ 2 PE NIPPLES L=6" A106 GR.B SCH 80, ENDS AS PER MNF STD, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SI䂡㱨前" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.3kg (1.3kg totales) y en el piping_class es 2.4kg (2.4kg totales). Se deben revisar los isométricos 
+
+ITEM 22: CS2SA1-2"-ALV-1-5-014 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE WITH INTEGRAL WELDED 2 NIPPLES, FULL BORE, FLOATING BALL, API 608, SEAT LEAKAGE AS PER API 598, ASTM A105, CLASS 800, SW ENDS W/ 2 PE NIPPLES L=6" A106 GR.B SCH 80, ENDS AS PER MNF STD, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SI" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.3kg (1.3kg totales) y en el piping_class es 2.4kg (2.4kg totales). Se deben revisar los isométricos 
+
+ITEM 24: CS2SA1-2"-ALV-1-5-014 , BOLT, 1/2"x75mm (1", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B1.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 25: CS2SA1-2"-ALV-1-5-014 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 26: CS2SA1-2"-ALV-1-5-014 , CAP, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CAP, CS, ASTM ASTM A105 , ASME B16.11, THRD, CLASS 3000" y en el piping_class es "CAP, CS, ASTM A105, ASME B16.11, SW, CLASS 3000". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.2kg (0.4kg totales) y en el piping_class es 0.14kg (0.28kg totales). Se deben revisar los isométricos 
+
+ITEM 27: CS2SA1-2"-ALV-1-5-014 , GAS, 1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.05kg (0.05kg totales) y en el piping_class es 0.047kg (0.047kg totales). Se deben revisar los isométricos 
+
+ITEM 28: CS2SA1-2"-ALV-1-5-014 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 30: CS2SA1-2"-ALV-1-5-014 , SW, 1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.13kg (1.13kg totales) y en el piping_class es 0.9kg (0.9kg totales). Se deben revisar los isométricos 
+
+ITEM 32: CS2SA1-2"-ALV-1-5-014 , BOLT, 7/8"x160mm (2", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 35: CS2SA1-3"-ALV-1-5-012 , BOLT, 5/8"x100mm (4", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 36: CS2SA1-3"-ALV-1-5-012 , CRE, 4"x3"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.4kg (1.4kg totales) y en el piping_class es 1.6kg (1.6kg totales). Se deben revisar los isométricos 
+
+ITEM 37: CS2SA1-3"-ALV-1-5-012 , GAS, 4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.26kg (0.26kg totales) y en el piping_class es 0.235kg (0.235kg totales). Se deben revisar los isométricos 
+
+ITEM 39: CS2SA1-3"-ALV-1-5-012 , BOLT, 7/8"x160mm (3", #900)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 40: CS2SA1-3"-ALV-1-5-012 , GAS, 3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+
+ITEM 41: CS2SA1-3"-ALV-1-5-012 , WNK, 3"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 29.02kg (58.04kg totales) y en el piping_class es 13.63kg (27.26kg totales). Se deben revisar los isométricos 
+
+ITEM 43: CS2SA1-3/4"-DRE-1-5-003 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, RB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.3kg (1.3kg totales) y en el piping_class es 2.4kg (2.4kg totales). Se deben revisar los isométricos 
+
+ITEM 45: CS2SA1-3/4"-DRE-1-5-003 , NIP, 3/4"x100mm
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 160 L= 150 mm" y en el piping_class es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 160 L= 100 mm". Se deben revisar los isométricos
+
+ITEM 48: CS2SA1-3/4"-DRE-1-5-006 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, RB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.3kg (1.3kg totales) y en el piping_class es 2.4kg (2.4kg totales). Se deben revisar los isométricos 
+
+ITEM 50: CS2SA1-3/4"-DRE-1-5-006 , NIP, 3/4"x100mm
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 160 L= 150 mm" y en el piping_class es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 160 L= 100 mm". Se deben revisar los isométricos
+
+ITEM 51: CS2SA1-3/4"-DRE-1-5-007 , GAS, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.04kg (0.04kg totales) y en el piping_class es 0.035kg (0.035kg totales). Se deben revisar los isométricos 
+
+ITEM 53: CS2SA1-3/4"-DRE-1-5-007 , SW, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.84kg (0.84kg totales) y en el piping_class es 0.9kg (0.9kg totales). Se deben revisar los isométricos 
+
+ITEM 57: CS2SA1-3/4"-DRE-1-5-007 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, RB, FLOATING BALL, B16.34, A105, CL 1500, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SEAT RINGS NYLON, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, B16.34, A105, CL 1500, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SEAT RINGS NYLON, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 10.5kg (10.5kg totales) y en el piping_class es 3.2kg (3.2kg totales). Se deben revisar los isométricos 
+
+ITEM 59: CS2SA1-3/4"-DRE-1-5-007 , F8, 3/4"
+---------------------------------------
+* Este es un equipo tipo wafer vefificar pernos.
+
+ITEM 60: CS2SA1-3/4"-DRE-1-5-007 , GAS, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.0kg (1.0kg totales) y en el piping_class es 0.055kg (0.055kg totales). Se deben revisar los isométricos 
+
+ITEM 61: CS2SA1-3/4"-DRE-1-5-007 , GLB, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.2kg (3.2kg totales) y en el piping_class es 4.0kg (4.0kg totales). Se deben revisar los isométricos 
+
+ITEM 63: CS2SA1-3/4"-DRE-1-5-007 , SW, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 2.84kg (2.84kg totales) y en el piping_class es 2.3kg (2.3kg totales). Se deben revisar los isométricos 
+
+ITEM 64: CS2SA1-3/4"-DRE-1-5-008 , GAS, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.04kg (0.04kg totales) y en el piping_class es 0.035kg (0.035kg totales). Se deben revisar los isométricos 
+
+ITEM 66: CS2SA1-3/4"-DRE-1-5-008 , SW, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.84kg (0.84kg totales) y en el piping_class es 0.9kg (0.9kg totales). Se deben revisar los isométricos 
+
+ITEM 69: CS2SA1-3/4"-DRE-1-5-008 , BAL, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, RB, FLOATING BALL, B16.34, A105, CL 1500, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SEAT RINGS NYLON, API 607, LO" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, B16.34, A105, CL 1500, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SEAT RINGS NYLON, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 10.5kg (10.5kg totales) y en el piping_class es 3.2kg (3.2kg totales). Se deben revisar los isométricos 
+
+ITEM 71: CS2SA1-3/4"-DRE-1-5-008 , F8, 3/4"
+---------------------------------------
+* Este es un equipo tipo wafer vefificar pernos.
+
+ITEM 72: CS2SA1-3/4"-DRE-1-5-008 , GAS, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.0kg (1.0kg totales) y en el piping_class es 0.055kg (0.055kg totales). Se deben revisar los isométricos 
+
+ITEM 73: CS2SA1-3/4"-DRE-1-5-008 , GLB, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.2kg (3.2kg totales) y en el piping_class es 4.0kg (4.0kg totales). Se deben revisar los isométricos 
+
+ITEM 76: CS2SA1-3/4"-DRE-1-5-008 , SW, 3/4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 2.84kg (2.84kg totales) y en el piping_class es 2.3kg (2.3kg totales). Se deben revisar los isométricos 
+
+ITEM 77: CS2SA1-6"-ALV-1-5-001 , BE, 2"
+---------------------------------------
+* La longitud de la tubería es muy corta (100.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 79: CS2SA1-6"-ALV-1-5-001 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 80: CS2SA1-6"-ALV-1-5-001 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 81: CS2SA1-6"-ALV-1-5-001 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316 ST" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 5.8kg (5.8kg totales) y en el piping_class es 5.5kg (5.5kg totales). Se deben revisar los isométricos 
+
+ITEM 82: CS2SA1-6"-ALV-1-5-001 , ERE, 6"x4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.08kg (3.08kg totales) y en el piping_class es 3.9kg (3.9kg totales). Se deben revisar los isométricos 
+
+ITEM 83: CS2SA1-6"-ALV-1-5-001 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 84: CS2SA1-6"-ALV-1-5-001 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.87kg (1.74kg totales) y en el piping_class es 0.302kg (0.604kg totales). Se deben revisar los isométricos 
+
+ITEM 88: CS2SA1-6"-ALV-1-5-001 , BOLT, 3/4"x125mm (4", #300)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 89: CS2SA1-6"-ALV-1-5-001 , GAS, 4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 300, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 300, RF". Se deben revisar los isométricos
+
+ITEM 93: CS2SA1-6"-ALV-1-5-003 , BE, 6"
+---------------------------------------
+* La longitud de la tubería es muy corta (200.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 94: CS2SA1-6"-ALV-1-5-003 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 95: CS2SA1-6"-ALV-1-5-003 , BOLT, 3/4"x120mm (8", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 96: CS2SA1-6"-ALV-1-5-003 , BOLT, 5/8"x100mm (4", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 97: CS2SA1-6"-ALV-1-5-003 , CRE, 8"x6"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 4.73kg (4.73kg totales) y en el piping_class es 6.5kg (6.5kg totales). Se deben revisar los isométricos 
+
+ITEM 98: CS2SA1-6"-ALV-1-5-003 , GAS, 4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.26kg (0.26kg totales) y en el piping_class es 0.235kg (0.235kg totales). Se deben revisar los isométricos 
+
+ITEM 99: CS2SA1-6"-ALV-1-5-003 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.43kg (0.43kg totales) y en el piping_class es 0.302kg (0.302kg totales). Se deben revisar los isométricos 
+
+ITEM 100: CS2SA1-6"-ALV-1-5-003 , GAS, 8"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.6kg (0.6kg totales) y en el piping_class es 0.434kg (0.434kg totales). Se deben revisar los isométricos 
+
+ITEM 101: CS2SA1-6"-ALV-1-5-003 , RTE, 8"x4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 12.35kg (12.35kg totales) y en el piping_class es 28.0kg (28.0kg totales). Se deben revisar los isométricos 
+
+ITEM 102: CS2SA1-6"-ALV-1-5-003 , WNK, 8"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 18.22kg (18.22kg totales) y en el piping_class es 17.3kg (17.3kg totales). Se deben revisar los isométricos 
+
+ITEM 105: CS2SA1-6"-ALV-1-5-004 , BE, 2"
+---------------------------------------
+* La longitud de la tubería es muy corta (100.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 107: CS2SA1-6"-ALV-1-5-004 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 108: CS2SA1-6"-ALV-1-5-004 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 109: CS2SA1-6"-ALV-1-5-004 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 5.8kg (5.8kg totales) y en el piping_class es 5.5kg (5.5kg totales). Se deben revisar los isométricos 
+
+ITEM 110: CS2SA1-6"-ALV-1-5-004 , ERE, 6"x4"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.08kg (3.08kg totales) y en el piping_class es 3.9kg (3.9kg totales). Se deben revisar los isométricos 
+
+ITEM 111: CS2SA1-6"-ALV-1-5-004 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 112: CS2SA1-6"-ALV-1-5-004 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.87kg (1.74kg totales) y en el piping_class es 0.302kg (0.604kg totales). Se deben revisar los isométricos 
+
+ITEM 116: CS2SA1-6"-ALV-1-5-004 , BOLT, 3/4"x125mm (4", #300)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 117: CS2SA1-6"-ALV-1-5-004 , GAS, 4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 300, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 300, RF". Se deben revisar los isométricos
+
+ITEM 119: CS2SA1-6"-ALV-1-5-005 , BE, 2"
+---------------------------------------
+* La longitud de la tubería es muy corta (200.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 120: CS2SA1-6"-ALV-1-5-005 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 121: CS2SA1-6"-ALV-1-5-005 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 11.6kg (23.2kg totales) y en el piping_class es 5.5kg (11.0kg totales). Se deben revisar los isométricos 
+
+ITEM 122: CS2SA1-6"-ALV-1-5-005 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 126: CS2SA1-6"-ALV-1-5-010 , 90L, 1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.38kg (0.38kg totales) y en el piping_class es 0.35kg (0.35kg totales). Se deben revisar los isométricos 
+
+ITEM 128: CS2SA1-6"-ALV-1-5-010 , BAL, 1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE WITH INTEGRAL WELDED 2 NIPPLES, FULL BORE, FLOATING BALL, API 608, SEAT LEAKAGE AS PER API 598, ASTM A105, CLASS 800, SW ENDS W/ 2 PE NIPPLES L=6" A106 GR.B SCH 80, ENDS AS PER MNF STD, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SI" y en el piping_class es "BALL VALVE W/INTEGRAL WELDED 2 NIPPLES, FB, FLOATING BALL, API 608, API 598, A105, CL 800, SW W/2 PE NIPPLES, MNF STD, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, API 607, LO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 2.4kg (2.4kg totales) y en el piping_class es 3.5kg (3.5kg totales). Se deben revisar los isométricos 
+
+ITEM 131: CS2SA1-6"-ALV-1-5-010 , BOLT, 1/2"x75mm (1", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 132: CS2SA1-6"-ALV-1-5-010 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 133: CS2SA1-6"-ALV-1-5-010 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 134: CS2SA1-6"-ALV-1-5-010 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316䒊掉向" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 17.4kg (52.199999999999996kg totales) y en el piping_class es 5.5kg (16.5kg totales). Se deben revisar los isométricos 
+
+ITEM 135: CS2SA1-6"-ALV-1-5-010 , F8, 1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.13kg (0.13kg totales) y en el piping_class es 0.14kg (0.14kg totales). Se deben revisar los isométricos 
+* Este es un equipo tipo wafer vefificar pernos.
+
+ITEM 136: CS2SA1-6"-ALV-1-5-010 , GAS, 1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 137: CS2SA1-6"-ALV-1-5-010 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 138: CS2SA1-6"-ALV-1-5-010 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 1.3kg (3.9000000000000004kg totales) y en el piping_class es 0.302kg (0.9059999999999999kg totales). Se deben revisar los isométricos 
+
+ITEM 139: CS2SA1-6"-ALV-1-5-010 , GAT, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "GATE VALVE FLANGED ENDS, API 600, SEAT LEAKAGE AS PER API 598, ASTM A216 GR.WCB, CLASS 150, RF, ENDS AS PER ASME B16.5, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, API TRIM NO 8, RENEWABLE SEATS, FLEXIBLE WEDGE, STE" y en el piping_class es "GATE VALVE FL, API 600, API 598, A216 GR.WCB, CL 150, RF, B16.5, BB, SPW SS304/GRAPH, PKG GRAPH, TRIM #8, RENEWABLE SEATS, FLEXIBLE WEDGE, STEM OS&Y/RSNRO, HO". Se deben revisar los isométricos
+
+ITEM 140: CS2SA1-6"-ALV-1-5-010 , GAT, 3/4"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "GATE VALVE SOCKET WELDING ENDS, API 602, SEAT LEAKAGE AS PER API 598, ASTM A105, CLASS 800, SW ENDS, ENDS AS PER ASME B16.11, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, API TRIM NO 8, RENEWABLE SEATS, SOLID WEDGE, 䂙Ō哑" y en el piping_class es "GATE VALVE SW, API 602, API 598, A105, CL 800, SW, B16.11, BB, SPW SS304/GRAPH, PKG GRAPH, TRIM #8, RENEWABLE SEATS, SOLID WEDGE, STEM OS&Y/RSNRO, HO". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 6.66kg (19.98kg totales) y en el piping_class es 2.0kg (6.0kg totales). Se deben revisar los isométricos 
+
+ITEM 141: CS2SA1-6"-ALV-1-5-010 , NIP, 3/4"x100mm
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 80" y en el piping_class es "NIPPLE, SEAMLESS, CS, ASTM A106 Gr.B, ASME B36.10, PE, SCH 80 L= 100 mm". Se deben revisar los isométricos
+
+ITEM 144: CS2SA1-6"-ALV-1-5-010 , RTE, 1-1/2"x1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.87kg (0.87kg totales) y en el piping_class es 1.35kg (1.35kg totales). Se deben revisar los isométricos 
+
+ITEM 147: CS2SA1-6"-ALV-1-5-010 , SW, 1"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 2.26kg (4.52kg totales) y en el piping_class es 0.9kg (1.8kg totales). Se deben revisar los isométricos 
+
+ITEM 148: CS2SA1-6"-ALV-1-5-010 , TEE, 6"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 9.27kg (9.27kg totales) y en el piping_class es 19.3kg (19.3kg totales). Se deben revisar los isométricos 
+
+ITEM 152: CS5SA1-6"-ALV-1-5-002 , BE, 2"
+---------------------------------------
+* La longitud de la tubería es muy corta (200.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 153: CS5SA1-6"-ALV-1-5-002 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 154: CS5SA1-6"-ALV-1-5-002 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 11.6kg (23.2kg totales) y en el piping_class es 5.5kg (11.0kg totales). Se deben revisar los isométricos 
+
+ITEM 155: CS5SA1-6"-ALV-1-5-002 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 158: CS5SA1-6"-ALV-1-5-002 , 90L, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "ELBOW 90 DEG LR, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "ELBOW 90 DEG LR, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9,  IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". Se deben revisar los isométricos
+
+ITEM 159: CS5SA1-6"-ALV-1-5-002 , BAL, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE FLANGED ENDS, FULL BORE, LONG PATTERN, TRUNNION BALL, API 6D, ASTM A216 GR.WCB, CLASS 1500, RF, ENDS AS PER ASME B16.5, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, BOLTED CONNECTION, A193 GR.B7/A194 GR.2H, SPW AISI 304/G" y en el piping_class es "BALL VALVE FL, FB, LP, TRUNNION BALL, API 6D, A216 GR.WCB, CL 1500, RF, B16.5, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SPW SS304/GRAPH, SEAT RINGS SS316, SEAT INSERTS NYLON, API 607, LO". Se deben revisar los isométricos
+
+ITEM 160: CS5SA1-6"-ALV-1-5-002 , BE, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+
+ITEM 161: CS5SA1-6"-ALV-1-5-002 , BE, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+
+ITEM 162: CS5SA1-6"-ALV-1-5-002 , PE, 1"
+---------------------------------------
+* La longitud de la tubería es muy corta (50.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 163: CS5SA1-6"-ALV-1-5-002 , BOLT, 1-1/8"x210mm (6", #900)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 164: CS5SA1-6"-ALV-1-5-002 , BOLT, 7/8"x160mm (2", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 165: CS5SA1-6"-ALV-1-5-002 , CRE, 6"x3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CONCENTRIC REDUCER, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80x80" y en el piping_class es "CONCENTRIC REDUCER, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80 x 80". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.93kg (3.93kg totales) y en el piping_class es 5.95kg (5.95kg totales). Se deben revisar los isométricos 
+
+ITEM 166: CS5SA1-6"-ALV-1-5-002 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.4kg (0.8kg totales) y en el piping_class es 0.216kg (0.432kg totales). Se deben revisar los isométricos 
+
+ITEM 167: CS5SA1-6"-ALV-1-5-002 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+
+ITEM 169: CS5SA1-6"-ALV-1-5-002 , SWC, 2"x1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CONCENTRIC SWAGE, CS, ASTM A234 Gr.WPB, MSS SP-95, IMPACT TEST PARA. 423.2.3 ASME B 31.4, BExPE, SCH 80x80" y en el piping_class es "CONCENTRIC SWAGE, CS, ASTM A234 Gr.WPB, MSS SP-95, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BExPE, SCH 80x80 ". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.91kg (0.91kg totales) y en el piping_class es 1.06kg (1.06kg totales). Se deben revisar los isométricos 
+
+ITEM 172: CS5SA1-6"-ALV-1-5-002 , BOLT, 1-1/8"x195mm (3", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HVY HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B1.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 190.0mm y en el piping_class es de 195.0mm. Se deben revisar los isométricos 
+
+ITEM 173: CS5SA1-6"-ALV-1-5-002 , GAS, 3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "RING JOINT GASKET, SOFT IRON 90 BHN MAX., OVAL TYPE, ASME B16.20, CLASS 1500, RTJ" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.29kg (0.29kg totales) y en el piping_class es 0.45kg (0.45kg totales). Se deben revisar los isométricos 
+
+ITEM 174: CS5SA1-6"-ALV-1-5-002 , WNK, 3"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 19.35kg (19.35kg totales) y en el piping_class es 20.53kg (20.53kg totales). Se deben revisar los isométricos 
+
+ITEM 176: CS5SA1-6"-ALV-1-5-005 , 90L, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "ELBOW 90 DEG LR, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "ELBOW 90 DEG LR, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9,  IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". Se deben revisar los isométricos
+
+ITEM 177: CS5SA1-6"-ALV-1-5-005 , BAL, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "BALL VALVE FLANGED ENDS, FULL BORE, LONG PATTERN, TRUNNION BALL, API 6D, ASTM A216 GR.WCB, CLASS 1500, RF, ENDS AS PER ASME B16.5, AISI 316 BALL, AISI 316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, BOLTED CONNECTION, A193 GR.B7/A194 GR.2H, SPW AISI 304/G" y en el piping_class es "BALL VALVE FL, FB, LP, TRUNNION BALL, API 6D, A216 GR.WCB, CL 1500, RF, B16.5, SS316 BALL, SS316 STEM, 2 OR 3 PCS SPLIT BODY SIDE ENTRY, SPW SS304/GRAPH, SEAT RINGS SS316, SEAT INSERTS NYLON, API 607, LO". Se deben revisar los isométricos
+
+ITEM 178: CS5SA1-6"-ALV-1-5-005 , BE, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+
+ITEM 179: CS5SA1-6"-ALV-1-5-005 , BE, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+
+ITEM 180: CS5SA1-6"-ALV-1-5-005 , PE, 1"
+---------------------------------------
+* La longitud de la tubería es muy corta (50.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 181: CS5SA1-6"-ALV-1-5-005 , BOLT, 1-1/8"x210mm (6", #900)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 182: CS5SA1-6"-ALV-1-5-005 , BOLT, 7/8"x160mm (2", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 183: CS5SA1-6"-ALV-1-5-005 , CRE, 6"x3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CONCENTRIC REDUCER, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80x80" y en el piping_class es "CONCENTRIC REDUCER, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80 x 80". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 3.93kg (3.93kg totales) y en el piping_class es 5.95kg (5.95kg totales). Se deben revisar los isométricos 
+
+ITEM 184: CS5SA1-6"-ALV-1-5-005 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 1500, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.4kg (0.8kg totales) y en el piping_class es 0.216kg (0.432kg totales). Se deben revisar los isométricos 
+
+ITEM 185: CS5SA1-6"-ALV-1-5-005 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+
+ITEM 188: CS5SA1-6"-ALV-1-5-005 , SWC, 2"x1"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "CONCENTRIC SWAGE, CS, ASTM A234 Gr.WPB, MSS SP-95, IMPACT TEST PARA. 423.2.3 ASME B 31.4, BExPE, SCH 80x80" y en el piping_class es "CONCENTRIC SWAGE, CS, ASTM A234 Gr.WPB, MSS SP-95, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BExPE, SCH 80x80 ". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.91kg (0.91kg totales) y en el piping_class es 1.06kg (1.06kg totales). Se deben revisar los isométricos 
+
+ITEM 192: CS5SA1-6"-ALV-1-5-005 , BOLT, 1-1/8"x195mm (3", #1500)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HVY HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B1.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 190.0mm y en el piping_class es de 195.0mm. Se deben revisar los isométricos 
+
+ITEM 193: CS5SA1-6"-ALV-1-5-005 , GAS, 3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "RING JOINT GASKET, SOFT IRON 90 BHN MAX., OVAL TYPE, ASME B16.20, CLASS 1500, RTJ" y en el piping_class es "RING JOINT GASKET, SOFT IRON BHN MAX, OVAL TYPE, ASME B16.20, CLASS 1500, RTJ". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 0.29kg (0.29kg totales) y en el piping_class es 0.45kg (0.45kg totales). Se deben revisar los isométricos 
+
+ITEM 194: CS5SA1-6"-ALV-1-5-005 , WNK, 3"
+---------------------------------------
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 19.35kg (19.35kg totales) y en el piping_class es 20.53kg (20.53kg totales). Se deben revisar los isométricos 
+
+ITEM 195: CS5SA1-6"-ALV-1-5-006 , BE, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+* La longitud de la tubería es muy corta (182.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 196: CS5SA1-6"-ALV-1-5-011 , BE, 2"
+---------------------------------------
+* La longitud de la tubería es muy corta (100.0mm), podría ser un niple. Revisar si se puede cambiar 
+
+ITEM 197: CS5SA1-6"-ALV-1-5-011 , BOLT, 5/8"x90mm (2", #150)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+* La longitud de los pernos no coincide, en el BOM es de 110.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
+
+ITEM 198: CS5SA1-6"-ALV-1-5-011 , DBBM, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "INTEGRAL MONO FLANGE DOUBLE BLOCK AND BLEED NEEDLE MULTI-VALVE, EEMUA 182, ASTM A105, CLASS 150, RF / (1/2" NPTF OUTLET), ENDS AS PER ASME B16.5 AND ASME B1.20.1, BOLTED BONNET, A193 GR.B7/A194 GR.2H, SPW AISI 304/GRAPHITE, PACKING: GRAPHITE, AISI 316䐸᫆圜" y en el piping_class es "INTEGRAL MONO FLANGE DBB NEEDLE MULTI-VALVE, EEMUA 182, A105, CL 150, RF/NPTF, B16.5 AND B1.20.1, BB, SPW SS304/GRAPH, PKG GRAPH; SS316 STEM, SEATS&STEM TIP, S, SWIVEL NEEDLE, STEM OS&Y/RSRO, T-HANDLE". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 5.8kg (5.8kg totales) y en el piping_class es 5.5kg (5.5kg totales). Se deben revisar los isométricos 
+
+ITEM 199: CS5SA1-6"-ALV-1-5-011 , GAS, 2"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 150, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 150, RF". Se deben revisar los isométricos
+
+ITEM 202: CS5SA1-6"-ALV-1-5-011 , 90L, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "ELBOW 90 DEG LR, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80" y en el piping_class es "ELBOW 90 DEG LR, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9,  IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". Se deben revisar los isométricos
+
+ITEM 203: CS5SA1-6"-ALV-1-5-011 , BE, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS, CS, API 5L Gr.B, PSL2, ASME B36.10, BE, SCH 80" y en el piping_class es "PIPE, SEAMLESS, CS, API 5L Gr.B, ASME B36.10, PSL2, BE, SCH 80". Se deben revisar los isométricos
+
+ITEM 204: CS5SA1-6"-ALV-1-5-011 , BOLT, 1-1/8"x210mm (6", #900)
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STUD BOLTS W/2 HEX NUTS, CS, ASME A193 Gr.B7 / A194 Gr.2H, ASME B18.2.1/B18.2.2" y en el piping_class es "STUD BOLTS W/2 HVY HEX NUTS, CS, A193 Gr.B7/A194 Gr.2H, ASME B18.2.1/B18.2.2". Se deben revisar los isométricos
+
+ITEM 205: CS5SA1-6"-ALV-1-5-011 , GAS, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "SPIRAL WOUND GASKET, AISI 304/GRAPHITE, INNER AISI 304/OUTER CS, ASME B16.20, THK 1/8", CLASS 900, RF" y en el piping_class es "SPIRAL WOUND GASKET, SS, AISI 304/GRAPHITE, ASME B16.20, THK 1/8", CLASS 900, RF". Se deben revisar los isométricos
+
+ITEM 206: CS5SA1-6"-ALV-1-5-011 , RTE, 6"x3"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "REDUCING TEE, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80x80" y en el piping_class es "REDUCING TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80 x 80". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 12.54kg (12.54kg totales) y en el piping_class es 18.0kg (18.0kg totales). Se deben revisar los isométricos 
+
+ITEM 207: CS5SA1-6"-ALV-1-5-011 , TEE, 6"
+---------------------------------------
+* La DESCRIPTION no coincide, en el BOM es "STRAIGHT TEE, SEAMLESS, IMPACT TEST PARA. 423.2.3 ASME B31.4, CS, ASTM A234 Gr.WPB, ASME B16.9, BW, SCH 80
+;" y en el piping_class es "STRAIGHT TEE, SEAMLESS, CS, ASTM A234 Gr.WPB, ASME B16.9, IMPACT TEST AT 32°F ACCORDING TO PARA 423.2.3 OF ASME B31.4 FOR ACCEPTANCE CRITERIA, BW, SCH 80". Se deben revisar los isométricos
+* El WEIGHT_PER_UNIT no coincide, en el BOM es 14.06kg (14.06kg totales) y en el piping_class es 19.3kg (19.3kg totales). Se deben revisar los isométricos 
+

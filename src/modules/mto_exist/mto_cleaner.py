@@ -2,8 +2,8 @@ import pandas as pd
 import re
 
 
-from src.mto_exist.define_tag import define_tag
-from src.mto_exist.define_bolts import define_bolts
+from src.modules.mto_exist.define_tag import define_tag
+from src.modules.mto_exist.define_bolts import define_bolts
 
 
 # Crea una columna comun entre el piping class y el bom
@@ -64,7 +64,7 @@ def change_bw_by_be(description):
 
 def mto_cleaner():
     # Leer el MTO
-    mto_df = pd.read_csv('mto.csv')
+    mto_df = pd.read_csv('./scr/inputs/mto.csv')
 
     # Rellenar espacios vacío
     mto_df.fillna('-', inplace=True)
@@ -79,12 +79,12 @@ def mto_cleaner():
     mto_df['SECOND_SIZE'] = mto_df['SECOND_SIZE'].apply(modify_size)
 
     # Extraer el piping class
-    CS2SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS2SA1.csv')
-    CS3SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS3SA1.csv')
-    CS5SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS5SA1.csv')
-    CS6SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS6SA1.csv')
-    CS1SC2 = pd.read_csv('./CENIT/PIPING_CLASS/CS1SC2.csv')
-    CS4SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS4SA1.csv')
+    CS2SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS2SA1.csv')
+    CS3SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS3SA1.csv')
+    CS5SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS5SA1.csv')
+    CS6SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS6SA1.csv')
+    CS1SC2 = pd.read_csv('./src/clients/cenit/piping_class/CS1SC2.csv')
+    CS4SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS4SA1.csv')
 
     piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2, CS4SA1])
 

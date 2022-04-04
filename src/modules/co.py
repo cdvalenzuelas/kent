@@ -10,7 +10,7 @@ def unidad(item_type):
 
 def supply():
     # Leer el MTO
-    co_df = pd.read_csv('./output/mto.csv')
+    co_df = pd.read_csv('./src/output/mto.csv')
 
     co_df['UNIDAD'] = co_df['TYPE'].apply(unidad)
 
@@ -37,7 +37,7 @@ def description_pre_manufacturing(row):
 
 def pre_manufacturing():
     # Leer el MTO
-    co_df = pd.read_csv('./output/mto.csv')
+    co_df = pd.read_csv('./src/output/mto.csv')
 
     # Unidades de prefabricación
     co_df['UNIDAD'] = 'KG'
@@ -54,4 +54,4 @@ def co():
     pre_manufacturing_df = pre_manufacturing()
 
     # Crear el archivo summary
-    #co_df.to_csv('./output/co.csv', index=True)
+    #co_df.to_csv('./src/output/co.csv', index=True)

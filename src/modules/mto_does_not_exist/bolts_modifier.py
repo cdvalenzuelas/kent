@@ -86,7 +86,7 @@ def bolts_weight(row):
 # Esta es la función que modifica el dataframe con respecto a los bolts
 def bolts_modifier(mto_df):
     # lEER EL ARCHIVO DE PERNOS
-    bolts = pd.read_csv('./utils/bolts_kent.csv')
+    bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
 
     # Se crean los indices para los bolts en mto y en bolts
     mto_df['BOLT_INDEX'] = mto_df[['FIRST_SIZE', 'RATING', 'FACE']].apply(

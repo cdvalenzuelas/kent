@@ -61,7 +61,7 @@ def mto_diagnostic(row):
         mto_diagnostic = f'ITEM {item}: {line_num} , {type_code}, {first_size}{second_size}\n---------------------------------------\n{mto_diagnostic}\n'
 
     if str(short_description) != 'nan':
-        with open('./output/diagnostic.txt', mode='a') as f:
+        with open('./src/output/diagnostic.txt', mode='a') as f:
             f.write(mto_diagnostic)
 
     return item
@@ -83,7 +83,7 @@ def define_diagnostic(mto_df):
     index = pd.DataFrame({'INDEX': list(range(1, mto_df.shape[0] + 1))})
 
     # lEER EL ARCHIVO DE PERNOS
-    bolts = pd.read_csv('./utils/bolts_kent.csv')
+    bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
 
     # Unir el indice y el mto en un dataframe
     mto_df = pd.concat([index, mto_df], axis=1)
@@ -102,7 +102,7 @@ def define_diagnostic(mto_df):
 
     # Eliminar el archivo de diagnostic
     try:
-        os.remove('./output/diagnostic.txt')
+        os.remove('./src/output/diagnostic.txt')
     except:
         print('EL ARCHIVO "diagnostic.txt" no existe en el proyecto')
 

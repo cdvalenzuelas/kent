@@ -3,7 +3,7 @@ import pandas as pd
 
 def summary():
     # Leer el MTO
-    mto_df = pd.read_csv('./output/mto.csv')
+    mto_df = pd.read_csv('./src/output/mto.csv')
 
     # Eliminar columnas innecesarias
     mto_df.drop(['LINE_NUM', 'SPEC'], axis=1, inplace=True)
@@ -22,4 +22,4 @@ def summary():
     mto_df.reset_index(drop=False)
 
     # Crear el archivo summary
-    mto_df.to_csv('./output/summary.csv', index=True)
+    mto_df.to_csv('./src/output/summary.csv', index=True)

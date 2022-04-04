@@ -1,9 +1,9 @@
 import pandas as pd
 import re
 
-from src.mto_does_not_exist.pipes_modifier import pipe_qty
-from src.mto_does_not_exist.nipples_modifier import nipple_second_size, nipple_second_size_number
-from src.mto_does_not_exist.mto_diagnostic import define_diagnostic
+from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
+from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
+from src.modules.mto_does_not_exist.mto_diagnostic import define_diagnostic
 
 
 # Reemplaza los espacios por guines en los tamalños en pulgadas
@@ -26,7 +26,7 @@ def units(TYPE):
 
 def bom_cleaner():
     # Leer el BOM
-    bom = pd.read_csv('bom.csv')
+    bom = pd.read_csv('./src/inputs/bom.csv')
 
     # Llenar los N.A con guines
     bom.fillna('-', inplace=True)
@@ -51,12 +51,12 @@ def bom_cleaner():
                                'RED_NOM', 'TAG']].apply(concat_colums, axis=1)
 
     # Extraer el piping class
-    CS2SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS2SA1.csv')
-    CS3SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS3SA1.csv')
-    CS5SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS5SA1.csv')
-    CS6SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS6SA1.csv')
-    CS1SC2 = pd.read_csv('./CENIT/PIPING_CLASS/CS1SC2.csv')
-    CS4SA1 = pd.read_csv('./CENIT/PIPING_CLASS/CS4SA1.csv')
+    CS2SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS2SA1.csv')
+    CS3SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS3SA1.csv')
+    CS5SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS5SA1.csv')
+    CS6SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS6SA1.csv')
+    CS1SC2 = pd.read_csv('./src/clients/cenit/piping_class/CS1SC2.csv')
+    CS4SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS4SA1.csv')
 
     piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2, CS4SA1])
 
@@ -81,7 +81,5 @@ def bom_cleaner():
 
     # Creando la columna units
     mto_df['UNITS'] = mto_df['TYPE'].apply(units)
-
-    mto_df.to_csv('./temp.csv')
 
     return mto_df

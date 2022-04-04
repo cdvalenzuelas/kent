@@ -3,9 +3,9 @@ import pandas as pd
 
 def clean_csv():
     # Leer archivos
-    mr_df = pd.read_csv('./output/mr.csv')
-    summary_df = pd.read_csv('./output/summary.csv')
-    mto_df = pd.read_csv('./output/mto.csv')
+    mr_df = pd.read_csv('./src/output/mr.csv')
+    summary_df = pd.read_csv('./src/output/summary.csv')
+    mto_df = pd.read_csv('./src/output/mto.csv')
 
     # Ordenar los dataframes
     summary_df.sort_values(by=['ORDER', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
@@ -35,6 +35,6 @@ def clean_csv():
     summary_df['WEIGHT_PER_UNIT'] = round(summary_df['WEIGHT_PER_UNIT'], 4)
 
     # Crear el archivos
-    mr_df.to_csv('./output/mr.csv', index=False)
-    summary_df.to_csv('./output/summary.csv', index=False)
-    mto_df.to_csv('./output/mto.csv', index=False)
+    mr_df.to_csv('./src/output/mr.csv', index=False)
+    summary_df.to_csv('./src/output/summary.csv', index=False)
+    mto_df.to_csv('./src/output/mto.csv', index=False)

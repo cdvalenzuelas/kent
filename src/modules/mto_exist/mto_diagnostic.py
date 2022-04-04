@@ -38,7 +38,7 @@ def mto_diagnostic(row):
         mto_diagnostic = f'ITEM {item}\n---------------------------------------\n{mto_diagnostic}\n'
 
     if str(type_y) != 'nan':
-        with open('./output/diagnostic.txt', mode='a') as f:
+        with open('./src/output/diagnostic.txt', mode='a') as f:
             f.write(mto_diagnostic)
 
     return line_num
@@ -53,7 +53,7 @@ def define_diganostic(mto_df):
 
     # Eliminar el archivo de diagnostic
     try:
-        os.remove('./output/diagnostic.txt')
+        os.remove('./src/output/diagnostic.txt')
     except:
         print('EL ARCHOVO "diagnostic.txt" no existe en el proyecto')
 
