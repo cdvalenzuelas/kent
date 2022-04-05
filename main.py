@@ -2,18 +2,32 @@ from src.modules.mto_exist.mto_exist import mto_exist
 from src.modules.mto_does_not_exist import mto_does_not_exist
 from src.modules.summary import summary
 from src.modules.mr import mr
+from src.modules.hd.hd import hd
 from src.utils.clean_csv import clean_csv
 
 
 if __name__ == '__main__':
     mto_already_exist = False
 
+    # Se crea el MTO en función de si entregan un MTO hecho o un BOM desde 0
     if not mto_already_exist:
+        # Entregan un BOM desde 0
         mto_does_not_exist()
     else:
+        # Nos entregan el MTO hecho para hacer correcciones
         mto_exist()
 
-    # co()
+    # Se crea la HD
+    hd()
+
+    # Creación del sumario
     summary()
+
+    # Se crea el MR
     mr()
+
+    # Se limpian los archivos crados
     clean_csv()
+
+    # Se crean las cantidades de obra
+    # co()
