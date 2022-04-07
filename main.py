@@ -1,8 +1,9 @@
 from src.modules.mto_exist.mto_exist import mto_exist
 from src.modules.mto_does_not_exist import mto_does_not_exist
-from src.modules.summary import summary
-from src.modules.mr import mr
+from src.modules.summary.summary import summary
+from src.modules.mr.mr import mr
 from src.modules.hd.hd import hd
+from src.modules.co.co import co
 from src.utils.clean_csv import clean_csv
 
 
@@ -18,7 +19,10 @@ if __name__ == '__main__':
         mto_exist()
 
     # Se crea la HD
-    hd()
+    # hd()
+
+    # Se crean las cantidades de obra
+    co()
 
     # Creación del sumario
     summary()
@@ -28,6 +32,3 @@ if __name__ == '__main__':
 
     # Se limpian los archivos crados
     clean_csv()
-
-    # Se crean las cantidades de obra
-    # co()

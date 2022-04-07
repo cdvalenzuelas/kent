@@ -16,7 +16,7 @@ def hd():
         './src/clients/cenit/elements/cenit_valves_tags.csv')
 
     # leer el MTO creado
-    mto_df = pd.read_csv('./src/output/mto.csv')
+    mto_df = pd.read_csv('./output/mto.csv')
 
     # Extrayendo únicamente las válvulas
     mto_df = mto_df[mto_df['TYPE'] == 'VL']

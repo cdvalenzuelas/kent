@@ -26,7 +26,7 @@ def units(TYPE):
 
 def bom_cleaner():
     # Leer el BOM
-    bom = pd.read_csv('./src/inputs/bom.csv')
+    bom = pd.read_csv('./inputs/bom.csv')
 
     # Llenar los N.A con guines
     bom.fillna('-', inplace=True)
