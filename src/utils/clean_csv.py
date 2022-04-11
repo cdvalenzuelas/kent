@@ -1,8 +1,7 @@
 import pandas as pd
 
+
 # Reemplaza puntos por comas
-
-
 def replace_dot_by_comma(data):
     if type(data) == float or type(data) == int:
         if data % 1 == 0:
@@ -82,6 +81,13 @@ def clean_csv():
 
     # Crear el archivos
     mr_df.to_csv('./output/mr.csv', index=False)
+    mr_df.to_excel('./output/mr.xlsx', index=False)
+
     summary_df.to_csv('./output/summary.csv', index=False)
+    summary_df.to_excel('./output/summary.xlsx', index=False)
+
     mto_df.to_csv('./output/mto.csv', index=False)
+    mto_df.to_excel('./output/mto.xlsx', index=False)
+
     co_df.to_csv('./output/co.csv', index=False)
+    co_df.to_excel('./output/co.xlsx', index=False)

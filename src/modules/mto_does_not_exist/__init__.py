@@ -8,7 +8,8 @@ def mto_does_not_exist():
     mto_df = bom_cleaner()
 
     # Crear registro de items sin identificar
-    mto_df_na = mto_df[mto_df['DESCRIPTION'].isnull()]
+    mto_df_na = mto_df[(mto_df['DESCRIPTION'].isnull())
+                       | (mto_df['DESCRIPTION'] == '-')]
 
     mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
 
@@ -32,9 +33,8 @@ def mto_does_not_exist():
     # Agrupar y sumar por cantidad peso y area
     mto_df = mto_df.groupby(['LINE_NUM', 'SPEC', 'ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE',
                              'FIRST_SIZE_NUMBER', 'SECOND_SIZE', 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING',
-                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'SUPPLY_CODE', 'SUPPLY_TITLE', 'SUPPLY_DESCRIPTION',
-                             'MANUFACTURING_CODE', 'MANUFACTURING_TITLE', 'MANUFACTURING_DESCRIPTION',
-                             'ERECTION_CODE', 'ERECTION_TITLE', 'ERECTION_DESCRIPTION'])[['QTY', 'WEIGHT', 'AREA']].agg(
+                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'SUPPLY_DESCRIPTION', 'MANUFACTURING_DESCRIPTION',
+                             'ERECTION_DESCRIPTION'])[['QTY', 'WEIGHT', 'AREA']].agg(
         TOTAL_WEIGHT=('WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))

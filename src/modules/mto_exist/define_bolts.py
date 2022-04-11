@@ -128,6 +128,8 @@ def define_bolts(mto_df, piping_class):
     mto_df = pd.merge(mto_df, bolts_df_1,
                       how='left', on='bolt_index')
 
+    mto_df.fillna('-', inplace=True)
+
     # Definir el first_size_number de los pernos
     mto_df['FIRST_SIZE_NUMBER'] = mto_df[[
         'TYPE_CODE', 'FIRST_SIZE_NUMBER', 'BOLT_DIAM_NUM']].apply(bolt_first_size_number, axis=1)

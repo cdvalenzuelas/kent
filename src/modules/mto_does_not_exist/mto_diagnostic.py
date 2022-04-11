@@ -100,6 +100,8 @@ def define_diagnostic(mto_df):
     # Hacer un joint con la tabla pernos
     mto_df = pd.merge(mto_df, bolts, how='left', on='BOLT_INDEX')
 
+    mto_df.fillna('-', inplace=True)
+
     # Eliminar el archivo de diagnostic
     try:
         os.remove('./output/diagnostic.txt')

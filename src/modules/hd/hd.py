@@ -37,6 +37,8 @@ def hd():
     valves_df.drop(['SPEC_y', 'TAG_y', 'valves_index',
                    'FIRST_SIZE_NUMBER'], inplace=True, axis=1)
 
+    valves_df.fillna('-', inplace=True)
+
     valves_df.rename({'SPEC_x': 'SPEC', 'TAG_x': 'TAG'}, inplace=True, axis=1)
 
     ball(valves_df)

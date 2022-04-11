@@ -98,6 +98,8 @@ def bolts_modifier(mto_df):
     # Hacer un join entre el mto y los bolts para completar el MTO
     mto_df = pd.merge(mto_df, bolts, how='left', on='BOLT_INDEX')
 
+    mto_df.fillna('-', inplace=True)
+
     # Renombrando columnas
     mto_df.rename(columns={'RATING_x': 'RATING',
                   'FACE_x': 'FACE'}, inplace=True)

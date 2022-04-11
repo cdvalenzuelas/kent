@@ -4,6 +4,7 @@ import re
 
 from src.modules.mto_exist.define_tag import define_tag
 from src.modules.mto_exist.define_bolts import define_bolts
+from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 
 
 # Crea una columna comun entre el piping class y el bom
@@ -79,14 +80,7 @@ def mto_cleaner():
     mto_df['SECOND_SIZE'] = mto_df['SECOND_SIZE'].apply(modify_size)
 
     # Extraer el piping class
-    CS2SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS2SA1.csv')
-    CS3SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS3SA1.csv')
-    CS5SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS5SA1.csv')
-    CS6SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS6SA1.csv')
-    CS1SC2 = pd.read_csv('./src/clients/cenit/piping_class/CS1SC2.csv')
-    CS4SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS4SA1.csv')
-
-    piping_class = pd.concat([CS2SA1, CS3SA1, CS5SA1, CS6SA1, CS1SC2, CS4SA1])
+    piping_class = cenit_piping_class()
 
     # Carbiar BW por BE
     piping_class['SHORT_DESCRIPTION'] = piping_class['SHORT_DESCRIPTION'].apply(
@@ -104,6 +98,8 @@ def mto_cleaner():
 
     # Hacer un join entre el bom y el piping class para generar el mto
     mto_df = pd.merge(mto_df, piping_class, how='left', on='common_index')
+
+    mto_df.fillna('-', inplace=True)
 
     # Eliminar las columnas innecesarias
     mto_df.drop(['SPEC_y', 'TYPE_CODE_y', 'FIRST_SIZE_y',

@@ -1,18 +1,16 @@
-from src.modules.co.co_temp import co_temp
-from src.modules.co.supply import supply
-from src.modules.co.pre_manufacturing import pre_manufacturing
-from src.modules.co.valves_hidrostatic_test import valves_hidrostatic_test
+# Se traen las cantidades de obra de cada cliente
+from src.clients.cenit.co.cenit_co import cenit_co
 
 
-def co():
-    # Crear un archivo temporal que indique que items tienen información faltante em las cantidades de obra
-    co_temp()
+# Se traen los archivos de configuración para cada cliente
+from src.clients.cenit.co.cenit_co_conf import cenit_co_conf
 
-    # Definir el suministro
-    supply()
 
-    # Definir la prefabricación
-    pre_manufacturing()
+# Esta función define que cliente se está trabajando y ejecuta sus cantidades de obra
+def co(client):
+    print(
+        f'RECUERDE MODIFICAR EL ARCHIVO DE CONFIGUARACIÓN DE CANTIDADES DE OBRA DE {client.upper()}')
 
-    # Definir las cantidades de pruebas hidrostáticas
-    valves_hidrostatic_test()
+    # Ejecutar cada cantidad de obra con su archivo de configuración
+    if client == 'cenit':
+        cenit_co(cenit_co_conf)

@@ -8,7 +8,11 @@ from src.utils.clean_csv import clean_csv
 
 
 if __name__ == '__main__':
+    # Definir si nos entregan MTO o BOM
     mto_already_exist = False
+
+    # Definir el cliente
+    client = 'cenit'
 
     # Se crea el MTO en función de si entregan un MTO hecho o un BOM desde 0
     if not mto_already_exist:
@@ -22,7 +26,7 @@ if __name__ == '__main__':
     # hd()
 
     # Se crean las cantidades de obra
-    co()
+    co(client)
 
     # Creación del sumario
     summary()
