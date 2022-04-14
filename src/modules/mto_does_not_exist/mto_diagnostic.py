@@ -102,12 +102,6 @@ def define_diagnostic(mto_df):
 
     mto_df.fillna('-', inplace=True)
 
-    # Eliminar el archivo de diagnostic
-    try:
-        os.remove('./output/diagnostic.txt')
-    except:
-        print('EL ARCHIVO "diagnostic.txt" no existe en el proyecto')
-
     mto_df = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
                     'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x']]
 

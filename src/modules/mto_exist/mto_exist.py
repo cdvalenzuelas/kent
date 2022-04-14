@@ -15,9 +15,11 @@ def mto_exist():
     # Crear registro de items sin identificar
     mto_df_na = mto_df[mto_df['SHORT_DESCRIPTION'].isnull()]
 
-    mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
+    if mto_df_na.shape[0] > 0:
 
-    mto_df_na.to_csv('./output/mto_temp.csv', index=True)
+        mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
+
+        mto_df_na.to_csv('./output/mto_temp.csv', index=True)
 
     # Eliminar columnas innecesarias
     mto_df.drop(['common_index'], axis=1, inplace=True)

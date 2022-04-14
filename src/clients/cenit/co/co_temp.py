@@ -41,5 +41,10 @@ def co_temp():
     co_df.drop(['LINE_NUM', 'ORDER', 'TYPE', 'FIRST_SIZE_NUMBER',
                 'SECOND_SIZE_NUMBER', 'UNITS', 'TOTAL_WEIGHT', 'QTY', 'SCH', 'FACE', 'RATING', 'UNITS', 'TAG'], inplace=True, axis=1)
 
-    # Guardar el archivo
-    co_df.to_csv('./output/co_temp.csv', index=False)
+    if co_df.shape[0] == 0:
+        print('✅ TODOS LOS ELEMENTOS DEL B.O.M TIENEN RELACIONADOS CANTIDADES DE OBRA\n')
+    else:
+        print(
+            '❌  EXISTEN ELEMENTOS DEL B.O.M QUE NO TIENEN RELACIONADAS CANTIDADES DE OBRA\n')
+        # Guardar el archivo
+        co_df.to_csv('./output/co_temp.csv', index=False)

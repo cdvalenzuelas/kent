@@ -11,9 +11,15 @@ def mto_does_not_exist():
     mto_df_na = mto_df[(mto_df['DESCRIPTION'].isnull())
                        | (mto_df['DESCRIPTION'] == '-')]
 
-    mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
+    # Si se encontraron todos lo elementos en el piping class decirlo, de lo contrario alertarlo
+    if mto_df_na.shape[0] == 0:
+        print('\n✅ SE ENCONTRARON TODOS LOS ELEMENTOS DEL B.O.M EN EL PIPING CLASS\n')
+    else:
+        print('\n❌ HAY ELEMENTOS EN EL B.O.M QUE NO SE ENCUENTRAN EN EL PIPING CLASS\n')
 
-    mto_df_na.to_csv('./output/mto_temp.csv', index=True)
+        mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
+
+        mto_df_na.to_csv('./output/mto_temp.csv', index=True)
 
     # Modificación por pernos
     mto_df = bolts_modifier(mto_df=mto_df)

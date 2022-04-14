@@ -51,12 +51,6 @@ def define_diganostic(mto_df):
     # Unir el indice y el mto en un dataframe
     mto_df = pd.concat([index, mto_df], axis=1)
 
-    # Eliminar el archivo de diagnostic
-    try:
-        os.remove('./output/diagnostic.txt')
-    except:
-        print('EL ARCHOVO "diagnostic.txt" no existe en el proyecto')
-
     # Hacer un diganóstico de los items
     mto_df['LINE_NUM'] = mto_df[['INDEX', 'LINE_NUM', 'SPEC', 'TYPE_x', 'TYPE_CODE', 'DESCRIPTION_x',
                                  'FIRST_SIZE', 'SECOND_SIZE', 'SCH_x', 'FACE_x', 'RATING_x', 'QTY',
