@@ -1,0 +1,17 @@
+
+Existen 1 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
+Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
+Estas líneas son: {'CS2SA1-1"-SUM-1-5_009'}. Es posible que estas líneas estén mal nombradas en la 
+maqueta o que estas líneas no se encuentren ruteadas.
+                
+Existen 1 líneas en el B.O.M que no existe en el P&ID.
+Es probable que estén símplemente mal nombradas y sea necesario rectificar.
+Estas líneas son: {'CS2SA1-1"-SUM-1-5-009'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+                
+La línea CS2SA1-3"-ALV-1-5-002 contiene válvulas de tipo CHS, diámetro 3" y spec CS2SA1.
+Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidades.
+El rating no correspone, en el P&ID es 300 pero por piping_class debería ser 150, se debe evaluar el P&ID (hablar con procesos).
+
+La línea CS2SA1-3"-ALV-1-5-003 contiene válvulas de tipo CHS, diámetro 3" y spec CS2SA1.
+Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidades.
+Las cantidades no coinciden, en el B.O.M es 1 y en P&ID es 3. Existen menos válvulas en la maqueta que en el P&ID.

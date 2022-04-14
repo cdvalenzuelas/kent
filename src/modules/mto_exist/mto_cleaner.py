@@ -18,7 +18,7 @@ def modify_size(second_size):
     size = re.sub(' mm', 'mm', str(second_size))
     size = re.sub('"', '', str(size))
     size = re.sub('[\s]', '-', str(size))
-    size = re.sub(',', '.', str(size))
+    size = re.sub('.', ',', str(size))
     size = re.sub(' ', '-', str(size))
     size += '"'
     size = re.sub('mm"', 'mm', str(size))

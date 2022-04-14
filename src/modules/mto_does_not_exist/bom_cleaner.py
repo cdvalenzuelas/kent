@@ -5,11 +5,7 @@ from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
 from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
 from src.modules.mto_does_not_exist.mto_diagnostic import define_diagnostic
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
-
-
-# Reemplaza los espacios por guines en los tamalños en pulgadas
-def replace_spaces(size):
-    return re.sub('[\s]', '-', str(size))
+from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 
 
 # Crea una columna comun entre el piping class y el bom
@@ -40,8 +36,8 @@ def bom_cleaner():
     bom['QTY'] = bom[['LENGTH', 'DB_CODE', 'QTY']].apply(pipe_qty, axis=1)
 
     # Se reemplazan los espacios por "guiones" en los tamaños combinados (ejemplo 1 1/2 se convierte en 1-1/2)
-    bom['MAIN_NOM'] = bom['MAIN_NOM'].apply(replace_spaces)
-    bom['RED_NOM'] = bom['RED_NOM'].apply(replace_spaces)
+    bom['MAIN_NOM'] = bom['MAIN_NOM'].apply(replace_spaces_by_dash)
+    bom['RED_NOM'] = bom['RED_NOM'].apply(replace_spaces_by_dash)
 
     # Eliminar columnas innecesarias
     bom.drop(['MARK', 'THK_NOM', 'SIZE', 'DESCRIPTION'], axis=1, inplace=True)

@@ -7,17 +7,13 @@ from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
 from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.clients.cenit.co.utils import common_index, def_note
+from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 
 
 # Crea una columna comun entre el piping class y el bom
 def concat_colums(row):
     spec, type_code, first_size, second_size, tag = row
     return f'{spec} {type_code} {first_size} {second_size} {tag}'
-
-
-# Reemplaza los espacios por guines en los tamalños en pulgadas
-def replace_spaces(size):
-    return re.sub('[\s]', '-', str(size))
 
 
 def demolition_cleaner(demolition_df):
@@ -33,8 +29,10 @@ def demolition_cleaner(demolition_df):
         pipe_qty, axis=1)
 
     # Se reemplazan los espacios por "guiones" en los tamaños combinados (ejemplo 1 1/2 se convierte en 1-1/2)
-    demolition_df['MAIN_NOM'] = demolition_df['MAIN_NOM'].apply(replace_spaces)
-    demolition_df['RED_NOM'] = demolition_df['RED_NOM'].apply(replace_spaces)
+    demolition_df['MAIN_NOM'] = demolition_df['MAIN_NOM'].apply(
+        replace_spaces_by_dash)
+    demolition_df['RED_NOM'] = demolition_df['RED_NOM'].apply(
+        replace_spaces_by_dash)
 
     # Eliminar columnas innecesarias
     demolition_df.drop(
