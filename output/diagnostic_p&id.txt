@@ -1,17 +1,51 @@
 
-Existen 1 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
-Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
-Estas líneas son: {'CS2SA1-1"-SUM-1-5_009'}. Es posible que estas líneas estén mal nombradas en la 
-maqueta o que estas líneas no se encuentren ruteadas.
-                
-Existen 1 líneas en el B.O.M que no existe en el P&ID.
-Es probable que estén símplemente mal nombradas y sea necesario rectificar.
-Estas líneas son: {'CS2SA1-1"-SUM-1-5-009'}. Es posible que estas líneas estén mal nombradas en la maqueta.
-                
-La línea CS2SA1-3"-ALV-1-5-002 contiene válvulas de tipo CHS, diámetro 3" y spec CS2SA1.
-Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidades.
-El rating no correspone, en el P&ID es 300 pero por piping_class debería ser 150, se debe evaluar el P&ID (hablar con procesos).
 
-La línea CS2SA1-3"-ALV-1-5-003 contiene válvulas de tipo CHS, diámetro 3" y spec CS2SA1.
+                
+
+        
+La línea CS2SA1-1"-DRE-1-5-011 contiene 1 válvulas de typo BAL, diámetro 1", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-1"-DRE-1-5-012 contiene 1 válvulas de typo GAT, diámetro 1", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+       
+La línea CS4SA1-6"-ALV-1-5-002 contiene válvulas de tipo BAL, diámetro 2" y spec CS4SA1.
 Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidades.
 Las cantidades no coinciden, en el B.O.M es 1 y en P&ID es 3. Existen menos válvulas en la maqueta que en el P&ID.
+
+La línea CS4SA1-6"-ALV-1-5-002 contiene 2 válvulas de typo DBB, diámetro 2", rating 600, y spec CS4SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS4SA1-6"-ALV-1-5-004 contiene válvulas de tipo BAL, diámetro 2" y spec CS4SA1.
+Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidades.
+Las cantidades no coinciden, en el B.O.M es 1 y en P&ID es 3. Existen menos válvulas en la maqueta que en el P&ID.
+
+La línea CS4SA1-6"-ALV-1-5-004 contiene 2 válvulas de typo DBB, diámetro 2", rating 600, y spec CS4SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID.        
+
+        
+La línea CS4SA1-6"-ALV-1-5-002 contiene 1 válvulas de tipo GLB, diámetro 2", rating 600 y spec CS4SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-3"-ALV-1-5-005 contiene 1 válvulas de tipo BAL, diámetro 3", rating 150 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-3"-ALV-1-5-005 contiene 1 válvulas de tipo GAT, diámetro 1", rating 800 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-3"-ALV-1-5-006 contiene 1 válvulas de tipo BAL, diámetro 3", rating 150 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-3"-ALV-1-5-006 contiene 1 válvulas de tipo GAT, diámetro 1", rating 800 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        

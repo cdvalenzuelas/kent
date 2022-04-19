@@ -1,5 +1,4 @@
 import pandas as pd
-import re
 
 from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
 from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size

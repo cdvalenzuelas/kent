@@ -21,6 +21,12 @@ def mto_does_not_exist():
 
         mto_df_na.to_csv('./output/mto_temp.csv', index=True)
 
+    # Limpiar el mto
+
+    mto_df = mto_df[mto_df['DESCRIPTION'] != '-']
+
+    mto_df.to_csv('temp2.csv')
+
     # Modificación por pernos
     mto_df = bolts_modifier(mto_df=mto_df)
 

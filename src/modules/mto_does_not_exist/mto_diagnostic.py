@@ -33,12 +33,13 @@ def mto_diagnostic(row):
     # PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
     if type_code in ['PE', 'BE', 'TE']:
         if 1000*weight_x/length >= 1.05*float(weight_y) or 1000*weight_x/length <= 0.95*float(weight_y):
-            print(item)
             mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {1000*weight_x/length}kg ({weight_x}kg totales) y en el piping_class es {weight_y*length/1000}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
     elif type_code == 'BOLT':
         if weight_x/qty >= 1.05*float(bolt_weight) or weight_x/qty <= 0.95*float(bolt_weight):
             if weight_y > 0:
                 mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {weight_x/qty}kg ({weight_x}kg totales) y en el piping_class es {weight_y}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
+    elif type_code == '-':
+        f'* El elemento no se encuentra en el piping class.'
     else:
         if weight_x/qty >= 1.05*float(weight_y) or weight_x/qty <= 0.95*float(weight_y):
             if weight_y > 0:

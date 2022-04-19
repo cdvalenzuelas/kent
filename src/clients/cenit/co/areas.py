@@ -8,6 +8,12 @@ from src.utils.normalize_string import normalize_string
 def def_total_area(row):
     type_element, qty, area = row
 
+    if type_element == '-':
+        return 0
+
+    qty = float(qty)
+    area = float(area)
+
     if type_element == 'PP':
         return pi*area*qty/1000
     else:

@@ -21,7 +21,7 @@ if __name__ == '__main__':
         pass
 
     # Definir si nos entregan MTO o BOM
-    mto_already_exist = True
+    mto_already_exist = False
 
     # Definir el cliente
     client = 'cenit'
