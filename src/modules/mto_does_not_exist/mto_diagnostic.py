@@ -25,25 +25,26 @@ def mto_diagnostic(row):
 
     # Empezar a crear el diagnóstico
     mto_diagnostic = ''
+    mto_diagnostic_2 = ''
 
     # DESCRIPTION Diagnostic
     if short_desc_2 != short_description_2:
-        mto_diagnostic += f'* La DESCRIPTION no coincide, en el BOM es "{short_desc}" y en el piping_class es "{short_description}". Se deben revisar los isométricos\n'
+        mto_diagnostic_2 += f'* La DESCRIPTION no coincide, en el BOM es "{short_desc}" y en el piping_class es "{short_description}". Se deben revisar los isométricos\n'
 
     # PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
     if type_code in ['PE', 'BE', 'TE']:
         if 1000*weight_x/length >= 1.05*float(weight_y) or 1000*weight_x/length <= 0.95*float(weight_y):
-            mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {1000*weight_x/length}kg ({weight_x}kg totales) y en el piping_class es {weight_y*length/1000}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
+            mto_diagnostic_2 += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {1000*weight_x/length}kg ({weight_x}kg totales) y en el piping_class es {weight_y*length/1000}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
     elif type_code == 'BOLT':
         if weight_x/qty >= 1.05*float(bolt_weight) or weight_x/qty <= 0.95*float(bolt_weight):
             if weight_y > 0:
-                mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {weight_x/qty}kg ({weight_x}kg totales) y en el piping_class es {weight_y}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
+                mto_diagnostic_2 += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {weight_x/qty}kg ({weight_x}kg totales) y en el piping_class es {weight_y}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
     elif type_code == '-':
-        f'* El elemento no se encuentra en el piping class.'
+        mto_diagnostic_2 += f'* El elemento no se encuentra en el piping class.'
     else:
         if weight_x/qty >= 1.05*float(weight_y) or weight_x/qty <= 0.95*float(weight_y):
             if weight_y > 0:
-                mto_diagnostic += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {weight_x}kg ({weight_x*qty}kg totales) y en el piping_class es {weight_y}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
+                mto_diagnostic_2 += f'* El WEIGHT_PER_UNIT no coincide, en el BOM es {weight_x}kg ({weight_x*qty}kg totales) y en el piping_class es {weight_y}kg ({weight_y*qty}kg totales). Se deben revisar los isométricos \n'
 
     # Ver diferencias en longitudes de pernos
     if type_code == 'BOLT' and length != bolt_length:
@@ -57,13 +58,21 @@ def mto_diagnostic(row):
     if type_code in ['F8', 'BTY']:
         mto_diagnostic += f'* Este es un equipo tipo wafer vefificar pernos.\n'
 
-    # Escribir en el archivo
+    # Escribir en el archivo de cosas importantes
     if mto_diagnostic != '':
         mto_diagnostic = f'ITEM {item}: {line_num} , {type_code}, {first_size}{second_size}\n---------------------------------------\n{mto_diagnostic}\n'
 
     if str(short_description) != 'nan':
         with open('./output/diagnostic.txt', mode='a') as f:
             f.write(mto_diagnostic)
+
+    # Escribir en el archivo de cosas importantes
+    if mto_diagnostic_2 != '':
+        mto_diagnostic_2 = f'ITEM {item}: {line_num} , {type_code}, {first_size}{second_size}\n---------------------------------------\n{mto_diagnostic_2}\n'
+
+    if str(short_description) != 'nan':
+        with open('./output/diagnostic_descriptions_and_weights.txt', mode='a') as f:
+            f.write(mto_diagnostic_2)
 
     return item
 

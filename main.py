@@ -26,28 +26,32 @@ if __name__ == '__main__':
     # Definir el cliente
     client = 'cenit'
 
+    mto_df_na_lenght = 0
+
     # Se crea el MTO en función de si entregan un MTO hecho o un BOM desde 0
     if not mto_already_exist:
         # Entregan un BOM desde 0
-        mto_does_not_exist()
+        mto_df_na_lenght = mto_does_not_exist()
     else:
         # Nos entregan el MTO hecho para hacer correcciones
-        mto_exist()
+        mto_df_na_lenght = mto_exist()
 
-    # Se crea la HD
-    # hd()
+    if mto_df_na_lenght == 0:
 
-    # Se crean las cantidades de obra
-    co(client)
+        # Se crea la HD
+        # hd()
 
-    # Creación del sumario
-    summary()
+        # Se crean las cantidades de obra
+        co(client)
 
-    # Se crea el MR
-    mr()
+        # Creación del sumario
+        summary()
 
-    # Se limpian los archivos crados
-    clean_csv()
+        # Se crea el MR
+        mr()
 
-    # Comparar con la info del P&ID con el MTO
-    compare_pid()
+        # Se limpian los archivos crados
+        clean_csv()
+
+        # Comparar con la info del P&ID con el MTO
+        compare_pid()

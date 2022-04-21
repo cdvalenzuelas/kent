@@ -58,3 +58,5 @@ def mto_does_not_exist():
 
     # Crear el archivo de MTO
     mto_df.to_csv('./output/mto.csv', index=True)
+
+    return mto_df_na.shape[0]
