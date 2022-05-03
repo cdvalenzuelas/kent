@@ -80,16 +80,21 @@ def demolition_cleaner(demolition_df):
     demolition_df.fillna('-', inplace=True)
 
     # Dejar únicamente las columnas necesarias
-    demolition_df = demolition_df[['TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION']]
+    demolition_df = demolition_df[[
+        'TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION', 'QTY']]
+
+    demolition_df['WEIGHT'] = demolition_df['WEIGHT'] * \
+        demolition_df['QTY']
 
     return demolition_df
 
 
 # Definir la descripción de la demolición en función del tipo de elemento
 def def_demolition_description(row, method):
-    type_element, demolition_description, weight = row
+    type_element, demolition_description, weight, qty = row
 
     if type_element == 'VL':
+
         if weight <= 200:
             return 'DESMANTELAMIENTO DE VÁLVULAS CUYO PESO SEA ≤ 200 KG(INCLUYE TRANSPORTE Y DISPOSICIÓN FINAL)'
         elif weight > 200 and weight <= 500:
@@ -133,7 +138,7 @@ def demolition(method):
 
         # Definir el demolition descrption según el type
         demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df[[
-            'TYPE', 'DEMOLITION_DESCRIPTION', 'WEIGHT']].apply(def_demolition_description, axis=1, method=method)
+            'TYPE', 'DEMOLITION_DESCRIPTION', 'WEIGHT', 'QTY']].apply(def_demolition_description, axis=1, method=method)
 
         # Se suman las cantidades
         demolition_df = demolition_df.groupby(['DEMOLITION_DESCRIPTION'], as_index=False)[
@@ -159,6 +164,11 @@ def demolition(method):
         # Definir las cantidades
         demolition_df['QTY'] = demolition_df[[
             'QTY', 'WEIGHT']].apply(def_qty, axis=1)
+
+        demolition_df_2 = demolition_df[(demolition_df['WEIGHT'] == 0)]
+
+        #
+        print(demolition_df_2)
 
         # Deninir si un elemento es nuevo o no
         demolition_df['NOTE'] = demolition_df[[
