@@ -8,6 +8,7 @@ from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.clients.cenit.co.utils import common_index, def_note
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
+from src.modules.mto_does_not_exist.bolts_modifier import bolts_modifier
 
 
 # Crea una columna comun entre el piping class y el bom
@@ -55,9 +56,13 @@ def demolition_cleaner(demolition_df):
     demolition_df = pd.merge(demolition_df, piping_class,
                              how='left', on='common_index')
 
+    # A las válvulas se les asigna otro item de demolición
+    demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df.apply(
+        lambda x: 'VL' if x['TYPE'] == 'VL' else x['DEMOLITION_DESCRIPTION'], axis=1)
+
     # Crear registro de items sin identificar
     demolition_df_na = demolition_df[(demolition_df['DESCRIPTION'].isnull()) | (
-        demolition_df['DESCRIPTION'] == '-')]
+        demolition_df['DESCRIPTION'] == '-') | (demolition_df['DEMOLITION_DESCRIPTION'] == '-')]
 
     if demolition_df_na.shape[0] > 0:
         demolition_df_na = demolition_df_na[[
@@ -78,6 +83,20 @@ def demolition_cleaner(demolition_df):
         columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
 
     demolition_df.fillna('-', inplace=True)
+
+    # Modificación por pernos
+    demolition_df = bolts_modifier(mto_df=demolition_df)
+
+    # Ver si algunos elementos de la demolición tienen peso cero
+    demolition_df_zero_weight = demolition_df[demolition_df['WEIGHT'] == 0]
+
+    if demolition_df_zero_weight.shape[0] > 0:
+        demolition_df_zero_weight.to_csv(
+            './output/demolition_df_zero_weight.csv', index=True)
+
+        print('❌ HAY ELEMENTOS DE DEMOLICIÓN QUE NO TIENEN PESO ASIGNADO.\n')
+    else:
+        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASINADO.\n')
 
     # Dejar únicamente las columnas necesarias
     demolition_df = demolition_df[[
@@ -123,9 +142,8 @@ def def_qty(row):
     else:
         return qty_y
 
+
 # OJO EL DEMOLITION TAMBIÉN PUEDE VENIR EN FORMA DE MTO
-
-
 def demolition(method):
     try:
         # Leer el archivo de demolición
@@ -164,11 +182,6 @@ def demolition(method):
         # Definir las cantidades
         demolition_df['QTY'] = demolition_df[[
             'QTY', 'WEIGHT']].apply(def_qty, axis=1)
-
-        demolition_df_2 = demolition_df[(demolition_df['WEIGHT'] == 0)]
-
-        #
-        print(demolition_df_2)
 
         # Deninir si un elemento es nuevo o no
         demolition_df['NOTE'] = demolition_df[[

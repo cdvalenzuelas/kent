@@ -1,7 +1,7 @@
 cenit_co_conf = {
     'supply': True,
     'pre_manufacturing': True,
-    'valves_hidrostatic_test': False,
+    'valves_hidrostatic_test': True,
     'erection': True,
     'areas': True,
     'pipes_hidrostatic_test': True,

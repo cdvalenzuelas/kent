@@ -36,22 +36,22 @@ if __name__ == '__main__':
         # Nos entregan el MTO hecho para hacer correcciones
         mto_df_na_lenght = mto_exist()
 
-    if mto_df_na_lenght == 0:
+    # if mto_df_na_lenght == 0:
 
-        # Se crea la HD
-        # hd()
+    # Se crea la HD
+    # hd()
 
-        # Se crean las cantidades de obra
-        co(client)
+    # Se crean las cantidades de obra
+    co(client)
 
-        # Creación del sumario
-        summary()
+    # Creación del sumario
+    summary()
 
-        # Se crea el MR
-        mr()
+    # Se crea el MR
+    mr()
 
-        # Se limpian los archivos crados
-        clean_csv()
+    # Se limpian los archivos crados
+    clean_csv()
 
-        # Comparar con la info del P&ID con el MTO
-        compare_pid()
+    # Comparar con la info del P&ID con el MTO
+    compare_pid()

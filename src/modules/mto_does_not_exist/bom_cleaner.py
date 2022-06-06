@@ -19,7 +19,19 @@ def units(TYPE):
     else:
         return 'e.a'
 
+# Corregir el peso de las válvulas y dejar el que aparece en el bom
 
+
+def valves_weight(row):
+    weight_x, weight_y, type_element, qty = row
+
+    if type_element == 'VL':
+        return round(weight_x / qty, 2)
+    else:
+        return weight_y
+
+
+# Dejar los pesos que vienen en el BOM
 def bom_cleaner():
     # Leer el BOM
     bom = pd.read_csv('./inputs/bom.csv')
@@ -56,6 +68,10 @@ def bom_cleaner():
 
     # Hacer un join entre el bom y el piping class para generar el mto
     mto_df = pd.merge(bom, piping_class, how='left', on='common_index')
+
+    # Corregir el peso de válvulas
+    # mto_df['WEIGHT_y'] = mto_df[['WEIGHT_x', 'WEIGHT_y',
+    # 'TYPE', 'QTY']].apply(valves_weight, axis=1)
 
     # Por aqupí se hace la comparación OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
     # OJO EL DEFINE DIGANOSTIC DEBERÍA COJER UN ARCHIVO LIMPIO Y LLENARLO CON TODAD LAS FICIONES (BORRAR LOS ARCHIVOS DE INPUTS CADA VEZ QUE SE CORRA LA INFORMACIÓN)

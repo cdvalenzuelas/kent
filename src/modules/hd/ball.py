@@ -1,44 +1,34 @@
-# Crear índices
-from operator import index
+from src.modules.hd.general_fields import general_fields
 
+def ball(row, wb, valve_type):  
+    # Llenando los campos generales 
+    wb, sheet_name = general_fields(row, wb, valve_type)
 
-def create_index(row):
-    spec, tag, type_code, rating, service, design_pressure, design_temperature, valve_type, connection, end_code, bore, operator, body, bonnet_gasket, ball, stem, other, seals, seat, packing, api_trim, length, design_code, test_pressure, aplicable_standards, bore_according_to, coating, system = row
+    # Seleccionando la hoja correcta
+    sheet = wb[sheet_name]     
 
-    return f'{spec} {tag} {type_code} {rating} {service} {design_pressure} {design_temperature} {valve_type} {connection} {end_code} {bore} {operator} {body} {bonnet_gasket} {ball} {stem} {other} {seals} {seat} {packing} {api_trim} {length} {design_code} {test_pressure} {aplicable_standards} {bore_according_to} {coating} {system}'
+    # CONDICIONES MECÁNICAS PARA LAS VÁLVULAS DE BOLA
+    sheet['J15'] = 'X' if row['BORE'] == 'FULL' else ''
+    sheet['T15'] = 'X' if row['BORE'] == 'REDUCED' else ''
+    sheet['AE15'] = row['BORE_ACCORDING_TO'] if row['BORE_ACCORDING_TO'] != '-' else ''
+    sheet['P16'] = 'X' if row['LENGTH'] == 'SHORT' else '' #SÓLO PARA VÁLVULAS DE BOLA
+    sheet['AA16'] = 'X' if row['LENGTH'] == 'LONG' else '' #SÓLO PARA VÁLVULAS DE BOLA    
 
+    # MATERIALS, SÓLO PARA VÁLVULAS DE BOLA
+    sheet['H31'] = row['BODY']
+    sheet['H32'] = row['BONNET_GASKET']
+    sheet['AC31'] = row['PACKING'] if row['PACKING'] != '-' else 'BY MNF'
+    sheet['H33'] = row['SEALS'] if row['SEALS'] != '-' else 'BY MNF'
+    sheet['H34'] = row['BALL'] if row['BALL'] != '-' else 'BY MNF'
+    sheet['H35'] = row['STEM'] if row['STEM'] != '-' else 'BY MNF'
+    sheet['H36'] = row['SEAT'] if row['SEAT'] != '-' else 'BY MNF'
+    sheet['H37'] = row['COATING'] if row['COATING'] != '-' else 'BY MNF'
+    sheet['H39'] = row['OTHER'] if row['OTHER'] != '-' else ''
 
-def ball(valves_df):
-    # Extrayendo únicamente las válvulas de bola
-    valves_df = valves_df[valves_df['TYPE_CODE'].str.startswith('BAL')]
+    # returnr el wb
+    return wb
+    
 
-    # Ordenar las válvulas
-    valves_df.sort_values(by=['SPEC', 'TAG', 'TYPE_CODE', 'RATING', 'SERVICE',
-                              'DESIGN_PRESSURE', 'DESIGN_TEMPERATURE', 'TYPE', 'CONECTION',
-                              'END_CODE', 'BORE', 'OPERATOR', 'BODY', 'BONNET_GASKET', 'BALL',
-                              'STEAM', 'OTHER', 'SEALS', 'SEAT', 'PACKING', 'API_TRIM', 'LENGTH',
-                                                 'DESIGN_CODE', 'TEST_PRESSURE', 'APPLICABLE_STANDARDS',
-                                                 'BORE_ACCORDING_TO', 'COATING', 'SYSTEM', 'SIZE_NUMBER', 'SIZE'], inplace=True)
+    
 
-    # Eliminar duplicados
-    valves_df.drop_duplicates(['SPEC', 'TAG', 'TYPE_CODE', 'SIZE_NUMBER', 'SIZE', 'RATING', 'SERVICE',
-                               'DESIGN_PRESSURE', 'DESIGN_TEMPERATURE', 'TYPE', 'CONECTION',
-                               'END_CODE', 'BORE', 'OPERATOR', 'BODY', 'BONNET_GASKET', 'BALL',
-                               'STEAM', 'OTHER', 'SEALS', 'SEAT', 'PACKING', 'API_TRIM', 'LENGTH',
-                                                 'DESIGN_CODE', 'TEST_PRESSURE', 'APPLICABLE_STANDARDS',
-                                                 'BORE_ACCORDING_TO', 'COATING', 'SYSTEM'], keep='first', inplace=True)
-
-    # Crear índices
-    valves_df['index_2'] = valves_df[['SPEC', 'TAG', 'TYPE_CODE', 'RATING', 'SERVICE',
-                                      'DESIGN_PRESSURE', 'DESIGN_TEMPERATURE', 'TYPE', 'CONECTION',
-                                      'END_CODE', 'BORE', 'OPERATOR', 'BODY', 'BONNET_GASKET', 'BALL',
-                                      'STEAM', 'OTHER', 'SEALS', 'SEAT', 'PACKING', 'API_TRIM', 'LENGTH',
-                                      'DESIGN_CODE', 'TEST_PRESSURE', 'APPLICABLE_STANDARDS',
-                                      'BORE_ACCORDING_TO', 'COATING', 'SYSTEM']].apply(create_index, axis=1)
-
-    # Sacar aparte todos los indices distintos
-    indexes = valves_df[['index_2']]
-
-    indexes.drop_duplicates(['index_2'], inplace=True, keep='first')
-
-    print(indexes)
+    
