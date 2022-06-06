@@ -8,6 +8,7 @@ from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.clients.cenit.co.utils import common_index, def_note
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
+from src.modules.mto_does_not_exist.bolts_modifier import bolts_modifier
 
 
 # Crea una columna comun entre el piping class y el bom
@@ -55,9 +56,13 @@ def demolition_cleaner(demolition_df):
     demolition_df = pd.merge(demolition_df, piping_class,
                              how='left', on='common_index')
 
+    # A las válvulas se les asigna otro item de demolición
+    demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df.apply(
+        lambda x: 'VL' if x['TYPE'] == 'VL' else x['DEMOLITION_DESCRIPTION'], axis=1)
+
     # Crear registro de items sin identificar
     demolition_df_na = demolition_df[(demolition_df['DESCRIPTION'].isnull()) | (
-        demolition_df['DESCRIPTION'] == '-')]
+        demolition_df['DESCRIPTION'] == '-') | (demolition_df['DEMOLITION_DESCRIPTION'] == '-')]
 
     if demolition_df_na.shape[0] > 0:
         demolition_df_na = demolition_df_na[[
@@ -79,17 +84,36 @@ def demolition_cleaner(demolition_df):
 
     demolition_df.fillna('-', inplace=True)
 
+    # Modificación por pernos
+    demolition_df = bolts_modifier(mto_df=demolition_df)
+
+    # Ver si algunos elementos de la demolición tienen peso cero
+    demolition_df_zero_weight = demolition_df[demolition_df['WEIGHT'] == 0]
+
+    if demolition_df_zero_weight.shape[0] > 0:
+        demolition_df_zero_weight.to_csv(
+            './output/demolition_df_zero_weight.csv', index=True)
+
+        print('❌ HAY ELEMENTOS DE DEMOLICIÓN QUE NO TIENEN PESO ASIGNADO.\n')
+    else:
+        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASINADO.\n')
+
     # Dejar únicamente las columnas necesarias
-    demolition_df = demolition_df[['TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION']]
+    demolition_df = demolition_df[[
+        'TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION', 'QTY']]
+
+    demolition_df['WEIGHT'] = demolition_df['WEIGHT'] * \
+        demolition_df['QTY']
 
     return demolition_df
 
 
 # Definir la descripción de la demolición en función del tipo de elemento
 def def_demolition_description(row, method):
-    type_element, demolition_description, weight = row
+    type_element, demolition_description, weight, qty = row
 
     if type_element == 'VL':
+
         if weight <= 200:
             return 'DESMANTELAMIENTO DE VÁLVULAS CUYO PESO SEA ≤ 200 KG(INCLUYE TRANSPORTE Y DISPOSICIÓN FINAL)'
         elif weight > 200 and weight <= 500:
@@ -118,9 +142,8 @@ def def_qty(row):
     else:
         return qty_y
 
+
 # OJO EL DEMOLITION TAMBIÉN PUEDE VENIR EN FORMA DE MTO
-
-
 def demolition(method):
     try:
         # Leer el archivo de demolición
@@ -133,7 +156,7 @@ def demolition(method):
 
         # Definir el demolition descrption según el type
         demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df[[
-            'TYPE', 'DEMOLITION_DESCRIPTION', 'WEIGHT']].apply(def_demolition_description, axis=1, method=method)
+            'TYPE', 'DEMOLITION_DESCRIPTION', 'WEIGHT', 'QTY']].apply(def_demolition_description, axis=1, method=method)
 
         # Se suman las cantidades
         demolition_df = demolition_df.groupby(['DEMOLITION_DESCRIPTION'], as_index=False)[

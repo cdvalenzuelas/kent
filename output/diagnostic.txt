@@ -1,72 +1,120 @@
-ITEM 56: CS2SA1-3/4"-ALV-1-5-016 , F8, 1"
+ITEM 3: CS1SC2-8"-SCI-0-7-001 , BOLT, 3/4"x120mm (8", #150)
 ---------------------------------------
-* Este es un equipo tipo wafer vefificar pernos.
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 120.0mm. Se deben revisar los isométricos 
 
-ITEM 65: CS2SA1-3/4"-DRE-1-5-007 , BOLT, 3/4"x125mm (3/4", #1500)
+ITEM 8: CS1SC2-8"-SCI-0-7-001 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 114.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 70: CS2SA1-3/4"-DRE-1-5-008 , BOLT, 3/4"x125mm (3/4", #1500)
+ITEM 16: CS1SC2-6"-SCI-0-7-002 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 114.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 71: CS2SA1-3/4"-DRE-1-5-008 , F8, 3/4"
+ITEM 26: CS1SC2-6"-SCI-0-7-005 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* Este es un equipo tipo wafer vefificar pernos.
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 77: CS2SA1-6"-ALV-1-5-001 , BOLT, 1/2"x70mm (3/4", #150)
+ITEM 36: CS1SC2-6"-SCI-0-7-005 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 95.0mm y en el piping_class es de 70.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 93: CS2SA1-6"-ALV-1-5-004 , BOLT, 1/2"x70mm (3/4", #150)
+ITEM 39: CS1SC2-8"-SCI-0-7-006 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 95.0mm y en el piping_class es de 70.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 110: CS2SA1-6"-ALV-1-5-010 , BOLT, 1/2"x70mm (3/4", #150)
+ITEM 41: CS1SC2-8"-SCI-0-7-006 , BOLT, 3/4"x120mm (8", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 95.0mm y en el piping_class es de 70.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 120.0mm. Se deben revisar los isométricos 
 
-ITEM 128: CS2SA1-8"-ALV-1-5-009 , BOLT, 1/2"x70mm (3/4", #150)
+ITEM 48: CS1SC2-8"-SCI-0-7-004 , BOLT, 3/4"x120mm (8", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 95.0mm y en el piping_class es de 70.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 120.0mm. Se deben revisar los isométricos 
 
-ITEM 153: CS5SA1-6"-ALV-1-5-002 , PE, 1"
+ITEM 52: CS1SC2-8"-SCI-0-7-004 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de la tubería es muy corta (21.0mm), podría ser un niple. Revisar si se puede cambiar 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 158: CS5SA1-6"-ALV-1-5-002 , BOLT, 3/4"x125mm (3/4", #1500)
+ITEM 60: CS1SC2-6"-SCI-0-7-003 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 114.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 159: CS5SA1-6"-ALV-1-5-002 , BOLT, 7/8"x140mm (1", #1500)
+ITEM 69: CS1SC2-2"-SCI-0-7-007 , BOLT, 5/8"x90mm (2", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 127.0mm y en el piping_class es de 140.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
 
-ITEM 162: CS5SA1-6"-ALV-1-5-002 , F8, 3/4"
+ITEM 84: CS1SC2-2"-SCI-0-7-008 , BOLT, 5/8"x90mm (2", #150)
 ---------------------------------------
-* Este es un equipo tipo wafer vefificar pernos.
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 90.0mm. Se deben revisar los isométricos 
 
-ITEM 179: CS5SA1-6"-ALV-1-5-002 , BOLT, 1-1/8"x195mm (3", #1500)
+ITEM 93: CS1SC2-6"-SCI-0-7-009 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 190.0mm y en el piping_class es de 195.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 190: CS5SA1-6"-ALV-1-5-005 , PE, 1"
+ITEM 101: CS1SC2-6"-SCI-0-7-010 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de la tubería es muy corta (21.0mm), podría ser un niple. Revisar si se puede cambiar 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 195: CS5SA1-6"-ALV-1-5-005 , BOLT, 3/4"x125mm (3/4", #1500)
+ITEM 106: CS1SC2-6"-SCI-0-7-011 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 114.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 196: CS5SA1-6"-ALV-1-5-005 , BOLT, 7/8"x140mm (1", #1500)
+ITEM 147: TIE-IN-009/TIE-IN-010 , BOLT, 5/8"x100mm (3", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 127.0mm y en el piping_class es de 140.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 100.0mm. Se deben revisar los isométricos 
 
-ITEM 215: CS5SA1-6"-ALV-1-5-005 , BOLT, 1-1/8"x195mm (3", #1500)
+ITEM 159: CS1SC2-6"-SCI-0-7-031 , BOLT, 3/4"x115mm (6", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 190.0mm y en el piping_class es de 195.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 
-ITEM 230: CS5SA1-6"-ALV-1-5-011 , BOLT, 3/4"x125mm (3/4", #1500)
+ITEM 238: CS1SC2-1-1/2"-SCI-0-7-019 , BOLT, 1/2"x85mm (1-1/2", #150)
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 114.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
+
+ITEM 257: CS1SC2-1-1/2"-SCI-0-7-021 , BOLT, 1/2"x85mm (1-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
+
+ITEM 263: CS1SC2-1-1/2"-SCI-0-7-022 , BOLT, 1/2"x85mm (1-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
+
+ITEM 269: CS1SC2-1-1/2"-SCI-0-7-023 , BOLT, 1/2"x85mm (1-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
+
+ITEM 275: CS1SC2-1-1/2"-SCI-0-7-024 , BOLT, 1/2"x85mm (1-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
+
+ITEM 280: CS1SC2-6"-SCI-0-7-025 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
+
+ITEM 284: CS1SC2-6"-SCI-0-7-026 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
+
+ITEM 287: CE-02/TIE-IN-011 , BOLT, 5/8"x95mm (2-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 95.0mm. Se deben revisar los isométricos 
+
+ITEM 289: CE-01/TIE-IN-012 , BOLT, 5/8"x95mm (2-1/2", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de -mm y en el piping_class es de 95.0mm. Se deben revisar los isométricos 
+
+ITEM 292: 6"GAV413C3J2G-21/TIE-IN-024/TIE-IN-025 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
+
+ITEM 297: 6"GAV413C3J2G-22/TIE-IN-028/TIE-IN-029 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
+
+ITEM 302: TIE-IN-030 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
+
+ITEM 305: TIE-IN-033 , BOLT, 3/4"x115mm (6", #150)
+---------------------------------------
+* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 115.0mm. Se deben revisar los isométricos 
 

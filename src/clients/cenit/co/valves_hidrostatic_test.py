@@ -23,7 +23,7 @@ def valves_hidrostatic_test():
 
     # Crear índices comunes para hacer un merge
     co_df['common_index'] = co_df['MANUFACTURING_DESCRIPTION'].apply(
-        common_index, axis=1)
+        common_index)
 
     co_template['common_index'] = co_template['DESCRIPTION'].apply(
         common_index)
