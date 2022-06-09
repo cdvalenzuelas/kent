@@ -1,7 +1,7 @@
 import shutil
 import os
 
-from src.modules.mto_exist.mto_exist import mto_exist
+from src.modules.transform_bom import transform_bom
 from src.modules.mto_does_not_exist import mto_does_not_exist
 from src.modules.summary.summary import summary
 from src.modules.mr.mr import mr
@@ -20,38 +20,31 @@ if __name__ == '__main__':
     except:
         pass
 
-    # Definir si nos entregan MTO o BOM
-    mto_already_exist = False
-
     # Definir el cliente
     client = 'cenit'
 
-    mto_df_na_lenght = 0
+    # Se trensforma el bom a un formato standard sin importar el programa de diseño utilizado
+    bom_is_correct = transform_bom()
 
-    # Se crea el MTO en función de si entregan un MTO hecho o un BOM desde 0
-    if not mto_already_exist:
-        # Entregan un BOM desde 0
-        mto_df_na_lenght = mto_does_not_exist()
-    else:
-        # Nos entregan el MTO hecho para hacer correcciones
-        mto_df_na_lenght = mto_exist()
+    # Si se reconoce algún
+    if bom_is_correct:
+        # Se crea el MTO
+        mto_does_not_exist()
 
-    # if mto_df_na_lenght == 0:
+        # Se crea la HD
+        hd()
 
-    # Se crea la HD
-    # hd()
+        # Se crean las cantidades de obra
+        co(client)
 
-    # Se crean las cantidades de obra
-    co(client)
+        # Creación del sumario
+        summary()
 
-    # Creación del sumario
-    summary()
+        # Se crea el MR
+        mr()
 
-    # Se crea el MR
-    mr()
+        # Se limpian los archivos crados
+        clean_csv()
 
-    # Se limpian los archivos crados
-    clean_csv()
-
-    # Comparar con la info del P&ID con el MTO
-    compare_pid()
+        # Comparar con la info del P&ID con el MTO
+        compare_pid()

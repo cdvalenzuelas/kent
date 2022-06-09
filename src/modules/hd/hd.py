@@ -10,6 +10,8 @@ from src.modules.hd.monoflange import monoflange
 from src.modules.hd.globe import globe
 
 # Crear un índice común para las válvulas
+
+
 def valves_index(row):
     spec, size, tag = row
 
@@ -17,145 +19,155 @@ def valves_index(row):
 
 
 def hd():
-    # leer el archivo de válvulas
-    valves_df = pd.read_csv('./src/clients/cenit/elements/cenit_valves_tags.csv')
-
-    # Leer los templates de válvulas
-    wb = load_workbook(filename='./src/clients/cenit/templates/hd_template.xlsx')
-
     # leer el MTO creado
     mto_df = pd.read_csv('./output/mto.csv')
 
     # Extrayendo únicamente las válvulas
     mto_df = mto_df[mto_df['TYPE'] == 'VL']
 
-    # Extrayendo Las columnas necesarias del MTO
-    mto_df = mto_df[['SPEC', 'FIRST_SIZE_NUMBER', 'TAG']]    
+    # Si existen válvulas hacer las hojas de datos de válvulas
+    if mto_df.shape[0] > 0:
 
-    # Eliminando válvulas repetidas del MTO
-    mto_df = mto_df.drop_duplicates(['SPEC', 'FIRST_SIZE_NUMBER', 'TAG'], keep='last')            
+        # leer el archivo de válvulas
+        valves_df = pd.read_csv(
+            './src/clients/cenit/elements/cenit_valves_tags.csv')
 
-    # Crear un índice común entre el mto y la tabla de válvulas
-    valves_df['valves_index'] = valves_df[['SPEC', 'SIZE_NUMBER', 'TAG']].apply(
-        valves_index, axis=1)
+        # Leer los templates de válvulas
+        wb = load_workbook(
+            filename='./src/clients/cenit/templates/hd_template.xlsx')
 
-    mto_df['valves_index'] = mto_df[['SPEC', 'FIRST_SIZE_NUMBER', 'TAG']].apply(
-        valves_index, axis=1)
+        # Extrayendo Las columnas necesarias del MTO
+        mto_df = mto_df[['SPEC', 'FIRST_SIZE_NUMBER', 'TAG']]
 
-    
-    # Crear el merge entre las dos tablas
-    valves_df = pd.merge(mto_df, valves_df, how='left', on='valves_index')    
-    
-    valves_df.drop(['SPEC_y', 'TAG_y', 'valves_index', 'FIRST_SIZE_NUMBER'], inplace=True, axis=1)
+        # Eliminando válvulas repetidas del MTO
+        mto_df = mto_df.drop_duplicates(
+            ['SPEC', 'FIRST_SIZE_NUMBER', 'TAG'], keep='last')
 
-    valves_df.fillna('-', inplace=True)
+        # Crear un índice común entre el mto y la tabla de válvulas
+        valves_df['valves_index'] = valves_df[['SPEC', 'SIZE_NUMBER', 'TAG']].apply(
+            valves_index, axis=1)
 
-    valves_df.rename({'SPEC_x': 'SPEC', 'TAG_x': 'TAG'}, inplace=True, axis=1)      
+        mto_df['valves_index'] = mto_df[['SPEC', 'FIRST_SIZE_NUMBER', 'TAG']].apply(
+            valves_index, axis=1)
 
-    # ORDENAR EL DATAFRAME
-    valves_df.sort_values(by=['TAG', 'SPEC', 'SIZE_NUMBER'], inplace=True)
+        # Crear el merge entre las dos tablas
+        valves_df = pd.merge(mto_df, valves_df, how='left', on='valves_index')
 
-    # Resetear los índices
-    valves_df.reset_index(inplace=True, drop=True)    
+        valves_df.drop(['SPEC_y', 'TAG_y', 'valves_index',
+                        'FIRST_SIZE_NUMBER'], inplace=True, axis=1)
 
-    # Recoger los diámetros por cada TAG y por cada SPEC
-    final_index = valves_df.shape[0] - 1    
+        valves_df.fillna('-', inplace=True)
 
-    valves_sizes = []
+        valves_df.rename({'SPEC_x': 'SPEC', 'TAG_x': 'TAG'},
+                         inplace=True, axis=1)
 
-    size_per_tag_and_spec = ''
+        # ORDENAR EL DATAFRAME
+        valves_df.sort_values(by=['TAG', 'SPEC', 'SIZE_NUMBER'], inplace=True)
 
-    # VER SOBR QUE COLUNMAS SE VAN A COMPARAR LAS VÁLVULAS   
+        # Resetear los índices
+        valves_df.reset_index(inplace=True, drop=True)
 
-    valves_df_columns = [prop for prop in valves_df.columns if prop not in ['SIZE', 'SIZE_NUMBER']]
-    
-    for index, row in valves_df.iterrows(): 
-        if index < final_index:
-            # Extraer dos filas consecutivas
-            row_a = valves_df.iloc[index]
-            row_b = valves_df.iloc[index + 1]
+        # Recoger los diámetros por cada TAG y por cada SPEC
+        final_index = valves_df.shape[0] - 1
 
-            cond = True
+        valves_sizes = []
 
-            # Comparar si las dós filas consecutivas difieren únicamente en tamaño
-            for prop in valves_df_columns:
-                cond = cond and (row_a[prop] == row_b[prop])
+        size_per_tag_and_spec = ''
 
-                # Si la condición pasa a ser falsa se acaba la comparación
-                if not cond:
-                    break            
+        # VER SOBR QUE COLUNMAS SE VAN A COMPARAR LAS VÁLVULAS
 
-            # Si las dos válvulas consecutivas son iguales
-            if cond:                
-                size_per_tag_and_spec += f'{row_a["SIZE"]}, '
+        valves_df_columns = [
+            prop for prop in valves_df.columns if prop not in ['SIZE', 'SIZE_NUMBER']]
 
-                # Si las dos últimas válvulas son iguales
-                if index == final_index -1:
-                    size_per_tag_and_spec += f'{row_b["SIZE"]}'
-                    size_per_tag_and_spec = size_per_tag_and_spec.replace('\"','')
+        for index, row in valves_df.iterrows():
+            if index < final_index:
+                # Extraer dos filas consecutivas
+                row_a = valves_df.iloc[index]
+                row_b = valves_df.iloc[index + 1]
+
+                cond = True
+
+                # Comparar si las dós filas consecutivas difieren únicamente en tamaño
+                for prop in valves_df_columns:
+                    cond = cond and (row_a[prop] == row_b[prop])
+
+                    # Si la condición pasa a ser falsa se acaba la comparación
+                    if not cond:
+                        break
+
+                # Si las dos válvulas consecutivas son iguales
+                if cond:
+                    size_per_tag_and_spec += f'{row_a["SIZE"]}, '
+
+                    # Si las dos últimas válvulas son iguales
+                    if index == final_index - 1:
+                        size_per_tag_and_spec += f'{row_b["SIZE"]}'
+                        size_per_tag_and_spec = size_per_tag_and_spec.replace(
+                            '\"', '')
+                        valves_sizes.append(size_per_tag_and_spec)
+                        break
+                # Si las dos válvulas consecutivas son diferentes
+                else:
+                    size_per_tag_and_spec += f'{row_a["SIZE"]}'
+                    size_per_tag_and_spec = size_per_tag_and_spec.replace(
+                        '\"', '')
                     valves_sizes.append(size_per_tag_and_spec)
-                    break
-            # Si las dos válvulas consecutivas son diferentes
+                    size_per_tag_and_spec = ''
+
+                    # Si las dos últimas válvulas son diferentes
+                    if index == final_index - 1:
+                        first_size_b = row_b["SIZE"].replace('\"', '')
+                        valves_sizes.append(first_size_b)
+                        break
+
+        # Eliminar válvulas repetidas
+        valves_df = valves_df.drop_duplicates(['SPEC', 'TAG', 'TYPE_CODE', 'RATING',
+                                               'SERVICE', 'DESIGN_PRESSURE', 'DESIGN_TEMPERATURE', 'TYPE', 'CONECTION',
+                                               'END_CODE', 'BORE', 'OPERATOR', 'BODY', 'BONNET_GASKET', 'BALL', 'STEM',
+                                               'OTHER', 'SEALS', 'SEAT', 'PACKING', 'API_TRIM', 'LENGTH', 'DESIGN_CODE',
+                                               'TEST_PRESSURE', 'APPLICABLE_STANDARDS', 'BORE_ACCORDING_TO', 'COATING',
+                                               'SYSTEM', 'PATTERN'], keep='last')
+
+        valves_df.reset_index(inplace=True, drop=True)
+
+        # UNIR LOS VALVES_SIZES AL DATA_FRAME
+        new_column = pd.DataFrame({'SIZES': valves_sizes})
+
+        valves_df = pd.concat([new_column, valves_df], axis=1)
+
+        valves_df.to_csv('hd_temp.csv')
+
+        # Iterar todo el dataframe
+        for index, row in valves_df.iterrows():
+            if row['TYPE_CODE'] in ['BAL', 'BAL6']:
+                wb = ball(row, wb, valve_type='BALL')
+            elif row['TYPE_CODE'] in ['GAT']:
+                wb = gate(row, wb, valve_type='GATE')
+            elif row['TYPE_CODE'] in ['CHL', 'CHS']:
+                wb = check(row, wb, valve_type='CHECK')
+            elif row['TYPE_CODE'] in ['DBB']:
+                wb = monoflange(row, wb, valve_type='MONOFLANGE')
+            elif row['TYPE_CODE'] in ['GLB']:
+                wb = globe(row, wb, valve_type='GLOBE')
             else:
-                size_per_tag_and_spec += f'{row_a["SIZE"]}'
-                size_per_tag_and_spec = size_per_tag_and_spec.replace('\"','')
-                valves_sizes.append(size_per_tag_and_spec)
-                size_per_tag_and_spec = ''
+                print(
+                    f"❌ NO SE HAN CREADO LAS HOJAS DE DATOS DE {row['TAG']}\n")
 
-                # Si las dos últimas válvulas son diferentes
-                if index == final_index -1:
-                    first_size_b = row_b["SIZE"].replace('\"','')
-                    valves_sizes.append(first_size_b)
-                    break  
-    
+        # Eliminar hojas dummy
+        std = wb.get_sheet_by_name('BALL')
+        wb.remove_sheet(std)
 
-    # Eliminar válvulas repetidas
-    valves_df = valves_df.drop_duplicates(['SPEC', 'TAG', 'TYPE_CODE', 'RATING', 
-      'SERVICE', 'DESIGN_PRESSURE', 'DESIGN_TEMPERATURE', 'TYPE', 'CONECTION', 
-      'END_CODE', 'BORE', 'OPERATOR', 'BODY', 'BONNET_GASKET', 'BALL', 'STEM', 
-      'OTHER', 'SEALS', 'SEAT', 'PACKING', 'API_TRIM', 'LENGTH', 'DESIGN_CODE', 
-      'TEST_PRESSURE', 'APPLICABLE_STANDARDS', 'BORE_ACCORDING_TO', 'COATING', 
-      'SYSTEM', 'PATTERN'], keep='last')
+        std = wb.get_sheet_by_name('GATE')
+        wb.remove_sheet(std)
 
-    valves_df.reset_index(inplace=True, drop=True)      
+        std = wb.get_sheet_by_name('GLOBE')
+        wb.remove_sheet(std)
 
-    # UNIR LOS VALVES_SIZES AL DATA_FRAME
-    new_column = pd.DataFrame({'SIZES': valves_sizes})    
+        std = wb.get_sheet_by_name('CHECK')
+        wb.remove_sheet(std)
 
-    valves_df = pd.concat([new_column, valves_df], axis=1)
+        std = wb.get_sheet_by_name('MONOFLANGE')
+        wb.remove_sheet(std)
 
-    valves_df.to_csv('hd_temp.csv')
-
-    # Iterar todo el dataframe
-    for index, row in valves_df.iterrows():
-        if row['TYPE_CODE'] in ['BAL', 'BAL6']:
-            wb = ball(row, wb, valve_type='BALL')
-        elif row['TYPE_CODE'] in ['GAT']:
-            wb = gate(row, wb, valve_type='GATE')
-        elif row['TYPE_CODE'] in ['CHL', 'CHS']:
-            wb = check(row, wb, valve_type='CHECK')
-        elif row['TYPE_CODE'] in ['DBB']:
-            wb = monoflange(row, wb, valve_type='MONOFLANGE')
-        elif row['TYPE_CODE'] in ['GLB']:
-            wb = globe(row, wb, valve_type='GLOBE')
-        else:            
-            print(f"❌ NO SE HAN CREADO LAS HOJAS DE DATOS DE {row['TAG']}\n")
-
-    # Eliminar hojas dummy
-    std=wb.get_sheet_by_name('BALL')
-    wb.remove_sheet(std)    
-
-    std=wb.get_sheet_by_name('GATE')
-    wb.remove_sheet(std)  
-
-    std=wb.get_sheet_by_name('GLOBE')
-    wb.remove_sheet(std)
-
-    std=wb.get_sheet_by_name('CHECK')
-    wb.remove_sheet(std)
-
-    std=wb.get_sheet_by_name('MONOFLANGE')
-    wb.remove_sheet(std) 
-
-    # Guardar el workbook
-    wb.save('./output/hd.xlsx')
+        # Guardar el workbook
+        wb.save('./output/hd.xlsx')
