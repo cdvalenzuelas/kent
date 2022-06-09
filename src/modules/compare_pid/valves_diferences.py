@@ -77,87 +77,90 @@ def valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df):
     # Sacar únicamente las válvulas del MTO
     mto_df = mto_df[(mto_df['TYPE']) == 'VL']
 
-    # Traer únicamente las válvulas del P&ID
-    pid_df = pid_df[pid_df['SPEC'].notnull()]
+    # Si existen válvulas, comparar válvulas
+    if mto_df.shape[0] > 0:
 
-    # Reemplazar los puntos por comas en el size del p&id
-    pid_df['FIRST_SIZE_NUMBER'] = pid_df['FIRST_SIZE_NUMBER'].apply(
-        replace_dot_by_comma)
+        # Traer únicamente las válvulas del P&ID
+        pid_df = pid_df[pid_df['SPEC'].notnull()]
 
-    pid_df['RATING'] = pid_df['RATING'].apply(
-        replace_dot_by_comma)
+        # Reemplazar los puntos por comas en el size del p&id
+        pid_df['FIRST_SIZE_NUMBER'] = pid_df['FIRST_SIZE_NUMBER'].apply(
+            replace_dot_by_comma)
 
-    pid_df['QTY'] = pid_df['QTY'].apply(
-        replace_dot_by_comma)
+        pid_df['RATING'] = pid_df['RATING'].apply(
+            replace_dot_by_comma)
 
-    mto_df['FIRST_SIZE_NUMBER'] = mto_df['FIRST_SIZE_NUMBER'].apply(
-        replace_dot_by_comma)
+        pid_df['QTY'] = pid_df['QTY'].apply(
+            replace_dot_by_comma)
 
-    mto_df['RATING'] = mto_df['RATING'].apply(
-        replace_dot_by_comma)
+        mto_df['FIRST_SIZE_NUMBER'] = mto_df['FIRST_SIZE_NUMBER'].apply(
+            replace_dot_by_comma)
 
-    mto_df['QTY'] = mto_df['QTY'].apply(
-        replace_dot_by_comma)
+        mto_df['RATING'] = mto_df['RATING'].apply(
+            replace_dot_by_comma)
 
-    # Crear un índice común entre el bom y el p&id
-    mto_df['common_index'] = mto_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                     'FIRST_SIZE_NUMBER', 'RATING', 'QTY']].apply(common_index, axis=1)
+        mto_df['QTY'] = mto_df['QTY'].apply(
+            replace_dot_by_comma)
 
-    pid_df['common_index'] = pid_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                     'FIRST_SIZE_NUMBER', 'RATING', 'QTY']].apply(common_index, axis=1)
-
-    # Hacer el Merge
-    merge_df = pd.merge(mto_df, pid_df, how='outer', on='common_index')
-
-    # Dejar únicamente las que no cinciden, es decir elminar las válvulas que coinciden en todo
-    merge_df = merge_df[(merge_df['QTY_x'].isnull()) |
-                        (merge_df['QTY_y'].isnull())]
-
-    # Verifica si hay diferencias  XXXXXXXXX
-    if merge_df.shape[0] > 0:
-
-        # Eliminar el common_index
-        merge_df.drop(['common_index'], inplace=True, axis=1)
-
-        # Redefinir MTO
-        mto_df = merge_df[merge_df['LINE_NUM_x'].notnull()]
-
-        mto_df = mto_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
-                        'RATING_x', 'QTY_x']]
-
-        mto_df.rename(columns={'LINE_NUM_x': 'LINE_NUM', 'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER',
-                               'RATING_x': 'RATING', 'QTY_x': 'QTY'}, inplace=True)
-
-        # Redefinir P&ID
-        pid_df = merge_df[merge_df['LINE_NUM_x'].isnull()]
-
-        pid_df = pid_df[['LINE_NUM_y', 'SPEC_y', 'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y',
-                        'RATING_y', 'QTY_y']]
-
-        pid_df.rename(columns={'LINE_NUM_y': 'LINE_NUM', 'SPEC_y': 'SPEC', 'TYPE_CODE_y': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_y': 'FIRST_SIZE_NUMBER',
-                               'RATING_y': 'RATING', 'QTY_y': 'QTY'}, inplace=True)
-
-        # Crer un índice para comparar si hay hay diferencias en cantidades y ratings
+        # Crear un índice común entre el bom y el p&id
         mto_df['common_index'] = mto_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                        'FIRST_SIZE_NUMBER']].apply(common_index_2, axis=1)
+                                        'FIRST_SIZE_NUMBER', 'RATING', 'QTY']].apply(common_index, axis=1)
 
         pid_df['common_index'] = pid_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                        'FIRST_SIZE_NUMBER']].apply(common_index_2, axis=1)
+                                        'FIRST_SIZE_NUMBER', 'RATING', 'QTY']].apply(common_index, axis=1)
 
-        # Hacer el nuevo merge
+        # Hacer el Merge
         merge_df = pd.merge(mto_df, pid_df, how='outer', on='common_index')
 
-        # Saber si se imprime el archivo temporales o no
+        # Dejar únicamente las que no cinciden, es decir elminar las válvulas que coinciden en todo
+        merge_df = merge_df[(merge_df['QTY_x'].isnull()) |
+                            (merge_df['QTY_y'].isnull())]
+
+        # Verifica si hay diferencias  XXXXXXXXX
         if merge_df.shape[0] > 0:
-            # Hacer un diagnóstico sobre cada una de las válvulas
-            merge_df['common_index'] = merge_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
-                                                'RATING_x', 'QTY_x', 'LINE_NUM_y', 'SPEC_y',
-                                                 'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'RATING_y', 'QTY_y']].apply(diacnostic, axis=1, pid_lines_unique=pid_lines_unique, bom_lines_unique=bom_lines_unique)
 
-            print(
-                '❌  HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+            # Eliminar el common_index
+            merge_df.drop(['common_index'], inplace=True, axis=1)
 
-            merge_df.to_csv('./output/p&id_temp.csv')
-        else:
-            print(
-                '✅  NO HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+            # Redefinir MTO
+            mto_df = merge_df[merge_df['LINE_NUM_x'].notnull()]
+
+            mto_df = mto_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
+                            'RATING_x', 'QTY_x']]
+
+            mto_df.rename(columns={'LINE_NUM_x': 'LINE_NUM', 'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER',
+                                   'RATING_x': 'RATING', 'QTY_x': 'QTY'}, inplace=True)
+
+            # Redefinir P&ID
+            pid_df = merge_df[merge_df['LINE_NUM_x'].isnull()]
+
+            pid_df = pid_df[['LINE_NUM_y', 'SPEC_y', 'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y',
+                            'RATING_y', 'QTY_y']]
+
+            pid_df.rename(columns={'LINE_NUM_y': 'LINE_NUM', 'SPEC_y': 'SPEC', 'TYPE_CODE_y': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_y': 'FIRST_SIZE_NUMBER',
+                                   'RATING_y': 'RATING', 'QTY_y': 'QTY'}, inplace=True)
+
+            # Crer un índice para comparar si hay hay diferencias en cantidades y ratings
+            mto_df['common_index'] = mto_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
+                                            'FIRST_SIZE_NUMBER']].apply(common_index_2, axis=1)
+
+            pid_df['common_index'] = pid_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
+                                            'FIRST_SIZE_NUMBER']].apply(common_index_2, axis=1)
+
+            # Hacer el nuevo merge
+            merge_df = pd.merge(mto_df, pid_df, how='outer', on='common_index')
+
+            # Saber si se imprime el archivo temporales o no
+            if merge_df.shape[0] > 0:
+                # Hacer un diagnóstico sobre cada una de las válvulas
+                merge_df['common_index'] = merge_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
+                                                    'RATING_x', 'QTY_x', 'LINE_NUM_y', 'SPEC_y',
+                                                     'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'RATING_y', 'QTY_y']].apply(diacnostic, axis=1, pid_lines_unique=pid_lines_unique, bom_lines_unique=bom_lines_unique)
+
+                print(
+                    '❌  HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+
+                merge_df.to_csv('./output/p&id_temp.csv')
+            else:
+                print(
+                    '✅  NO HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
