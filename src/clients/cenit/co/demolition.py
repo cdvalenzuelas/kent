@@ -3,12 +3,12 @@ import re
 
 
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
-from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
-from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
+from src.modules.mto.pipes_modifier import pipe_qty
+from src.modules.mto.nipples_modifier import nipple_second_size
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.clients.cenit.co.utils import common_index, def_note
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
-from src.modules.mto_does_not_exist.bolts_modifier import bolts_modifier
+from src.modules.mto.bolts_modifier import bolts_modifier
 
 
 # Crea una columna comun entre el piping class y el bom

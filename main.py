@@ -2,7 +2,7 @@ import shutil
 import os
 
 from src.modules.transform_bom import transform_bom
-from src.modules.mto_does_not_exist import mto_does_not_exist
+from src.modules.mto import mto
 from src.modules.summary.summary import summary
 from src.modules.mr.mr import mr
 from src.modules.hd.hd import hd
@@ -29,7 +29,7 @@ if __name__ == '__main__':
     # Si se reconoce algún
     if bom_is_correct:
         # Se crea el MTO
-        mto_does_not_exist()
+        mto()
 
         # Se crea la HD
         hd()

@@ -1,8 +1,8 @@
 import pandas as pd
 
-from src.modules.mto_does_not_exist.pipes_modifier import pipe_qty
-from src.modules.mto_does_not_exist.nipples_modifier import nipple_second_size
-from src.modules.mto_does_not_exist.mto_diagnostic import define_diagnostic
+from src.modules.mto.pipes_modifier import pipe_qty
+from src.modules.mto.nipples_modifier import nipple_second_size
+from src.modules.mto.mto_diagnostic import define_diagnostic
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 

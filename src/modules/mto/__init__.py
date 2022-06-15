@@ -1,8 +1,8 @@
-from src.modules.mto_does_not_exist.bom_cleaner import bom_cleaner
-from src.modules.mto_does_not_exist.bolts_modifier import bolts_modifier
+from src.modules.mto.bom_cleaner import bom_cleaner
+from src.modules.mto.bolts_modifier import bolts_modifier
 
 
-def mto_does_not_exist():
+def mto():
 
     # Creación del mto limpio incluyendo la información del piping class
     mto_df = bom_cleaner()

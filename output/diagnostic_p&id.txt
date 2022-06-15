@@ -1,10 +1,10 @@
 
 Existen 12 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
 Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
-Estas líneas son: {'CS3SA1-12"-PRO-2-3-001', 'CS2SA1-10"-PRO-2-3-002', 'CS3SA1-10"-PRO-2-3-003', 'CS2SA1-12"-PRO-2-3-006', 'CS2SA1-1-1/2"-DRE-2-3-008', 'CS2SA1-12"-PRO-2-3-005', 'CS2SA1-10"-PRO-1-3-011', 'CS3SA1-10"-PRO-1-3-009', 'CS2SA1-1"-ALV-2-3-012', 'CS2SA1-10"-PRO-1-3-010', 'CS2SA1-1"-ALV-1-3-007', 'CS2SA1-6"-ALV-2-3-004'}. Es posible que estas líneas estén mal nombradas en la 
+Estas líneas son: {'CS2SA1-10"-PRO-1-3-010', 'CS3SA1-10"-PRO-2-3-003', 'CS3SA1-12"-PRO-2-3-001', 'CS2SA1-12"-PRO-2-3-005', 'CS2SA1-1"-ALV-2-3-012', 'CS2SA1-10"-PRO-1-3-011', 'CS2SA1-1"-ALV-1-3-007', 'CS2SA1-1-1/2"-DRE-2-3-008', 'CS2SA1-6"-ALV-2-3-004', 'CS2SA1-12"-PRO-2-3-006', 'CS3SA1-10"-PRO-1-3-009', 'CS2SA1-10"-PRO-2-3-002'}. Es posible que estas líneas estén mal nombradas en la 
 maqueta o que estas líneas no se encuentren ruteadas.
                 
 Existen 3 líneas en el B.O.M que no existe en el P&ID.
 Es probable que estén símplemente mal nombradas y sea necesario rectificar.
-Estas líneas son: {'12"-CRU-110-CPE6-CLHAM64-101-A1A2-N', '4"-CRU-110-HAM-106D-A1A2-N', '6"-CRU-110-CPE6-CLHAM64-101-A1A2-N'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+Estas líneas son: {'4"-CRU-110-HAM-106D-A1A2-N', '12"-CRU-110-CPE6-CLHAM64-101-A1A2-N', '6"-CRU-110-CPE6-CLHAM64-101-A1A2-N'}. Es posible que estas líneas estén mal nombradas en la maqueta.
                 

@@ -8,6 +8,5 @@ def mr():
     # Filtrar el archivo y dejar sólo las válvulas
     mr_df = mr_df[mr_df['TYPE'] == 'VL']
 
-    if mr_df.shape[0] > 0:
-        # Crear el archivo summary
-        mr_df.to_csv('./output/mr.csv', index=True)
+    # Crear el archivo summary
+    mr_df.to_csv('./output/mr.csv', index=True)
