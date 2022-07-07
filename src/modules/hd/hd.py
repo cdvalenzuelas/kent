@@ -135,8 +135,6 @@ def hd():
 
         valves_df = pd.concat([new_column, valves_df], axis=1)
 
-        valves_df.to_csv('hd_temp.csv')
-
         # Iterar todo el dataframe
         for index, row in valves_df.iterrows():
             if row['TYPE_CODE'] in ['BAL', 'BAL6']:
@@ -169,5 +167,7 @@ def hd():
         std = wb.get_sheet_by_name('MONOFLANGE')
         wb.remove_sheet(std)
 
-        # Guardar el workbook
-        wb.save('./output/hd.xlsx')
+        # Si no se tienen hojas de datos (válvulas) que no se imprima o guarde el documento
+        if not(len(wb.sheetnames) == 1 and wb.sheetnames[0] == "ESRI_MAPINFO_SHEET"):
+            # Guardar el workbook
+            wb.save('./output/hd.xlsx')

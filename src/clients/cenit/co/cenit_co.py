@@ -6,7 +6,7 @@ from src.clients.cenit.co.valves_hidrostatic_test import valves_hidrostatic_test
 from src.clients.cenit.co.erection import erection
 from src.clients.cenit.co.areas import areas
 from src.clients.cenit.co.pipes_hidrostatic_test import pipes_hidrostatic_test
-from src.clients.cenit.co.ndt import ndt
+from src.clients.cenit.co.ndt.ndt import ndt
 from src.clients.cenit.co.valves_tags import valves_tags
 from src.clients.cenit.co.distance import distance
 

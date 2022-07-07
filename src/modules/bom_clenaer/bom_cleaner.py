@@ -1,8 +1,8 @@
 import pandas as pd
 
-from src.modules.mto.pipes_modifier import pipe_qty
-from src.modules.mto.nipples_modifier import nipple_second_size
-from src.modules.mto.mto_diagnostic import define_diagnostic
+from src.modules.bom_clenaer.pipes_modifier import pipe_qty
+from src.modules.bom_clenaer.nipples_modifier import nipple_second_size
+from src.modules.diagnostic.diagnostic import diagnostic
 from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 
@@ -75,7 +75,7 @@ def bom_cleaner():
 
     # Por aqupí se hace la comparación OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
     # OJO EL DEFINE DIGANOSTIC DEBERÍA COJER UN ARCHIVO LIMPIO Y LLENARLO CON TODAD LAS FICIONES (BORRAR LOS ARCHIVOS DE INPUTS CADA VEZ QUE SE CORRA LA INFORMACIÓN)
-    define_diagnostic(mto_df)
+    diagnostic(mto_df)
 
     # Eliminando columnas innecesarias
     mto_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',

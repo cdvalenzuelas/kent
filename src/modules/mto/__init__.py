@@ -1,5 +1,5 @@
-from src.modules.mto.bom_cleaner import bom_cleaner
-from src.modules.mto.bolts_modifier import bolts_modifier
+from src.modules.bom_clenaer.bom_cleaner import bom_cleaner
+from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 
 
 def mto():

@@ -1,8 +1,4 @@
-ITEM 22: 4"-CRU-110-HAM-106D-A1A2-N , BE, 3"
+ITEM 12: CS1SC2-6"-SCI-7-7-002 , BE, 6"
 ---------------------------------------
-* La longitud de la tubería es muy corta (100.0mm), podría ser un niple. Revisar si se puede cambiar 
-
-ITEM 40: 6"-CRU-110-CPE6-CLHAM64-101-A1A2-N , BE, 3"
----------------------------------------
-* La longitud de la tubería es muy corta (1.0mm), podría ser un niple. Revisar si se puede cambiar 
+EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 40.
 
