@@ -32,10 +32,7 @@ def valves_weight(row):
 
 
 # Dejar los pesos que vienen en el BOM
-def bom_cleaner():
-    # Leer el BOM
-    bom = pd.read_csv('./inputs/bom.csv')
-
+def bom_cleaner(bom):
     # Llenar los N.A con guines
     bom.fillna('-', inplace=True)
 

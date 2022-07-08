@@ -2,7 +2,7 @@ import re
 import pandas as pd
 
 
-from src.clients.cenit.co.utils import common_index
+from src.clients.cenit.co.utils.utils import common_index
 from src.utils.normalize_string import normalize_string
 
 
@@ -26,19 +26,13 @@ def def_distance(row, messure, total):
         return qty
 
 
-def distance(messure):
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def distance(messure, mto_df, co_df):
     # Calcular el peso total del proyecto
-    total = round(co_df['TOTAL_WEIGHT'].sum()*messure/1000, 2)
-
-    # Leer el archivo de cantidades de obra creadas
-    co_template = pd.read_csv('./output/co.csv')
+    total = round(mto_df['TOTAL_WEIGHT'].sum()*messure/1000, 2)
 
     # Definir la cantidad de TON*KM
-    co_template['QTY'] = co_template[['DESCRIPTION', 'QTY']].apply(
+    co_df['QTY'] = co_df[['DESCRIPTION', 'QTY']].apply(
         def_distance, axis=1, messure=messure, total=total)
 
     # Guardar el archivo creado
-    co_template.to_csv('./output/co.csv', index=False)
+    return co_df

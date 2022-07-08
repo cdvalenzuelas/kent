@@ -101,4 +101,4 @@ def transform_autoplant_to_cadworks(bom_df):
     bom_df = bom_df[['MARK', 'LINE_NUM', 'SPEC_FILE', 'DB_CODE', 'DESCRIPTION', 'SHORT_DESC',
                     'SIZE', 'MAIN_NOM', 'RED_NOM', 'THK_NOM', 'QTY', 'TAG', 'LENGTH', 'WEIGHT']]
 
-    bom_df.to_csv('./inputs/bom.csv', index=False)
+    return bom_df

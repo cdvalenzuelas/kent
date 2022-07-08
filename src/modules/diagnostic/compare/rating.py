@@ -12,8 +12,6 @@ def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_c
     if rating != '-' and type_code != 'BOLT':
         sub_str = normalize_string(rating)
 
-        print(sub_str)
-
         # Verificar si el ratingedule existe en el bom y en el piping class
         rating_in_bom = sub_str in short_desc_2
         rating_in_piping_class = sub_str in short_description_2

@@ -3,7 +3,7 @@ import pandas as pd
 
 
 from src.utils.normalize_string import normalize_string
-from src.clients.cenit.co.utils import common_index, def_note, def_qty
+from src.clients.cenit.co.utils.utils import common_index, def_note, def_qty
 
 
 # Definir tags de válvulas
@@ -20,35 +20,29 @@ def def_valves_tags(size):
         return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO MAYOR A 30”'
 
 
-def valves_tags():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def valves_tags(mto_df, co_df):
     # Traer únicamente las válvulas
-    co_df = co_df[(co_df['TYPE'] == 'VL')]
+    mto_df = mto_df[(mto_df['TYPE'] == 'VL')]
 
     # Dejar únicamente las columnas necesarias
-    co_df = co_df[['FIRST_SIZE_NUMBER', 'QTY']]
+    mto_df = mto_df[['FIRST_SIZE_NUMBER', 'QTY']]
 
     # Crear la columna tag_description
-    co_df['TAG'] = co_df['FIRST_SIZE_NUMBER'].apply(def_valves_tags)
+    mto_df['TAG'] = mto_df['FIRST_SIZE_NUMBER'].apply(def_valves_tags)
 
     # Sumar las cantidades
-    co_df = co_df.groupby(['TAG'], as_index=False)[
+    mto_df = mto_df.groupby(['TAG'], as_index=False)[
         ['QTY']].agg(QTY=('QTY', sum))
 
-    # Leer el archivo de cantidades de obra creadas
-    co_template = pd.read_csv('./output/co.csv')
-
     # Crear índice
-    co_df['common_index'] = co_df['TAG'].apply(common_index)
+    mto_df['common_index'] = mto_df['TAG'].apply(common_index)
 
-    co_template['common_index'] = co_template['DESCRIPTION'].apply(
+    co_df['common_index'] = co_df['DESCRIPTION'].apply(
         common_index)
 
     # Hacer el merge
     co_df = pd.merge(
-        co_template, co_df, on='common_index', how='outer')
+        co_df, mto_df, on='common_index', how='outer')
 
     # Llenar celdas vacías
     co_df.fillna('-', inplace=True)
@@ -68,4 +62,4 @@ def valves_tags():
     co_df.rename(columns={'QTY_x': 'QTY'}, inplace=True)
 
     # Guardar el archivo creado
-    co_df.to_csv('./output/co.csv', index=False)
+    return co_df

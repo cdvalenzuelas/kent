@@ -21,7 +21,7 @@ ITEM 11: CS1SC2-4"-SCI-7-7-005 , BE, 4"
 
 ITEM 12: CS1SC2-6"-SCI-7-7-002 , BE, 6"
 ---------------------------------------
-* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS SINGLE FUSION BONDED EPOXY, CS, ASTM A53 Gr.B, ASME B36.10, BE, SCH 50" y en el piping_class es "PIPE, SEAMLESS SINGLE FUSION BONDED EPOXY, CS, ASTM A53 Gr.B, ASME B36.10, BE, SCH 50". Se deben revisar los isométricos
+* La DESCRIPTION no coincide, en el BOM es "PIPE, SEAMLESS SINGLE FUSION BONDED EPOXY, CS, ASTM A53 Gr.B, ASME B36.10, BE, SCH 40" y en el piping_class es "PIPE, SEAMLESS SINGLE FUSION BONDED EPOXY, CS, ASTM A53 Gr.B, ASME B36.10, BE, SCH 40". Se deben revisar los isométricos
 
 ITEM 13: CS1SC2-6"-SCI-7-7-003 , BE, 2-1/2"
 ---------------------------------------

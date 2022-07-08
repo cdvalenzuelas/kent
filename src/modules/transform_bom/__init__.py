@@ -13,11 +13,10 @@ def transform_bom():
     cad_software = detect_cad_software(bom_df)
 
     if cad_software == 'cadworks':
-        bom_df.to_csv('./inputs/bom.csv', index=False)
-        return True
+        return (True, bom_df)
     elif cad_software == 'autoplant':
-        transform_autoplant_to_cadworks(bom_df)
-        return True
+        bom_df = transform_autoplant_to_cadworks(bom_df)
+        return (True, bom_df)
     else:
         print('\n❌ NO SE RECONOCE EL PROGRAMA DE DISEÑO, LAS COLUMNAS DEL BOM NO CORRESPONDEN A NINGUN TEMPLATE ESTABLECIDO')
         return False

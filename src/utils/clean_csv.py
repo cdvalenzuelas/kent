@@ -3,12 +3,12 @@ import pandas as pd
 from src.utils.replace_dot_by_comma import replace_dot_by_comma
 
 
-def clean_csv():
-    # Leer archivos
-    mr_df = pd.read_csv('./output/mr.csv')
-    summary_df = pd.read_csv('./output/summary.csv')
-    mto_df = pd.read_csv('./output/mto.csv')
-    co_df = pd.read_csv('./output/co.csv')
+def clean_csv(mto_df, summary_df, mr_df, co_df):
+    # Hacer copias de lod df
+    mto_df = mto_df.copy()
+    summary_df = summary_df.copy()
+    mr_df = mr_df.copy()
+    co_df = co_df.copy()
 
     # Ordenar los dataframes
     summary_df.sort_values(by=['ORDER', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
@@ -69,14 +69,7 @@ def clean_csv():
     mto_df = pd.concat([item, mto_df], axis=1)
 
     # Crear el archivos
-    mr_df.to_csv('./output/mr.csv', index=False)
     mr_df.to_excel('./output/mr.xlsx', index=False)
-
-    summary_df.to_csv('./output/summary.csv', index=False)
     summary_df.to_excel('./output/summary.xlsx', index=False)
-
-    mto_df.to_csv('./output/mto.csv', index=False)
     mto_df.to_excel('./output/mto.xlsx', index=False)
-
-    co_df.to_csv('./output/co.csv', index=False)
     co_df.to_excel('./output/co.xlsx', index=False)

@@ -1,54 +1,65 @@
+import pandas as pd
+
 from src.clients.cenit.co.co_temp import co_temp
-from src.clients.cenit.co.demolition import demolition
-from src.clients.cenit.co.supply import supply
-from src.clients.cenit.co.pre_manufacturing import pre_manufacturing
-from src.clients.cenit.co.valves_hidrostatic_test import valves_hidrostatic_test
-from src.clients.cenit.co.erection import erection
-from src.clients.cenit.co.areas import areas
-from src.clients.cenit.co.pipes_hidrostatic_test import pipes_hidrostatic_test
+from src.clients.cenit.co.demolition.demolition import demolition
+from src.clients.cenit.co.supply.supply import supply
+from src.clients.cenit.co.pre_manufacturing.pre_manufacturing import pre_manufacturing
+from src.clients.cenit.co.valves_hidrostatic_test.valves_hidrostatic_test import valves_hidrostatic_test
+from src.clients.cenit.co.erection.erection import erection
+from src.clients.cenit.co.areas.areas import areas
+from src.clients.cenit.co.pipes_hisdrostatic_test.pipes_hidrostatic_test import pipes_hidrostatic_test
 from src.clients.cenit.co.ndt.ndt import ndt
-from src.clients.cenit.co.valves_tags import valves_tags
-from src.clients.cenit.co.distance import distance
+from src.clients.cenit.co.valves_tags.valves_tags import valves_tags
+from src.clients.cenit.co.distance.distance import distance
 
 
-def cenit_co(cenit_co_conf):
+def cenit_co(cenit_co_conf, mto_df):
+    # Hacer una copia del mto_df
+    mto_df = mto_df.copy()
+
     # Crear un archivo temporal que indique que items tienen información faltante em las cantidades de obra
-    co_temp()
+    co_temp(mto_df)
+
+    # Leer el template de CO
+    co_df = pd.read_csv('./src/clients/cenit/templates/co_template.csv')
 
     # Definir el suministro
     if cenit_co_conf['supply']:
-        supply()
+        co_df = supply(mto_df, co_df)
 
     # Definir la prefabricación
     if cenit_co_conf['pre_manufacturing']:
-        pre_manufacturing()
+        co_df = pre_manufacturing(mto_df, co_df)
 
     # Definir las cantidades de pruebas hidrostáticas
     if cenit_co_conf['valves_hidrostatic_test']:
-        valves_hidrostatic_test()
+        co_df = valves_hidrostatic_test(mto_df, co_df)
 
     # Definir el montaje
     if cenit_co_conf['erection']:
-        erection()
+        co_df = erection(mto_df, co_df)
 
     # Definir áreas
     if cenit_co_conf['areas']:
-        areas()
+        co_df = areas(mto_df, co_df)
 
     # Definir las pruebas hidrostáticas sobre la tubería
     if cenit_co_conf['pipes_hidrostatic_test']:
-        pipes_hidrostatic_test()
+        co_df = pipes_hidrostatic_test(mto_df, co_df)
 
     # Definir soldaduras
     if cenit_co_conf['ndt']:
-        ndt()
+        co_df = ndt(mto_df, co_df)
 
     # Definir el desmantelamiento
     if cenit_co_conf['demolition']['demolition']:
-        demolition(cenit_co_conf['demolition']['method'])
+        co_df = demolition(
+            cenit_co_conf['demolition']['method'], co_df)
 
     # Definir la demarcación de válvulas (sólo cuenta válvulas y no tuberías)
     if cenit_co_conf['valves_tags']:
-        valves_tags()
+        co_df = valves_tags(mto_df, co_df)
 
-    distance(cenit_co_conf['messure'])
+    co_df = distance(cenit_co_conf['messure'], mto_df, co_df)
+
+    return co_df

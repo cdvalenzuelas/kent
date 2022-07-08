@@ -18,9 +18,9 @@ def valves_index(row):
     return f'{spec} {size} {tag}'
 
 
-def hd():
-    # leer el MTO creado
-    mto_df = pd.read_csv('./output/mto.csv')
+def hd(mto_df):
+    # Hacer una copia el mto_df
+    mto_df = mto_df.copy()
 
     # Extrayendo únicamente las válvulas
     mto_df = mto_df[mto_df['TYPE'] == 'VL']

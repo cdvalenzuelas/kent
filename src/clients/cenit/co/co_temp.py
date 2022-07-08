@@ -22,9 +22,9 @@ def def_manufacturing_description(row):
 
 
 # Crear un archivo temporal que indique que items tienen información faltante em las cantidades de obra
-def co_temp():
-    # Se lee el mto
-    co_df = pd.read_csv('./output/mto.csv')
+def co_temp(co_df):
+    # Hacer una copia del co_df
+    co_df = co_df.copy()
 
     # Se le coloca un área distinta a cero a las válvulas, gaskets, bolts y miscelaneos
     co_df['AREA'] = co_df[['AREA', 'TYPE']].apply(areas, axis=1)

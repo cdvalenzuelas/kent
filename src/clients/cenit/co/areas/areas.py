@@ -19,9 +19,8 @@ def def_total_area(row):
     else:
         return area * qty
 
+
 # Insertar el valor calculado en el documento de cantidades de obra
-
-
 def def_qty(row, cells_list, total):
     description, qty = row
 
@@ -31,22 +30,22 @@ def def_qty(row, cells_list, total):
         return qty
 
 
-def areas():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
+def areas(mto_df, co_df):
+    # Hacer copias de los dataframes
+    mto_df = mto_df.copy()
+    co_df = co_df.copy()
 
     # Obtener únicamente las columnas innecesarias
-    co_df = co_df[['TYPE', 'TYPE_CODE', 'QTY', 'AREA']]
+    mto_df = mto_df[['TYPE', 'TYPE_CODE', 'QTY', 'AREA']]
 
     # Definir área total
-    co_df['TOTAL_AREA'] = co_df[['TYPE', 'QTY', 'AREA']].apply(
+    mto_df['TOTAL_AREA'] = mto_df[['TYPE', 'QTY', 'AREA']].apply(
         def_total_area, axis=1)
 
     # Calcular el área total
-    total = round(co_df['TOTAL_AREA'].sum(), 2)
+    total = round(mto_df['TOTAL_AREA'].sum(), 2)
 
     # Insertar el valor calculado en el documento de cantidades de obra
-
     cell_1 = normalize_string(
         'LIMPIEZA CON CHORRO DE ABRASIVO GRADO METAL CASI BLANCO SEGÚN NORMA SSPC-SP 10')
     cell_2 = normalize_string(
@@ -59,12 +58,9 @@ def areas():
     # Estos son las celdas en donde se insertará el total de área
     cells_list = [cell_1, cell_2, cell_3, cell_4]
 
-    # Leer el archivo de cantidades de obra creadas
-    co_template = pd.read_csv('./output/co.csv')
-
     # Encontral la celda y colocar el valor
-    co_template['QTY'] = co_template[[
+    co_df['QTY'] = co_df[[
         'DESCRIPTION', 'QTY']].apply(def_qty, axis=1, args=(cells_list, total))
 
     # Guardar el archivo creado
-    co_template.to_csv('./output/co.csv', index=False)
+    return co_df

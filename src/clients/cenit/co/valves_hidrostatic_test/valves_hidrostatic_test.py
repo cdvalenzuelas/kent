@@ -1,35 +1,29 @@
 import pandas as pd
 
 
-from src.clients.cenit.co.utils import common_index, def_note, def_description, def_qty
+from src.clients.cenit.co.utils.utils import common_index, def_note, def_description, def_qty
 
 
-def valves_hidrostatic_test():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def valves_hidrostatic_test(mto_df, co_df):
     # Extraer únicamente las columnas necesarias
-    co_df = co_df[['TYPE', 'TYPE_CODE', 'MANUFACTURING_DESCRIPTION', 'QTY']]
+    mto_df = mto_df[['TYPE', 'TYPE_CODE', 'MANUFACTURING_DESCRIPTION', 'QTY']]
 
     # Eliminar válvulas y elementos que no tienen prefabricación, como bolts, gaskets,
-    co_df = co_df[(co_df['TYPE'] == 'VL')]
+    mto_df = mto_df[(mto_df['TYPE'] == 'VL')]
 
     # Se suman las cantidades
-    co_df = co_df.groupby(['MANUFACTURING_DESCRIPTION'], as_index=False)[
+    mto_df = mto_df.groupby(['MANUFACTURING_DESCRIPTION'], as_index=False)[
         ['QTY']].agg(QTY=('QTY', sum))
 
-    # Leer el archivo de cantidades de obra creadas
-    co_template = pd.read_csv('./output/co.csv')
-
     # Crear índices comunes para hacer un merge
-    co_df['common_index'] = co_df['MANUFACTURING_DESCRIPTION'].apply(
+    mto_df['common_index'] = mto_df['MANUFACTURING_DESCRIPTION'].apply(
         common_index)
 
-    co_template['common_index'] = co_template['DESCRIPTION'].apply(
+    co_df['common_index'] = co_df['DESCRIPTION'].apply(
         common_index)
 
     # Hacer un merge full
-    co_df = pd.merge(co_template, co_df, on='common_index', how='outer')
+    co_df = pd.merge(co_df, mto_df, on='common_index', how='outer')
 
     # Llenar los espacios nulos
     co_df.fillna('-', inplace=True)
@@ -54,4 +48,4 @@ def valves_hidrostatic_test():
     co_df.rename(columns={'QTY_x': 'QTY'}, inplace=True)
 
     # Guardar las cantidades de obra
-    co_df.to_csv('./output/co.csv', index=False)
+    return co_df

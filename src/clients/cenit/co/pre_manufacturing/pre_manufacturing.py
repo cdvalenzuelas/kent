@@ -1,36 +1,30 @@
 import pandas as pd
 
 
-from src.clients.cenit.co.utils import common_index, def_note, def_description, def_qty
+from src.clients.cenit.co.utils.utils import common_index, def_note, def_description, def_qty
 
 
-def pre_manufacturing():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def pre_manufacturing(mto_df, co_df):
     # Extraer únicamente las columnas necesarias
-    co_df = co_df[['TYPE', 'MANUFACTURING_DESCRIPTION', 'TOTAL_WEIGHT']]
+    mto_df = mto_df[['TYPE', 'MANUFACTURING_DESCRIPTION', 'TOTAL_WEIGHT']]
 
     # Eliminar válvulas y elementos que no tienen prefabricación, como bolts, gaskets,
-    co_df = co_df[(co_df['TYPE'] != 'VL') & (
-        co_df['MANUFACTURING_DESCRIPTION'] != '-')]
+    mto_df = mto_df[(mto_df['TYPE'] != 'VL') & (
+        mto_df['MANUFACTURING_DESCRIPTION'] != '-')]
 
     # Se suman los pesos
-    co_df = co_df.groupby(['MANUFACTURING_DESCRIPTION'], as_index=False)[
+    mto_df = mto_df.groupby(['MANUFACTURING_DESCRIPTION'], as_index=False)[
         ['TOTAL_WEIGHT']].agg(TOTAL_WEIGHT=('TOTAL_WEIGHT', sum))
 
-    # Leer el archivo de cantidades de obra creadas
-    co_template = pd.read_csv('./output/co.csv')
-
     # Crear índices comunes para hacer un merge
-    co_df['common_index'] = co_df['MANUFACTURING_DESCRIPTION'].apply(
+    mto_df['common_index'] = mto_df['MANUFACTURING_DESCRIPTION'].apply(
         common_index)
 
-    co_template['common_index'] = co_template['DESCRIPTION'].apply(
+    co_df['common_index'] = co_df['DESCRIPTION'].apply(
         common_index)
 
     # Hacer un merge full
-    co_df = pd.merge(co_template, co_df, on='common_index', how='outer')
+    co_df = pd.merge(co_df, mto_df, on='common_index', how='outer')
 
     # Llenar los espacios nulos
     co_df.fillna('-', inplace=True)
@@ -52,4 +46,4 @@ def pre_manufacturing():
                'TOTAL_WEIGHT'], inplace=True, axis=1)
 
     # Guardar las cantidades de obra
-    co_df.to_csv('./output/co.csv', index=False)
+    return co_df

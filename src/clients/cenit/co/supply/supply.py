@@ -1,31 +1,25 @@
 import pandas as pd
 
 
-from src.clients.cenit.co.utils import common_index, def_description, def_note, def_qty, def_units
+from src.clients.cenit.co.utils.utils import common_index, def_description, def_note, def_qty, def_units
 
 
-def supply():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def supply(mto_df, co_df):
     # Extraer únicamente las columnas necesarias
-    co_df = co_df[['TYPE_CODE', 'SUPPLY_DESCRIPTION', 'QTY']]
+    mto_df = mto_df[['TYPE_CODE', 'SUPPLY_DESCRIPTION', 'QTY']]
 
     # Se suman las cantidades
-    co_df = co_df.groupby(['TYPE_CODE', 'SUPPLY_DESCRIPTION'], as_index=False)[
+    mto_df = mto_df.groupby(['TYPE_CODE', 'SUPPLY_DESCRIPTION'], as_index=False)[
         ['QTY']].agg(QTY=('QTY', sum))
 
-    # Leer el template de CO
-    co_template = pd.read_csv('./src/clients/cenit/templates/co_template.csv')
-
     # Crear índices comunes para hacer un merge
-    co_df['common_index'] = co_df['SUPPLY_DESCRIPTION'].apply(common_index)
+    mto_df['common_index'] = mto_df['SUPPLY_DESCRIPTION'].apply(common_index)
 
-    co_template['common_index'] = co_template['DESCRIPTION'].apply(
+    co_df['common_index'] = co_df['DESCRIPTION'].apply(
         common_index)
 
     # Hacer un merge full
-    co_df = pd.merge(co_template, co_df, on='common_index', how='outer')
+    co_df = pd.merge(co_df, mto_df, on='common_index', how='outer')
 
     # Llenar los espacios nulos
     co_df.fillna('-', inplace=True)
@@ -50,10 +44,10 @@ def supply():
 
     # Elimuinar columnas innecesarias
     co_df.drop(['common_index', 'TYPE_CODE', 'SUPPLY_DESCRIPTION',
-               'QTY_y'], inplace=True, axis=1)
+                'QTY_y'], inplace=True, axis=1)
 
     # Renombrar columnas
     co_df.rename(columns={'QTY_x': 'QTY'}, inplace=True)
 
-    # Guardar el archivo
-    co_df.to_csv('./output/co.csv', index=False)
+    # Retornar el mto_df
+    return co_df

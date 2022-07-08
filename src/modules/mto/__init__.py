@@ -2,10 +2,10 @@ from src.modules.bom_clenaer.bom_cleaner import bom_cleaner
 from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 
 
-def mto():
+def mto(bom_df):
 
     # Creación del mto limpio incluyendo la información del piping class
-    mto_df = bom_cleaner()
+    mto_df = bom_cleaner(bom_df)
 
     # Crear registro de items sin identificar
     mto_df_na = mto_df[(mto_df['DESCRIPTION'].isnull())
@@ -44,7 +44,7 @@ def mto():
     mto_df = mto_df.groupby(['LINE_NUM', 'SPEC', 'ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE',
                              'FIRST_SIZE_NUMBER', 'SECOND_SIZE', 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING',
                              'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'SUPPLY_DESCRIPTION', 'MANUFACTURING_DESCRIPTION',
-                             'ERECTION_DESCRIPTION'])[['QTY', 'WEIGHT', 'AREA']].agg(
+                             'ERECTION_DESCRIPTION'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
         TOTAL_WEIGHT=('WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))
@@ -54,7 +54,4 @@ def mto():
     # Resetear el index
     mto_df.reset_index(drop=False)
 
-    # Crear el archivo de MTO
-    mto_df.to_csv('./output/mto.csv', index=True)
-
-    return mto_df_na.shape[0]
+    return mto_df

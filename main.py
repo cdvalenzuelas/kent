@@ -24,27 +24,27 @@ if __name__ == '__main__':
     client = 'cenit'
 
     # Se trensforma el bom a un formato standard sin importar el programa de diseño utilizado
-    bom_is_correct = transform_bom()
+    (bom_is_correct, bom_df) = transform_bom()
 
     # Si se reconoce algún
     if bom_is_correct:
         # Se crea el MTO
-        mto()
+        mto_df = mto(bom_df)
 
         # Se crea la HD
-        hd()
+        hd(mto_df)
 
         # Se crean las cantidades de obra
-        co(client)
+        co_df = co(client, mto_df)
 
         # Creación del sumario
-        summary()
+        summary_df = summary(mto_df)
 
         # Se crea el MR
-        mr()
-
-        # Se limpian los archivos crados
-        clean_csv()
+        mr_df = mr(summary_df)
 
         # Comparar con la info del P&ID con el MTO
-        compare_pid()
+        compare_pid(mto_df)
+
+        # Se limpian los archivos crados
+        clean_csv(mto_df, summary_df, mr_df, co_df)

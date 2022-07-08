@@ -24,46 +24,43 @@ def def_second_size_number(row):
     return second_size_number
 
 
-def ndt():
-    # Leer el MTO limpio
-    co_df = pd.read_csv('./output/mto.csv')
-
+def ndt(mto_df, co_df):
     # Obtener únicamente las columnas innecesarias
-    co_df = co_df[['SPEC', 'LINE_NUM', 'TYPE', 'TYPE_CODE',
-                   'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'FACE', 'QTY']]
+    mto_df = mto_df[['SPEC', 'LINE_NUM', 'TYPE', 'TYPE_CODE',
+                     'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'FACE', 'QTY']]
 
-    # Deajr únicamente las tuberías
-    co_df = co_df[(co_df['TYPE'] == 'PP') | (
-        co_df['TYPE'] == 'FT') | (co_df['TYPE'] == 'FL')]
+    # Deajr únicamente las tuberías y accesorios
+    mto_df = mto_df[(mto_df['TYPE'] == 'PP') | (
+        mto_df['TYPE'] == 'FT') | (mto_df['TYPE'] == 'FL')]
 
     # Si existen tuberpias y/o accesorios
-    if co_df.shape[0] > 0:
+    if mto_df.shape[0] > 0:
 
         # Arreglar el segundo diámetro
-        co_df['SECOND_SIZE_NUMBER'] = co_df[['TYPE', 'TYPE_CODE',
-                                            'SECOND_SIZE_NUMBER']].apply(def_second_size_number, axis=1)
+        mto_df['SECOND_SIZE_NUMBER'] = mto_df[['TYPE', 'TYPE_CODE',
+                                               'SECOND_SIZE_NUMBER']].apply(def_second_size_number, axis=1)
 
         # Ver la cantidad de solduras por cada elemento
-        co_df['DIAMETRIC_WELDS'] = co_df[['TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
-                                          'SECOND_SIZE_NUMBER', 'QTY', 'FACE']].apply(welds_per_element, axis=1)
+        mto_df['DIAMETRIC_WELDS'] = mto_df[['TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
+                                            'SECOND_SIZE_NUMBER', 'QTY', 'FACE']].apply(welds_per_element, axis=1)
 
         # Definir las soldaduras BW
-        co_df['BW'] = co_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
-                            'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_bw, axis=1)
+        mto_df['BW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
+                               'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_bw, axis=1)
 
         # Definir las soldaduras SW
-        co_df['SW'] = co_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
-                            'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_sw, axis=1)
+        mto_df['SW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
+                               'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_sw, axis=1)
 
         # Definir las soldaduras SW
-        co_df['TW'] = co_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
-                            'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_tw, axis=1)
+        mto_df['TW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
+                               'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_tw, axis=1)
 
         # Se eliminan columnas innecesarias
-        co_df.drop(['DIAMETRIC_WELDS'], inplace=True, axis=1)
+        mto_df.drop(['DIAMETRIC_WELDS'], inplace=True, axis=1)
 
         # Se crean las primeras listas de soldaduras
-        welds_list_1 = co_df.groupby(['LINE_NUM', 'SPEC', 'TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
+        welds_list_1 = mto_df.groupby(['LINE_NUM', 'SPEC', 'TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
                                       'SECOND_SIZE_NUMBER', 'FACE'], as_index=False)[['QTY', 'BW', 'SW', 'TW']].agg(QTY=('QTY', sum), BW=('BW', sum), SW=('SW', sum), TW=('TW', sum))
 
         # Se crea la segunda lista de soldaduras
@@ -96,12 +93,9 @@ def ndt():
         lp_cell = normalize_string(
             'PRUEBA DE TINTAS PENETRANTES PARA JUNTA DE TUBERÍA')
 
-        # Leer el archivo de cantidades de obra creadas
-        co_template = pd.read_csv('./output/co.csv')
-
         # Encontral la celda y colocar el valor
-        co_template['QTY'] = co_template[[
+        co_df['QTY'] = co_df[[
             'DESCRIPTION', 'QTY']].apply(def_qty, axis=1, args=(rt_cell, rt_total, lp_cell, lp_total))
 
-        # Guardar el archivo creado
-        co_template.to_csv('./output/co.csv', index=False)
+    # Guardar el archivo creado
+    return co_df
