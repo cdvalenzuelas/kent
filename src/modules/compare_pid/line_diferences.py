@@ -1,4 +1,5 @@
 def line_diferences(mto_df, pid_df):
+
     # Comparar si las lineas del P&ID se encuentrabn en el BOM
     pid_lines = set(pid_df['LINE_NUM'].unique())
 

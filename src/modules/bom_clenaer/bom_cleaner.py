@@ -3,7 +3,6 @@ import pandas as pd
 from src.modules.bom_clenaer.pipes_modifier import pipe_qty
 from src.modules.bom_clenaer.nipples_modifier import nipple_second_size
 from src.modules.diagnostic.diagnostic import diagnostic
-from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 
 
@@ -32,7 +31,7 @@ def valves_weight(row):
 
 
 # Dejar los pesos que vienen en el BOM
-def bom_cleaner(bom):
+def bom_cleaner(bom, piping_class, piping_class_valves_weights):
     # Llenar los N.A con guines
     bom.fillna('-', inplace=True)
 
@@ -55,9 +54,6 @@ def bom_cleaner(bom):
     bom['common_index'] = bom[['SPEC_FILE', 'DB_CODE', 'MAIN_NOM',
                                'RED_NOM', 'TAG']].apply(concat_colums, axis=1)
 
-    # Extraer el piping class
-    piping_class = cenit_piping_class()
-
     # Se crean los índices del BOM y del piping class
     # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
     piping_class['common_index'] = piping_class[[
@@ -67,10 +63,10 @@ def bom_cleaner(bom):
     mto_df = pd.merge(bom, piping_class, how='left', on='common_index')
 
     # Corregir el peso de válvulas
-    # mto_df['WEIGHT_y'] = mto_df[['WEIGHT_x', 'WEIGHT_y',
-    # 'TYPE', 'QTY']].apply(valves_weight, axis=1)
+    if not piping_class_valves_weights:
+        mto_df['WEIGHT_y'] = mto_df[['WEIGHT_x', 'WEIGHT_y',
+                                     'TYPE', 'QTY']].apply(valves_weight, axis=1)
 
-    # Por aqupí se hace la comparación OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
     # OJO EL DEFINE DIGANOSTIC DEBERÍA COJER UN ARCHIVO LIMPIO Y LLENARLO CON TODAD LAS FICIONES (BORRAR LOS ARCHIVOS DE INPUTS CADA VEZ QUE SE CORRA LA INFORMACIÓN)
     diagnostic(mto_df)
 

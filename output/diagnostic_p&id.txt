@@ -1,10 +1,5 @@
 
-Existen 16 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
-Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
-Estas líneas son: {'CS2SA1-2"-DRE-1-5-003', 'CS2SA1-6"-ALV-1-5-001', 'CS2SA1-3/4"-DRE-1-5-007', 'CS2SA1-2"-ALV-1-5-014', 'CS2SA1-3"-ALV-1-5-012', 'CS2SA1-2"-DRE-1-5-015', 'CS2SA1-3/4"-DRE-1-5-008', 'CS5SA1-6"-ALV-1-5-005', 'CS5SA1-6"-ALV-1-5-002', 'CS2SA1-6"-ALV-1-5-010', 'CS2SA1-6"-ALV-1-5-004', 'CS2SA1-1"-DRE-1-5-016', 'CS5SA1-6"-ALV-1-5-011', 'CS2SA1-8"-ALV-1-5-009', 'CS2SA1-2"-DRE-1-5-006', 'CS2SA1-2"-ALV-1-5-013'}. Es posible que estas líneas estén mal nombradas en la 
-maqueta o que estas líneas no se encuentren ruteadas.
-                
-Existen 9 líneas en el B.O.M que no existe en el P&ID.
+Existen 1 líneas en el B.O.M que no existe en el P&ID.
 Es probable que estén símplemente mal nombradas y sea necesario rectificar.
-Estas líneas son: {'TIE-IN 013', 'CS1SC2-6"-SCI-7-7-006', 'CS1SC2-8"-SCI-7-7-001', 'CS1SC2-4"-SCI-7-7-007', 'CS1SC2-4"-SCI-7-7-005', 'CS1SC2-3/4"-SCI-7-7-008', 'CS1SC2-6"-SCI-7-7-003', 'CS1SC2-6"-SCI-7-7-004', 'CS1SC2-6"-SCI-7-7-002'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+Estas líneas son: {'CS2SA1-1/2"-DRE-1-5-007'}. Es posible que estas líneas estén mal nombradas en la maqueta.
                 

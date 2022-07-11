@@ -13,7 +13,7 @@ from src.clients.cenit.co.valves_tags.valves_tags import valves_tags
 from src.clients.cenit.co.distance.distance import distance
 
 
-def cenit_co(cenit_co_conf, mto_df):
+def cenit_co(cenit_co_conf, mto_df, piping_class):
     # Hacer una copia del mto_df
     mto_df = mto_df.copy()
 
@@ -54,7 +54,7 @@ def cenit_co(cenit_co_conf, mto_df):
     # Definir el desmantelamiento
     if cenit_co_conf['demolition']['demolition']:
         co_df = demolition(
-            cenit_co_conf['demolition']['method'], co_df)
+            cenit_co_conf['demolition']['method'], co_df, piping_class)
 
     # Definir la demarcación de válvulas (sólo cuenta válvulas y no tuberías)
     if cenit_co_conf['valves_tags']:

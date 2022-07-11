@@ -16,7 +16,7 @@ def def_qty(row):
 
 
 # OJO EL DEMOLITION TAMBIÉN PUEDE VENIR EN FORMA DE MTO
-def demolition(method, co_df):
+def demolition(method, co_df, piping_class):
     try:
         # Leer el archivo de demolición
         demolition_df = pd.read_csv('./inputs/demolition.csv')
@@ -24,7 +24,7 @@ def demolition(method, co_df):
         print('💡 VERIFICAR QUE EL ARCHIVO demolition.csv SEA EL CORRECTO\n')
 
         # Limpiar el demolition.csv
-        demolition_df = demolition_cleaner(demolition_df)
+        demolition_df = demolition_cleaner(demolition_df, piping_class)
 
         # Definir el demolition descrption según el type
         demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df[[
