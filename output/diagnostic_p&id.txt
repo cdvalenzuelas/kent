@@ -1,5 +1,0 @@
-
-Existen 1 líneas en el B.O.M que no existe en el P&ID.
-Es probable que estén símplemente mal nombradas y sea necesario rectificar.
-Estas líneas son: {'CS2SA1-1/2"-DRE-1-5-007'}. Es posible que estas líneas estén mal nombradas en la maqueta.
-                

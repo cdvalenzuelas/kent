@@ -23,6 +23,12 @@ def locking_device(mto_df, pid_df):
     pid_df_locking_device_only = pid_df[(pid_df['QTY'] > 0) & (
         pid_df['QTY'] > pid_df['NO_LOCKING_DEVICE'])]
 
+    # Se crea la columna Note en el MTO
+    mto_df['NOTE'] = '-'
+
+    if pid_df_locking_device_only.shape[0] == 0:
+        return mto_df.copy()
+
     pid_df_locking_device_only = pid_df_locking_device_only.copy()
 
     # Crear índices comunes entre el MTO y el P&ID

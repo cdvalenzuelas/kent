@@ -1,5 +1,5 @@
 def find_tag(row, piping_class):
-    type_code, spec, size, qty = row
+    line, type_code, spec, size, qty = row
 
     # Si no hay válvulas no buscar tags
     if qty == 0:
@@ -20,11 +20,29 @@ def find_tag(row, piping_class):
     # Si no se encuentra la válvula mostrar un error, puede ser que el archivo de P&ID esté mal
     elif shape == 0:
         print(
-            f'❌ NO SE ENCUENTRAN VÁLVULAS CON SPECS {spec}, TYPE_CODE {type_code} y DIÁMETRO {size}, REVISAR EL ARCHIVO p&id.csv\n')
+            f'❌ NO SE ENCUENTRAN VÁLVULAS CON SPECS {spec}, TYPE_CODE {type_code} y DIÁMETRO {size} EN LA LÍNEA {line}, REVISAR EL ARCHIVO p&id.csv\n')
         return 'error'
     # Si hay más de un tipo de válvula para estas combinaciones de SPEC, TYPE_CODE y DIÁMETRO se le pide al usuario que confirme
     else:
-        print('HAY MÁS DE UN TIPO DE VÁLVULA QUE CUMPLE CON LOS REQUISITOS, POR FAVOR CONFIRMAR')
+        # Se resetea el índice
+        sub_piping_class.reset_index(inplace=True)
+
+        # Se le dice al usuario que hay más de una posibilidad y que debe elejir
+        print(f"""----------------------------------------------------------------------------------------------------------------------------------------------------
+HAY MÁS DE UN TIPO DE VÁLVULA QUE CUMPLE CON LOS REQUISITOS DE SPECS {spec} EN LA LÍNEA {line}, TYPE_CODE {type_code} y DIÁMETRO {size}, 
+LAS OPCIONES CORRECTAS SON:\n""")
+
+        # Se le muestran las opciones al usuario
+        print(sub_piping_class[['TAG', 'DESCRIPTION']])
+
+        # El usuario elije la opción correcta
+        index = int(input('\nSELECCIONES EL NUMERAL CORRECTO: '))
+
+        # La herramienta extrae el tag correcto
+        tag = sub_piping_class.loc[index, 'TAG']
+
+        # Se le agrega el tag faltate al archivo p&id.csv
+        return tag
 
 
 def search_valve_tag(pid_df, piping_class):
@@ -32,7 +50,9 @@ def search_valve_tag(pid_df, piping_class):
     piping_class = piping_class.copy()
     pid_df = pid_df.copy()
 
-    pid_df['TAG'] = pid_df[['TYPE_CODE', 'SPEC', 'FIRST_SIZE_NUMBER', 'QTY']].apply(
+    pid_df['TAG'] = pid_df[['LINE_NUM', 'TYPE_CODE', 'SPEC', 'FIRST_SIZE_NUMBER', 'QTY']].apply(
         find_tag, axis=1, piping_class=piping_class)
+
+    print('----------------------------------------------------------------------------------------------------------------------------------------------------\n')
 
     return pid_df

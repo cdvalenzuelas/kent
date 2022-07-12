@@ -88,7 +88,7 @@ def demolition_cleaner(demolition_df, piping_class):
 
         print('❌ HAY ELEMENTOS DE DEMOLICIÓN QUE NO TIENEN PESO ASIGNADO.\n')
     else:
-        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASINADO.\n')
+        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASIGNADO.\n')
 
     # Dejar únicamente las columnas necesarias
     demolition_df = demolition_df[[

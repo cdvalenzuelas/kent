@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import os
 
 from src.modules.diagnostic.compare.compare import compare
 
@@ -44,3 +45,11 @@ def diagnostic(mto_df):
 
     mto_df['INDEX'] = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
                               'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH']].apply(compare, axis=1)
+
+    diagnostic_length = 0
+
+    with open('./output/diagnostic.txt', mode='r') as f:
+        diagnostic_length = len(f.readlines())
+
+    if diagnostic_length == 0:
+        os.remove('./output/diagnostic.txt')

@@ -13,6 +13,9 @@ def cleaner(piping_class):
     pid_df['CSC'].fillna(0, inplace=True)
     pid_df['NO_LOCKING_DEVICE'].fillna(0, inplace=True)
 
+    # Llenar los espacios vacíos con '-'
+    pid_df.fillna('-', inplace=True)
+
     # Sumar el pid_df
     pid_df = pid_df.groupby(['LINE_NUM', 'SPEC', 'TYPE_CODE', 'FIRST_SIZE_NUMBER', 'RATING'], as_index=False)[['CSO', 'CSC', 'NO_LOCKING_DEVICE']].agg(
         CSO=('CSO', sum),

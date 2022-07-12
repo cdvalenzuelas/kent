@@ -39,7 +39,7 @@ def compare(row):
                           weight_x, weight_y, bolt_weight, qty, length)
 
     # bolts length
-    diagnostic = def_bolt_length(diagnostic, type_code, length)
+    diagnostic = def_bolt_length(diagnostic, type_code, length, bolt_length)
 
     # nipple option
     diagnostic = nipple_option(diagnostic, type_code, length)
