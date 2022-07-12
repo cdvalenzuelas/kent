@@ -1,9 +1,7 @@
 import pandas as pd
 
-from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.modules.bom_clenaer.pipes_modifier import pipe_qty
 from src.modules.bom_clenaer.nipples_modifier import nipple_second_size
-from src.clients.cenit.piping_class.cenit_piping_class import cenit_piping_class
 from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 
@@ -14,7 +12,7 @@ def concat_colums(row):
     return f'{spec} {type_code} {first_size} {second_size} {tag}'
 
 
-def demolition_cleaner(demolition_df):
+def demolition_cleaner(demolition_df, piping_class):
     # Llenar los N.A con guines
     demolition_df.fillna('-', inplace=True)
 
@@ -40,9 +38,6 @@ def demolition_cleaner(demolition_df):
     # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
     demolition_df['common_index'] = demolition_df[['SPEC_FILE', 'DB_CODE', 'MAIN_NOM',
                                                    'RED_NOM', 'TAG']].apply(concat_colums, axis=1)
-
-    # Extraer el piping class
-    piping_class = cenit_piping_class()
 
     # Se crean los índices del BOM y del piping class
     # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
@@ -93,7 +88,7 @@ def demolition_cleaner(demolition_df):
 
         print('❌ HAY ELEMENTOS DE DEMOLICIÓN QUE NO TIENEN PESO ASIGNADO.\n')
     else:
-        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASINADO.\n')
+        print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASIGNADO.\n')
 
     # Dejar únicamente las columnas necesarias
     demolition_df = demolition_df[[

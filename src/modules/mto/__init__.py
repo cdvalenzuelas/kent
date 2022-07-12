@@ -2,10 +2,10 @@ from src.modules.bom_clenaer.bom_cleaner import bom_cleaner
 from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 
 
-def mto(bom_df):
+def mto(bom_df, piping_class, piping_class_valves_weights):
 
     # Creación del mto limpio incluyendo la información del piping class
-    mto_df = bom_cleaner(bom_df)
+    mto_df = bom_cleaner(bom_df, piping_class, piping_class_valves_weights)
 
     # Crear registro de items sin identificar
     mto_df_na = mto_df[(mto_df['DESCRIPTION'].isnull())

@@ -13,7 +13,7 @@ def summary(mto_df):
 
     # Agrupar y sumar por cantidad peso y area
     summary_df = mto_df.groupby(['ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
-                                 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'UNITS', 'TAG', 'WEIGHT_PER_UNIT'], as_index=False).agg(
+                                 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'NOTE'], as_index=False).agg(
         TOTAL_WEIGHT=('TOTAL_WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))

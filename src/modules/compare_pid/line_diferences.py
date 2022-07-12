@@ -1,4 +1,5 @@
 def line_diferences(mto_df, pid_df):
+
     # Comparar si las lineas del P&ID se encuentrabn en el BOM
     pid_lines = set(pid_df['LINE_NUM'].unique())
 
@@ -13,7 +14,7 @@ def line_diferences(mto_df, pid_df):
 
     if pid_lines_unique_size > 0 or bom_lines_unique_size > 0:
         print(
-            '❌  HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+            '❌ HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
 
         # Escribir en el archivo las línes que existen en un archivo y en el otro no
         with open('./output/diagnostic_p&id.txt', mode='a') as f:
@@ -39,6 +40,6 @@ Estas líneas son: {bom_lines_unique}. Es posible que estas líneas estén mal n
                 f.write(bom_lines_unique_diacnostic)
     else:
         print(
-            '✅  NO HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+            '✅ NO HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
 
     return (bom_lines_unique, pid_lines_unique)
