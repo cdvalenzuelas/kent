@@ -38,8 +38,8 @@ def co_temp(co_df):
                   (co_df['MANUFACTURING_DESCRIPTION'] == '-') | (co_df['ERECTION_DESCRIPTION'] == '-')]
 
     # Eliminar columnas innecesarias
-    co_df.drop(['LINE_NUM', 'ORDER', 'TYPE', 'FIRST_SIZE_NUMBER',
-                'SECOND_SIZE_NUMBER', 'UNITS', 'TOTAL_WEIGHT', 'QTY', 'SCH', 'FACE', 'RATING', 'UNITS', 'TAG'], inplace=True, axis=1)
+    co_df.drop(['TYPE', 'FIRST_SIZE_NUMBER',
+                'SECOND_SIZE_NUMBER', 'UNITS', 'TOTAL_WEIGHT', 'QTY', 'UNITS'], inplace=True, axis=1)
 
     if co_df.shape[0] == 0:
         print('✅ TODOS LOS ELEMENTOS DEL B.O.M TIENEN RELACIONADOS CANTIDADES DE OBRA\n')

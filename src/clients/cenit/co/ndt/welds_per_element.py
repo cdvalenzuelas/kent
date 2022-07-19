@@ -1,6 +1,6 @@
 # Calcular las soldaduras por cada elementos
 def welds_per_element(row):
-    type_element, type_code, first_size_number, second_size_number, qty, face = row
+    type_element, type_code, first_size_number, second_size_number, qty = row
 
     first_size_number = float(first_size_number)
     second_size_number = float(second_size_number)

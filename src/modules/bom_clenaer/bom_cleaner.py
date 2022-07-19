@@ -30,8 +30,19 @@ def valves_weight(row):
         return weight_y
 
 
+# Arreglar los nombres de de las líneas basdas en si son entrerradas y/o prefabricadas
+def fix_line_num(line_num):
+    line_num = line_num.replace('(U)', '').replace('(P)', '')
+
+    return line_num
+
+
 # Dejar los pesos que vienen en el BOM
 def bom_cleaner(bom, piping_class, piping_class_valves_weights):
+    # Llenar los pesos y longitudes vacías con 0
+    bom['LENGTH'].fillna(0, inplace=True)
+    bom['WEIGHT'].fillna(0, inplace=True)
+
     # Llenar los N.A con guines
     bom.fillna('-', inplace=True)
 
@@ -80,6 +91,17 @@ def bom_cleaner(bom, piping_class, piping_class_valves_weights):
 
     # Creando la columna units
     mto_df['UNITS'] = mto_df['TYPE'].apply(units)
+
+    # Definir si el elemento está enterrado
+    mto_df['UNDERGROUND'] = mto_df['LINE_NUM'].apply(
+        lambda line_num: '(U)' in line_num)
+
+    # Definir si la línea es prefabricada
+    mto_df['PRE_MANUFACTURING'] = mto_df['LINE_NUM'].apply(
+        lambda line_num: '(P)' in line_num)
+
+    # Arreglar los nombres de línea
+    mto_df['LINE_NUM'] = mto_df['LINE_NUM'].apply(fix_line_num)
 
     mto_df.fillna('-', inplace=True)
 

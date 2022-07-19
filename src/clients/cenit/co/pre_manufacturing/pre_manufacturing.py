@@ -5,12 +5,13 @@ from src.clients.cenit.co.utils.utils import common_index, def_note, def_descrip
 
 
 def pre_manufacturing(mto_df, co_df):
-    # Extraer únicamente las columnas necesarias
-    mto_df = mto_df[['TYPE', 'MANUFACTURING_DESCRIPTION', 'TOTAL_WEIGHT']]
-
-    # Eliminar válvulas y elementos que no tienen prefabricación, como bolts, gaskets,
+    # Eliminar válvulas y dejar elementos que cuenten con la propiedad de PRE_MANUFACTURING sea verdadera
     mto_df = mto_df[(mto_df['TYPE'] != 'VL') & (
-        mto_df['MANUFACTURING_DESCRIPTION'] != '-')]
+        mto_df['PRE_MANUFACTURING'] == True)]
+
+    # Extraer únicamente las columnas necesarias
+    mto_df = mto_df[['TYPE', 'MANUFACTURING_DESCRIPTION',
+                     'TOTAL_WEIGHT']]
 
     # Se suman los pesos
     mto_df = mto_df.groupby(['MANUFACTURING_DESCRIPTION'], as_index=False)[
