@@ -40,18 +40,27 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
     # Eliminar columnas innecesarias
     mto_df.drop(['common_index'], axis=1, inplace=True)
 
+    # Mto que será utilizado para CO
+    mto_df_for_co = mto_df.copy()
+
     # Agrupar y sumar por cantidad peso y area
     mto_df = mto_df.groupby(['LINE_NUM', 'SPEC', 'ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE',
                              'FIRST_SIZE_NUMBER', 'SECOND_SIZE', 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING',
-                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'SUPPLY_DESCRIPTION', 'MANUFACTURING_DESCRIPTION',
-                             'ERECTION_DESCRIPTION'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
+                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
         TOTAL_WEIGHT=('WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))
 
-    # Aqui se pueden reaordenar los lsitados
+    # Hacer el sumario para las cantidades de obra
+    mto_df_for_co = mto_df_for_co.groupby(['SPEC', 'TYPE', 'TYPE_CODE', 'DESCRIPTION',
+                                           'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'FACE',
+                                           'UNITS', 'WEIGHT_PER_UNIT', 'SUPPLY_DESCRIPTION', 'MANUFACTURING_DESCRIPTION',
+                                           'ERECTION_DESCRIPTION', 'UNDERGROUND', 'PRE_MANUFACTURING'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
+        TOTAL_WEIGHT=('WEIGHT', sum),
+        AREA=('AREA', sum),
+        QTY=('QTY', sum))
 
     # Resetear el index
     mto_df.reset_index(drop=False)
 
-    return mto_df
+    return (mto_df, mto_df_for_co)

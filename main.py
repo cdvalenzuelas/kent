@@ -41,7 +41,8 @@ if __name__ == '__main__':
     # Si se reconoce algún
     if bom_is_correct:
         # Se crea el MTO
-        mto_df = mto(bom_df, piping_class, piping_class_valves_weights)
+        (mto_df, mto_df_for_co) = mto(
+            bom_df, piping_class, piping_class_valves_weights)
 
         # Comparar con la info del P&ID con el MTO
         mto_df = compare_pid(mto_df, piping_class)
@@ -50,7 +51,7 @@ if __name__ == '__main__':
         hd(mto_df)
 
         # Se crean las cantidades de obra
-        co_df = co(client, mto_df, piping_class)
+        co_df = co(client, mto_df_for_co, piping_class)
 
         # Creación del sumario
         summary_df = summary(mto_df)

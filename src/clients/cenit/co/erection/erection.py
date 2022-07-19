@@ -2,6 +2,7 @@ import pandas as pd
 
 
 from src.clients.cenit.co.utils.utils import common_index, def_note, def_description
+from src.clients.cenit.co.erection.def_erection_description import def_erection_description
 
 
 # Define la cantidad de los elementos nuevos
@@ -18,9 +19,16 @@ def def_qty(row):
 
 
 def erection(mto_df, co_df):
+    # Hacer una copia del df
+    mto_df = mto_df.copy()
+
     # Extraer únicamente las columnas necesarias
     mto_df = mto_df[['TYPE', 'ERECTION_DESCRIPTION',
-                     'TOTAL_WEIGHT', 'QTY']]
+                     'TOTAL_WEIGHT', 'QTY', 'UNDERGROUND', 'PRE_MANUFACTURING']]
+
+    # Redefnir la descripción del montaje en función de si está enterrada o aérea
+    mto_df['ERECTION_DESCRIPTION'] = mto_df[[
+        'ERECTION_DESCRIPTION', 'UNDERGROUND', 'PRE_MANUFACTURING']].apply(def_erection_description, axis=1)
 
     # Se suman las cantidades
     mto_df = mto_df.groupby(['ERECTION_DESCRIPTION'], as_index=False)[
