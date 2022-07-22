@@ -1,3 +1,4 @@
+from cmath import pi
 import pandas as pd
 
 from src.modules.bom_clenaer.pipes_modifier import pipe_qty
@@ -10,6 +11,29 @@ from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 def concat_colums(row):
     spec, type_code, first_size, second_size, tag = row
     return f'{spec} {type_code} {first_size} {second_size} {tag}'
+
+
+# Arreglar los nombres de de las líneas basdas en si son entrerradas y/o prefabricadas
+def fix_line_num(line_num):
+    line_num = line_num.replace('(U)', '').replace('(F)', '')
+
+    return line_num
+
+
+# Definir el peso o el volumen de la tubería a desmantelas o a abandonar
+def def_weight(row):
+    element_type, weight, qty, underground, forgiven, area = row
+
+    if not forgiven:
+        # Si no es tubería olvidada que se cambie su peso
+        return weight * qty
+    else:
+
+        if element_type == 'PP':
+            # Un dies porciento más que el volumen de la tubería
+            return 1.1 * 0.25 * pi * qty * ((area * 0.001) ** 2)
+        else:
+            return 0
 
 
 def demolition_cleaner(demolition_df, piping_class):
@@ -35,7 +59,6 @@ def demolition_cleaner(demolition_df, piping_class):
         ['MARK', 'THK_NOM', 'SIZE', 'DESCRIPTION'], axis=1, inplace=True)
 
     # Se crean los índices del BOM y del piping class
-    # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
     demolition_df['common_index'] = demolition_df[['SPEC_FILE', 'DB_CODE', 'MAIN_NOM',
                                                    'RED_NOM', 'TAG']].apply(concat_colums, axis=1)
 
@@ -47,6 +70,17 @@ def demolition_cleaner(demolition_df, piping_class):
     # Hacer un join entre el bom y el piping class para generar el mto
     demolition_df = pd.merge(demolition_df, piping_class,
                              how='left', on='common_index')
+
+    # Definir si el elemento está enterrado
+    demolition_df['UNDERGROUND'] = demolition_df['LINE_NUM'].apply(
+        lambda line_num: '(U)' in line_num)
+
+    # Definir si la línea es prefabricada
+    demolition_df['FORGIVEN'] = demolition_df['LINE_NUM'].apply(
+        lambda line_num: '(F)' in line_num)
+
+    # Arreglar los nombres de línea
+    demolition_df['LINE_NUM'] = demolition_df['LINE_NUM'].apply(fix_line_num)
 
     # A las válvulas se les asigna otro item de demolición
     demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df.apply(
@@ -66,7 +100,7 @@ def demolition_cleaner(demolition_df, piping_class):
     else:
         print('✅ TODOS LOS ELEMENTOS DEL ARCHIVO demolition.csv TIENEN PROPIEDADES DE DEMOLICIÓN Y ESTÁN EN EL PIPING CLASS\n')
 
-        # Eliminando columnas innecesarias
+    # Eliminando columnas innecesarias
     demolition_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',
                         'MAIN_NOM', 'RED_NOM', 'TAG_x', 'DESCRIPTION'], axis=1, inplace=True)
 
@@ -92,9 +126,9 @@ def demolition_cleaner(demolition_df, piping_class):
 
     # Dejar únicamente las columnas necesarias
     demolition_df = demolition_df[[
-        'TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION', 'QTY']]
+        'LINE_NUM', 'TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION', 'QTY', 'UNDERGROUND', 'FORGIVEN', 'AREA']]
 
-    demolition_df['WEIGHT'] = demolition_df['WEIGHT'] * \
-        demolition_df['QTY']
+    demolition_df['WEIGHT'] = demolition_df[['TYPE', 'WEIGHT', 'QTY',
+                                             'UNDERGROUND', 'FORGIVEN', 'AREA']].apply(def_weight, axis=1)
 
     return demolition_df

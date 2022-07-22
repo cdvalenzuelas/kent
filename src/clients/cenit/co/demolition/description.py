@@ -4,7 +4,7 @@ import re
 
 
 def def_demolition_description(row, method):
-    type_element, demolition_description, weight, qty = row
+    line, type_element, demolition_description, weight, underground, forgiven = row
 
     if type_element == 'VL':
 
@@ -21,7 +21,17 @@ def def_demolition_description(row, method):
         else:
             return 'DESMANTELAMIENTO DE VÁLVULA CUYO PESO SEA > 6.000 KG (INCLUYE TRANSPORTE Y DISPOSICIÓN FINAL)'
     else:
+        # Si el desmantelamiento se ará con oxicorte se debe modificar la descripción
         if method == 'hot':
-            return re.sub('CORTE EN FRÍO', 'OXICORTE', demolition_description)
-        else:
-            return demolition_description
+            demolition_description = re.sub(
+                'CORTE EN FRÍO', 'OXICORTE', demolition_description)
+
+        #
+        if underground:
+            demolition_description = re.sub(
+                'AÉREAS', 'ENTERRADAS', demolition_description)
+
+        if forgiven:
+            demolition_description = 'ABANDONO TECNICO DE TUBERIA ENTERRADA'
+
+    return demolition_description
