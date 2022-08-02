@@ -1,440 +1,112 @@
-ITEM 1: TIE-IN-003(P) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 2: TIE-IN-003(P) , GAS, 10"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 3: TIE-IN-003(P) , BOLT, 1"x170mm (10", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 170.0mm. Se deben revisar los isométricos 
-
-ITEM 4: TIE-IN-003(P) , BE, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-
-ITEM 5: CS3SA1-10"-PRO-1-4-008 , BE, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-
-ITEM 6: CS3SA1-10"-PRO-1-4-008 , WOL, 10"x4"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 7: CS3SA1-10"-PRO-1-4-008 , WOL, 10"x3"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 8: CS3SA1-10"-PRO-1-4-008 , SOL, 10"x1/2"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 9: CS3SA1-10"-PRO-1-4-008 , SOL, 10"x1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 10: CS3SA1-10"-PRO-1-4-008 , SOL, 10"x3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 11: CS3SA1-10"-PRO-1-4-008 , BE, 4"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 12: CS3SA1-10"-PRO-1-4-008 , WNK, 4"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 13: CS3SA1-10"-PRO-1-4-008(U) , GAS, 4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 14: CS3SA1-10"-PRO-1-4-008(U) , BOLT, 3/4"x125mm (4", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
-
-ITEM 15: CS3SA1-10"-PRO-1-4-008(U) , PE, 1"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 16: CS3SA1-10"-PRO-1-4-008(U) , BAL, 1"
+ITEM 1: CS2SA1-1"-TPR-1-5-018 , BAL, 1"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 17: CS3SA1-10"-PRO-1-4-008(U) , BE, 3"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 18: CS3SA1-10"-PRO-1-4-008(U) , WNK, 3"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 19: CS3SA1-10"-PRO-1-4-008(U)(P) , GAS, 3"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 20: CS3SA1-10"-PRO-1-4-008(U)(P) , BOLT, 3/4"x120mm (3", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 120.0mm. Se deben revisar los isométricos 
-
-ITEM 21: CS3SA1-10"-PRO-1-4-008(U)(P) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 22: CS3SA1-10"-PRO-1-4-008(U)(P) , GAS, 10"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 23: CS3SA1-10"-PRO-1-4-008(U)(P) , BOLT, 1"x170mm (10", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 170.0mm. Se deben revisar los isométricos 
-
-ITEM 24: SUCCIÓN BB-2602(R) , WNK, 12"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 25: SUCCIÓN BB-2602(R) , GAS, 12"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 26: SUCCIÓN BB-2602(R) , BOLT, 1-1/8"x185mm (12", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 185.0mm. Se deben revisar los isométricos 
-
-ITEM 27: SUCCIÓN BB-2602(R) , BE, 12"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-
-ITEM 28: SUCCIÓN BB-2602(R) , CRE, 12"x10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30x30.
-
-ITEM 29: SUCCIÓN BB-2602(R) , BE, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-
-ITEM 30: SUCCIÓN BB-2602(R) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
-
-ITEM 31: SUCCIÓN BB-2602(R) , GAS, 10"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
-
-ITEM 32: SUCCIÓN BB-2602(R) , BOLT, 7/8"x125mm (10", #150)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
-
-ITEM 33: SUCCIÓN BB-2602(R) , SOL, 12"x1/2"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 34: DESCARGA BB-2602(R) , WNK, 8"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 35: DESCARGA BB-2602(R) , GAS, 8"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 36: DESCARGA BB-2602(R) , BOLT, 7/8"x150mm (8", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 150.0mm. Se deben revisar los isométricos 
-
-ITEM 37: DESCARGA BB-2602(R) , BE, 8"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-
-ITEM 38: DESCARGA BB-2602(R) , CRE, 10"x8"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20x20.
-
-ITEM 39: DESCARGA BB-2602(R) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 40: DESCARGA BB-2602(R) , GAS, 10"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 41: DESCARGA BB-2602(R) , BOLT, 1"x170mm (10", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 170.0mm. Se deben revisar los isométricos 
-
-ITEM 42: DESCARGA BB-2602(R) , SOL, 10"x1/2"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 43: DESCARGA BB-2602(R) , SOL, 8"x1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 44: DESCARGA BB-2602(R) , SOL, 8"x3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 45: ALIVIO DESCARGA BB-2602(R) UPSTREAM , PE, 3/4"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 46: ALIVIO DESCARGA BB-2602(R) UPSTREAM , CPL, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 47: ALIVIO DESCARGA BB-2602(R) UPSTREAM , NIP, 3/4"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 48: ALIVIO DESCARGA BB-2602(R) UPSTREAM , SW, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 49: ALIVIO DESCARGA BB-2602(R) UPSTREAM , GAS, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 50: ALIVIO DESCARGA BB-2602(R) UPSTREAM , BOLT, 5/8"x85mm (3/4", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
-
-ITEM 51: ALIVIO DESCARGA BB-2602(R) UPSTREAM , BAL, 3/4"
+ITEM 2: CS2SA1-1"-TPR-1-5-018 , BAL, 3/4"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 52: SUCCIÓN BB-2601(R) , WNK, 12"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 53: SUCCIÓN BB-2601(R) , GAS, 12"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 54: SUCCIÓN BB-2601(R) , BOLT, 1-1/8"x185mm (12", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 185.0mm. Se deben revisar los isométricos 
-
-ITEM 55: SUCCIÓN BB-2601(R) , BE, 12"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-
-ITEM 56: SUCCIÓN BB-2601(R) , CRE, 12"x10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30x30.
-
-ITEM 57: SUCCIÓN BB-2601(R) , BE, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-
-ITEM 58: SUCCIÓN BB-2601(R) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 30.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
-
-ITEM 59: SUCCIÓN BB-2601(R) , GAS, 10"
+ITEM 3: CS2SA1-10"-PRO-1-6-015 , CHS, 10"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 60: SUCCIÓN BB-2601(R) , BOLT, 7/8"x125mm (10", #150)
+ITEM 4: CS2SA1-10"-PRO-1-6-016 , CHS, 10"
 ---------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 125.0mm. Se deben revisar los isométricos 
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 61: SUCCIÓN BB-2601(R) , SOL, 12"x1/2"
+ITEM 5: CS2SA1-2"-DRE-1-6-021 , BAL, 2"
 ---------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 62: DESCARGA BB-2601(R) , WNK, 8"
+ITEM 6: CS2SA1-24"-PRO-1-6-011 , CHS, 24"
 ---------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 63: DESCARGA BB-2601(R) , GAS, 8"
+ITEM 7: CS2SA1-24"-PRO-1-6-012 , GAT, 24"
 ---------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 64: DESCARGA BB-2601(R) , BOLT, 7/8"x150mm (8", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 150.0mm. Se deben revisar los isométricos 
-
-ITEM 65: DESCARGA BB-2601(R) , BE, 8"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-
-ITEM 66: DESCARGA BB-2601(R) , CRE, 10"x8"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20x20.
-
-ITEM 67: DESCARGA BB-2601(R) , WNK, 10"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 68: DESCARGA BB-2601(R) , GAS, 10"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 69: DESCARGA BB-2601(R) , BOLT, 1"x170mm (10", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 170.0mm. Se deben revisar los isométricos 
-
-ITEM 70: DESCARGA BB-2601(R) , SOL, 10"x1/2"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 71: DESCARGA BB-2601(R) , SOL, 8"x1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 72: DESCARGA BB-2601(R) , SOL, 8"x3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 73: ALIVIO DESCARGA BB-2601(R) UPSTREAM , PE, 3/4"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 74: ALIVIO DESCARGA BB-2601(R) UPSTREAM , CPL, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 75: ALIVIO DESCARGA BB-2601(R) UPSTREAM , NIP, 3/4"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 76: ALIVIO DESCARGA BB-2601(R) UPSTREAM , SW, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 77: ALIVIO DESCARGA BB-2601(R) UPSTREAM , GAS, 3/4"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
-
-ITEM 78: ALIVIO DESCARGA BB-2601(R) UPSTREAM , BOLT, 5/8"x85mm (3/4", #300)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 85.0mm. Se deben revisar los isométricos 
-
-ITEM 79: ALIVIO DESCARGA BB-2601(R) UPSTREAM , BAL, 3/4"
+ITEM 8: CS2SA1-24"-PRO-1-6-013 , BAL, 3/4"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 80: DRENAJE DESCARGA BB-2601(R) , PE, 1"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 81: DRENAJE DESCARGA BB-2601(R) , BAL, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
-
-ITEM 82: DRENAJE DESCARGA BB-2601(R) , NIP, 1"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 83: DRENAJE DESCARGA BB-2602(R) , PE, 1"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 84: DRENAJE DESCARGA BB-2602(R) , BAL, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
-
-ITEM 85: DRENAJE DESCARGA BB-2602(R) , NIP, 1"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 86: CABEZAL DRENAJES BOMBAS (DESCARGAS) , PE, 1"
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 87: CABEZAL DRENAJES BOMBAS (DESCARGAS) , 45L, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 88: CABEZAL DRENAJES BOMBAS (DESCARGAS) , TEE, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 89: CABEZAL DRENAJES BOMBAS (DESCARGAS) , SOL, 2"x1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 90: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , SW, 1"
+ITEM 9: CS2SA1-24"-PRO-1-6-013 , GAT, 24"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 91: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , GAS, 1"
+ITEM 10: CS2SA1-24"-PRO-1-6-013 , BAL, 2"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 92: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , BOLT, 1/2"x75mm (1", #150)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 75.0mm. Se deben revisar los isométricos 
-
-ITEM 93: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , NIP, 1"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 94: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , CPL, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 95: ALIVIO DESCARGA BB-2601(R) DOWNSTREAM , BAL, 1"
+ITEM 11: CS2SA1-24"-PRO-1-6-014 , BAL, 1"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 96: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , SW, 1"
+ITEM 12: CS2SA1-24"-PRO-1-6-014 , BAL, 6"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 97: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , GAS, 1"
+ITEM 13: CS2SA1-4"-PRO-1-6-017 , BAL, 4"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 98: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , BOLT, 1/2"x75mm (1", #150)
----------------------------------------
-* La longitud de los pernos no coincide, en el BOM es de 100.0mm y en el piping_class es de 75.0mm. Se deben revisar los isométricos 
-
-ITEM 99: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , NIP, 1"x100mm
----------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
-
-ITEM 100: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , CPL, 1"
----------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
-
-ITEM 101: ALIVIO DESCARGA BB-2602(R) DOWNSTREAM , BAL, 1"
+ITEM 14: CS2SA1-8"-PRO-1-1-019 , BAL, 1"
 ---------------------------------------
 EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 102: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , PE, 1"
+ITEM 15: CS2SA1-8"-PRO-1-1-019 , BAL, 3/4"
 ---------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 103: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , 45L, 1"
+ITEM 16: CS2SA1-8"-PRO-1-1-019 , CHS, 8"
 ---------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 104: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , TEE, 1"
+ITEM 17: CS2SA1-8"-PRO-1-9-020 , BAL, 2"
 ---------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 105: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , TEE, 2"
+ITEM 18: CS2SA1-8"-PRO-1-9-020 , BAL, 3/4"
 ---------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 40.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
 
-ITEM 106: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , NIP, 1"x100mm
+ITEM 19: CS2SA1-8"-PRO-1-9-020 , CHS, 8"
 ---------------------------------------
-EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 80.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 
-ITEM 107: CABEZAL ALIVIOS BOMBAS (DESCARGAS) , CPL, 1"
+ITEM 20: CS2SA1-8"-PRO-1-9-020 , GAT, 8"
 ---------------------------------------
-EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 3000.
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 21: CS2SA1-8"-PRO-1-9-022 , BAL, 3/4"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 800.
+
+ITEM 22: VALVULAS TANQUE , BAL, 2"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 23: VALVULAS TANQUE , BAL, 4"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 24: VALVULAS TANQUE , BAL, 6"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 25: CS2SA1-2"-DRE-1-1-025 , GLB, 2"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 26: CS2SA1-6"-DRE-1-1-024 , GLB, 6"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 27: CS2SA1-6"-DRE-1-1-023 , GLB, 6"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
+
+ITEM 28: PIT 0707 , BAL, 2"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 150.
 

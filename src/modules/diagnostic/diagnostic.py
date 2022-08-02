@@ -41,10 +41,23 @@ def diagnostic(mto_df):
     mto_df.fillna('-', inplace=True)
 
     mto_df = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
-                    'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH']]
+                    'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH', 'TAG_y']]
+
+    # Crear un diccionario con las diferencias o diagnóstico
+    diagnostic_dict = {
+        'index': [],
+        'description_spec': [],
+        'description_piping': [],
+        'weight_spec': [],
+        'weight_piping': [],
+        'bolt_length_spec': [],
+        'bolt_length_piping': [],
+        'sch_piping': [],
+        'rating_piping': []
+    }
 
     mto_df['INDEX'] = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
-                              'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH']].apply(compare, axis=1)
+                              'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH', 'TAG_y']].apply(compare, diagnostic_dict=diagnostic_dict, axis=1)
 
     diagnostic_length = 0
 

@@ -1,3 +1,5 @@
+import pandas as pd
+
 from src.utils.normalize_string import normalize_string
 from src.modules.diagnostic.compare.description import description
 from src.modules.diagnostic.compare.weight import weight
@@ -12,8 +14,8 @@ from src.modules.diagnostic.write.main_diacnostic import main_diacnostic
 from src.modules.diagnostic.write.second_diacnostic import second_diacnostic
 
 
-def compare(row):
-    item, line_num, type_code, short_desc, short_description, weight_x, weight_y, length, bolt_length, qty, bolt_weight, first_size, bolt_diameter, second_size, rating, shc = row
+def compare(row, diagnostic_dict):
+    item, line_num, type_code, short_desc, short_description, weight_x, weight_y, length, bolt_length, qty, bolt_weight, first_size, bolt_diameter, second_size, rating, shc, tag = row
 
     # Cambiar las descripciones
     short_desc_2 = normalize_string(short_desc)
@@ -30,16 +32,20 @@ def compare(row):
     diagnostic = ''
     diagnostic_2 = ''
 
+    # Crear indice
+    diagnostic_dict['index'].append('-')
+
     # Ver diferencias en descripciones
-    diagnostic_2 = description(diagnostic_2, short_desc_2,
-                               short_description_2, short_desc)
+    diagnostic_2, diagnostic_dict = description(diagnostic_2, short_desc_2,
+                                                short_description_2, short_desc, diagnostic_dict)
 
     # diferencias en pesos
-    diagnostic_2 = weight(diagnostic_2, type_code,
-                          weight_x, weight_y, bolt_weight, qty, length)
+    diagnostic_2, diagnostic_dict = weight(diagnostic_2, type_code,
+                                           weight_x, weight_y, bolt_weight, qty, length, diagnostic_dict)
 
     # bolts length
-    diagnostic = def_bolt_length(diagnostic, type_code, length, bolt_length)
+    diagnostic, diagnostic_dict = def_bolt_length(
+        diagnostic, type_code, length, bolt_length, diagnostic_dict)
 
     # nipple option
     diagnostic = nipple_option(diagnostic, type_code, length)
@@ -48,12 +54,15 @@ def compare(row):
     diagnostic = wafer_bolts(diagnostic, type_code)
 
     # Comparar sch
-    diagnostic = def_sch(diagnostic, short_desc_2,
-                         short_description_2, type_code, shc)
+    diagnostic, diagnostic_dict = def_sch(diagnostic, short_desc_2,
+                                          short_description_2, type_code, shc, diagnostic_dict)
 
     # Comparar el rating
-    diagnostic = def_rating(diagnostic, short_desc_2,
-                            short_description_2, rating, type_code)
+    diagnostic, diagnostic_dict = def_rating(diagnostic, short_desc_2,
+                                             short_description_2, rating, type_code, diagnostic_dict)
+
+    # print(diagnostic_dict)
+    print(pd.DataFrame(diagnostic_dict))
 
     # Main diagnostic
     main_diacnostic(diagnostic, short_description, item,

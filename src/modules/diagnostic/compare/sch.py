@@ -1,7 +1,7 @@
 import re
 
 
-def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch):
+def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch, diagnostic_dict):
     sch_in_bom = False
     sch_in_piping_class = False
     sch_diacnostic = ''
@@ -37,9 +37,15 @@ def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch):
 
         # Si hay diferencias retornar el diagnóistico
         if sch_diacnostic != '':
-            return mto_diagnostic + sch_diacnostic
+            diagnostic_dict['sch_piping'].append(real_sch)
+
+            return (mto_diagnostic + sch_diacnostic, diagnostic_dict)
         else:
-            return mto_diagnostic
+            diagnostic_dict['sch_piping'].append(None)
+
+            return (mto_diagnostic, diagnostic_dict)
 
     else:
-        return mto_diagnostic
+        diagnostic_dict['sch_piping'].append(None)
+
+        return (mto_diagnostic, diagnostic_dict)

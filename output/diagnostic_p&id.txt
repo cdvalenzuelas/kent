@@ -1,10 +1,9 @@
 
-Existen 9 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
-Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
-Estas líneas son: {'CS1SC2-4"-SCI-7-7-005', 'CS1SC2-6"-SCI-7-7-002', 'CS1SC2-6"-SCI-7-7-006', 'CS1SC2-6"-SCI-7-7-004', 'CS1SC2-3/4"-SCI-7-7-008', 'CS1SC2-6"-SCI-7-7-003', '4"-TIE-IN-013', 'CS1SC2-4"-SCI-7-7-007', 'CS1SC2-8"-SCI-7-7-001'}. Es posible que estas líneas estén mal nombradas en la 
-maqueta o que estas líneas no se encuentren ruteadas.
-                
-Existen 14 líneas en el B.O.M que no existe en el P&ID.
-Es probable que estén símplemente mal nombradas y sea necesario rectificar.
-Estas líneas son: {'SUCCIÓN BB-2601(R)', 'ALIVIO DESCARGA BB-2602(R) DOWNSTREAM', 'TIE-IN-003', 'ALIVIO DESCARGA BB-2601(R) UPSTREAM', 'ALIVIO DESCARGA BB-2602(R) UPSTREAM', 'CABEZAL ALIVIOS BOMBAS (DESCARGAS)', 'DRENAJE DESCARGA BB-2601(R)', 'CABEZAL DRENAJES BOMBAS (DESCARGAS)', 'ALIVIO DESCARGA BB-2601(R) DOWNSTREAM', 'CS3SA1-10"-PRO-1-4-008', 'DESCARGA BB-2602(R)', 'DRENAJE DESCARGA BB-2602(R)', 'DESCARGA BB-2601(R)', 'SUCCIÓN BB-2602(R)'}. Es posible que estas líneas estén mal nombradas en la maqueta.
-                
+La línea CS2SA1-24"-PRO-1-6-012 contiene 1,00 válvulas de typo GAT, diámetro 24", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-24"-PRO-1-6-012 contiene 1,00 válvulas de tipo CHS, diámetro 24", rating 150 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        

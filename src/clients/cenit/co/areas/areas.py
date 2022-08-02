@@ -15,7 +15,6 @@ def def_total_area(row):
     area = float(area)
 
     if type_element == 'PP':
-        print(area)
         return pi*area*qty/1000
     else:
         return area * qty
