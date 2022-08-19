@@ -1,5 +1,22 @@
 from src.modules.bom_clenaer.bom_cleaner import bom_cleaner
 from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
+import numpy as np
+
+
+# Calcular el área total de cada elemento
+def def_total_area(row):
+    type_element, area, qty = row
+
+    if type_element == '-':
+        return 0
+
+    area = float(area)
+    qty = float(qty)
+
+    if type_element == 'PP':
+        return 1.1 * 0.25 * np.pi * qty * (area / 1000) ** 2
+    else:
+        return 1.1 * area * qty
 
 
 def mto(bom_df, piping_class, piping_class_valves_weights):
@@ -50,6 +67,12 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
         TOTAL_WEIGHT=('WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))
+
+    # Se calcula el área total por elemento
+    mto_df_for_co['AREA'] = mto_df_for_co[[
+        'TYPE', 'AREA', 'QTY']].apply(def_total_area, axis=1)
+
+    mto_df_for_co.to_excel('co.xlsx')
 
     # Hacer el sumario para las cantidades de obra
     mto_df_for_co = mto_df_for_co.groupby(['SPEC', 'TYPE', 'TYPE_CODE', 'DESCRIPTION',

@@ -56,6 +56,8 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     summary_df['WEIGHT_PER_UNIT'] = summary_df[['WEIGHT_PER_UNIT', 'TYPE']].apply(
         df_round, axis=1)
 
+    co_df.to_csv('co.csv')
+
     co_df['QTY'] = co_df[['QTY', 'CODE']].apply(df_round, axis=1)
 
     # Cambiar puntos por comas en todos los archivos de salida

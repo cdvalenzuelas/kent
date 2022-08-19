@@ -2,7 +2,9 @@ import pandas as pd
 
 
 from src.utils.replace_dot_by_comma import replace_dot_by_comma
-from src.modules.compare_pid.valves_diferences.diacnostic import diacnostic
+from src.modules.compare_pid.valves_diferences.no_bom_valves import no_bom_valves
+from src.modules.compare_pid.valves_diferences.no_pid_valves import no_pid_valves
+from src.modules.compare_pid.valves_diferences.quantity_and_rating_diferences import quantity_and_rating_diferences
 
 
 # Función para hacer un merge
@@ -66,64 +68,41 @@ def valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df):
     # Hacer el Merge
     merge_df = pd.merge(mto_df, pid_df, how='outer', on='common_index')
 
-    # Dejar únicamente las que no cinciden, es decir elminar las válvulas que coinciden en todo
-    merge_df = merge_df[(merge_df['QTY_x'].isnull()) |
-                        (merge_df['QTY_y'].isnull())]
-
-    # Si no hay diferencias (según el paso anterior) en válvulas dejar de hacer el análisis
-    if merge_df.shape[0] == 0:
-        print(
-            '✅ NO HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
-        return
-
     # Eliminar el common_index
     merge_df.drop(['common_index'], inplace=True, axis=1)
 
-    # Redefinir MTO
-    mto_df = merge_df[merge_df['LINE_NUM_x'].notnull()]
+    # De aquí en adelante se van a diferenciar tres grupos de válvulas
 
-    mto_df = mto_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
-                    'RATING_x', 'QTY_x', 'TAG_x']]
+    # Válvulas que aparecen el el P&ID pero no en el BOM
+    merge_df_group_1 = merge_df[(merge_df['LINE_NUM_x'].isnull())]
 
-    mto_df.rename(columns={'LINE_NUM_x': 'LINE_NUM', 'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER',
-                           'RATING_x': 'RATING', 'QTY_x': 'QTY', 'TAG_x': 'TAG'}, inplace=True)
+    if merge_df_group_1.shape[0] > 0:
+        merge_df_group_1['common_index'] = merge_df_group_1[[
+            'LINE_NUM_y', 'QTY_y', 'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'RATING_y', 'SPEC_y']].apply(no_bom_valves, axis=1)
 
-    # Redefinir P&ID
-    pid_df = merge_df[merge_df['LINE_NUM_x'].isnull()]
+    # Válvulas que aparecen en el BOM pero no en el P&ID
+    merge_df_group_2 = merge_df[(merge_df['LINE_NUM_y'].isnull())]
 
-    pid_df = pid_df[['LINE_NUM_y', 'SPEC_y', 'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y',
-                    'RATING_y', 'QTY_y', 'TAG_y']]
+    if merge_df_group_2.shape[0] > 0:
+        merge_df_group_2['common_index'] = merge_df_group_2[[
+            'LINE_NUM_x', 'QTY_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x', 'RATING_x', 'SPEC_x']].apply(no_pid_valves, axis=1)
 
-    pid_df.rename(columns={'LINE_NUM_y': 'LINE_NUM', 'SPEC_y': 'SPEC', 'TYPE_CODE_y': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_y': 'FIRST_SIZE_NUMBER',
-                           'RATING_y': 'RATING', 'QTY_y': 'QTY', 'TAG_y': 'TAG'}, inplace=True)
+    # Válvulas que aparecen en los dos lados
+    merge_df_group_3 = merge_df[(merge_df['LINE_NUM_y'].notnull()) & (
+        merge_df['LINE_NUM_x'].notnull())]
 
-    # Crer un índice para comparar si hay hay diferencias en cantidades y ratings
-    mto_df['common_index'] = mto_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                    'FIRST_SIZE_NUMBER', 'TAG']].apply(common_index_2, axis=1)
+    if merge_df_group_3.shape[0] > 0:
+        merge_df_group_3['common_index'] = merge_df_group_3[[
+            'LINE_NUM_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x', 'SPEC_x', 'QTY_x', 'QTY_y', 'RATING_x', 'RATING_y']].apply(quantity_and_rating_diferences, axis=1)
 
-    pid_df['common_index'] = pid_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                    'FIRST_SIZE_NUMBER', 'TAG']].apply(common_index_2, axis=1)
+    # Concatenar todos los dtataframes
+    merge_df = pd.concat(
+        [merge_df_group_1, merge_df_group_2, merge_df_group_3], axis=0)
 
-    # Hacer el nuevo merge
-    merge_df = pd.merge(mto_df, pid_df, how='outer', on='common_index')
-
-    # Si la diferencia radica en cantidades y ratings, aún así hay diferencias
-    if merge_df.shape[0] == 0:
-        print(
-            '✅ NO HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
-        return
-
-    # Si hay diferencias entre ratings y cantidades seguir el análisis
-
-    # Hacer un diagnóstico sobre cada una de las válvulas
-    merge_df['common_index'] = merge_df[['LINE_NUM_x', 'SPEC_x', 'TYPE_CODE_x', 'FIRST_SIZE_NUMBER_x',
-                                        'RATING_x', 'QTY_x', 'LINE_NUM_y', 'SPEC_y',
-                                         'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'RATING_y', 'QTY_y']].apply(diacnostic, axis=1, pid_lines_unique=pid_lines_unique, bom_lines_unique=bom_lines_unique)
-
-    # Dejar únicamente las válvulas que tuvieron diferencias
+    # Ver cuantas válvulas tienen diferencias
     merge_df = merge_df[(merge_df['common_index'] == 'difference')]
 
-    # Si no hay diferencias de ningún tipo, parar el análisis
+    # Si no hay diferencias (según el paso anterior) en válvulas dejar de hacer el análisis
     if merge_df.shape[0] == 0:
         print(
             '✅ NO HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
@@ -131,3 +110,5 @@ def valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df):
     else:
         print(
             '❌ HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
+
+    return

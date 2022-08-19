@@ -3,25 +3,9 @@ import pandas as pd
 
 from src.utils.normalize_string import normalize_string
 
-
-# Calcular el área total
-def def_total_area(row):
-    type_element, qty, area = row
-
-    if type_element == '-':
-        return 0
-
-    qty = float(qty)
-    area = float(area)
-
-    if type_element == 'PP':
-        print(area)
-        return pi*area*qty/1000
-    else:
-        return area * qty
-
-
 # Insertar el valor calculado en el documento de cantidades de obra
+
+
 def def_qty(row, cells_list, total):
     description, qty = row
 
@@ -36,15 +20,10 @@ def areas(mto_df, co_df):
     mto_df = mto_df.copy()
     co_df = co_df.copy()
 
-    # Obtener únicamente las columnas innecesarias
-    mto_df = mto_df[['TYPE', 'TYPE_CODE', 'QTY', 'AREA']]
-
-    # Definir área total
-    mto_df['TOTAL_AREA'] = mto_df[['TYPE', 'QTY', 'AREA']].apply(
-        def_total_area, axis=1)
-
     # Calcular el área total
-    total = round(mto_df['TOTAL_AREA'].sum(), 2)
+    total = round(mto_df['AREA'].sum(), 2)
+
+    print('total-->', total)
 
     # Insertar el valor calculado en el documento de cantidades de obra
     cell_1 = normalize_string(
