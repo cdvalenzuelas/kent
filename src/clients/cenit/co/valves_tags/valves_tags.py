@@ -3,21 +3,28 @@ import pandas as pd
 
 
 from src.utils.normalize_string import normalize_string
-from src.clients.cenit.co.utils.utils import common_index, def_note, def_qty
+from src.clients.cenit.co.utils.utils import common_index, def_note
+
+
+# (VALEC17) Definir cantidades
+def def_qty(row):
+    qty_x, qty_y = row
+
+    return qty_x if qty_y == '-' else qty_y
 
 
 # (VALEC17) Definir tags de válvulas
 def def_valves_tags(size):
     if size < 2:
-        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO MENOR DE 2”'
+        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO MENOR DE 2"'
     elif size >= 2 and size <= 6:
-        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 2-6”'
+        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 2-6"'
     elif size >= 8 and size <= 14:
-        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 8-14”'
+        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 8-14"'
     elif size >= 16 and size <= 30:
-        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 16-30”'
+        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO DE 16-30"'
     else:
-        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO MAYOR A 30”'
+        return 'DEMARCACIÓN DE TUBERÍAS Y VÁLVULAS DIÁMETRO MAYOR A 30"'
 
 
 def valves_tags(mto_df, co_df):
@@ -43,6 +50,8 @@ def valves_tags(mto_df, co_df):
     # (VALEC17) Hacer el merge
     co_df = pd.merge(
         co_df, mto_df, on='common_index', how='outer')
+
+    co_df.to_csv('tags.csv')
 
     # (VALEC17) Llenar celdas vacías
     co_df.fillna('-', inplace=True)
