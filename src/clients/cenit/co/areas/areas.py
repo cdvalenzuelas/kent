@@ -23,8 +23,6 @@ def areas(mto_df, co_df):
     # Calcular el área total
     total = round(mto_df['AREA'].sum(), 2)
 
-    print('total-->', total)
-
     # Insertar el valor calculado en el documento de cantidades de obra
     cell_1 = normalize_string(
         'LIMPIEZA CON CHORRO DE ABRASIVO GRADO METAL CASI BLANCO SEGÚN NORMA SSPC-SP 10')

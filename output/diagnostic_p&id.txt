@@ -1,6 +1,262 @@
 
-Existen 2 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
+Existen 56 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
 Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
-Estas líneas son: {'CS1SC2-10"-SCI-TIE-IN-004', 'CS1SC2-24"-SCI-TIE-IN-130'}. Es posible que estas líneas estén mal nombradas en la 
+Estas líneas son: {'CS1SC2-3"-SCI-TIE-IN-008', 'CS1SC2-3"-SCI-0-7-014', 'CS1SC2-8"-SCI-0-7-006', 'CS1SC2-3/4"-SCI-0-7-036', 'CS1SC2-4"-SCI-0-7-027', 'CS1SC2-1/2"-SCI-0-7-034', 'CS1SC2-4"-SCI-TIE-IN-054', 'CS1SC2-6"-SCI-0-7-005', 'CS1SC2-4"-SCI-TIE-IN-040/041', 'CS1SC2-1-1/2"-SCI-TIE-IN-013', 'CS1SC2-8"-SCI-0-7-001', 'CS1SC2-6"-SCI-TIE-IN-048/049', 'CS1SC2-1/2"-SCI-0-7-033', 'CS1SC2-6"-SCI-TIE-IN-053', 'CS1SC2-4"-SCI-0-7-030', 'CS1SC2-6"-SCI-0-7-010', 'CS1SC2-6"-SCI-0-7-032', 'CS1SC2-6"-SCI-0-7-009', 'CS1SC2-6"-SCI-0-7-008', 'CS1SC2-3"-SCI-0-7-016', 'CS1SC2-2-1/2"-SCI-TIE-IN-014', 'CS1SC2-2"-SCI-0-7-018', 'CS1SC2-4"-SCI-TIE-IN-028', 'CS1SC2-6"-SCI-0-7-003', 'CS1SC2-1"-SCI-0-7-013', 'CS1SC2-8"-SCI-0-7-004', 'CS1SC2-4"-SCI-TIE-IN-043', 'CS1SC2-8"-SCI-TIE-IN-055/056', 'CS1SC2-2"-SCI-0-7-021', 'CS1SC2-6"-SCI-0-7-036', 'CS1SC2-1"-SCI-0-7-023', 'CS1SC2-4"-SCI-TIE-IN-059/060', 'CS1SC2-4"-SCI-TIE-IN-042', 'CS1SC2-1"-SCI-0-7-024', 'CS1SC2-2"-SCI-0-7-015', 'CS1SC2-6"-SCI-0-7-029', 'CS1SC2-1"-SCI-0-7-019', 'CS1SC2-3"-SCI-0-7-012', 'CS1SC2-6"-SCI-0-7-031', 'CS1SC2-2-1/2"-SCI-TIE-IN-012', 'CS1SC2-1-1/2"-SCI-TIE-IN-011', 'CS1SC2-4"-SCI-TIE-IN-023', 'CS1SC2-8"-SCI-TIE-IN-051/052', 'CS1SC2-1"-SCI-0-7-022', 'CS1SC2-1"-SCI-0-7-035', 'CS1SC2-4"-SCI-0-7-025', 'CS1SC2-3"-SCI-0-7-020', 'CS1SC2-4"-SCI-TIE-IN-050', 'CS1SC2-6"-SCI-0-7-026', 'CS2SA1-2"-SCI-0-7-001', 'CS1SC2-4"-SCI-0-7-028', 'CS1SC2-8"-SCI-0-7-007', 'CS1SC2-4"-SCI-TIE-IN-022', 'CS1SC2-3"-SCI-0-7-017', 'CS1SC2-3"-SCI-TIE-IN-009/010', 'CS1SC2-6"-SCI-0-7-002'}. Es posible que estas líneas estén mal nombradas en la 
 maqueta o que estas líneas no se encuentren ruteadas.
                 
+Existen 32 líneas en el B.O.M que no existe en el P&ID.
+Es probable que estén símplemente mal nombradas y sea necesario rectificar.
+Estas líneas son: {'10"-150_M', '2"-150_M', '10"-FWA-150# ', '10"-150', '10"-CS1SC2', '16"-150_M', '6"-FWA-150#', '10"-FWA-150#', '3"-150', '16"-FWA-150#', '3"-150_M', '4"-FWA-150#', '8"-150', '4"-150_M', '10"-EXP-150# (F)', '3"-EXP-150#', '2"-FWA-150#', '10"-FWA-150#  ', '4"-EXP-150#', '10"-EXP-150#', '4"-150_M (F)', '14"-FWA-150#', '10"-FWA-150#(F)', '3"-FWA-150#', '8"-FWA-150#  ', '6"-EXP-150#', '3"-EXP-150# (F)', '4"-150', '10"-FWA-150# (F)', '4"-150_M  (F)', '8"-150_M', '8"-FWA-150#'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+                
+La línea CS1SC2-1"-SCI-0-7-013 contiene 2,00 válvulas de tipo GAT, diámetro 1", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-1-1/2"-SCI-TIE-IN-011 contiene 1,00 válvulas de tipo GLB, diámetro 1,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-1-1/2"-SCI-TIE-IN-013 contiene 1,00 válvulas de tipo GLB, diámetro 1,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-2"-SCI-0-7-015 contiene 1,00 válvulas de tipo GAT, diámetro 2", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-2"-SCI-0-7-015 contiene 1,00 válvulas de tipo GLB, diámetro 1", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-2"-SCI-0-7-018 contiene 1,00 válvulas de tipo GAT, diámetro 2", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-2"-SCI-0-7-018 contiene 2,00 válvulas de tipo GLB, diámetro 1", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-2"-SCI-0-7-021 contiene 1,00 válvulas de tipo GLB, diámetro 1", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-012 contiene 1,00 válvulas de tipo GAT, diámetro 3", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-014 contiene 1,00 válvulas de tipo GLB, diámetro 0,75", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-014 contiene 1,00 válvulas de tipo GLB, diámetro 1,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-016 contiene 1,00 válvulas de tipo GAT, diámetro 3", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-016 contiene 1,00 válvulas de tipo GLB, diámetro 1,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-020 contiene 1,00 válvulas de tipo GAT, diámetro 3", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-3"-SCI-0-7-020 contiene 1,00 válvulas de tipo GLB, diámetro 1,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-4"-SCI-TIE-IN-040/041 contiene 1,00 válvulas de tipo GAT, diámetro 4", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-4"-SCI-TIE-IN-059/060 contiene 1,00 válvulas de tipo GAT, diámetro 4", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-002 contiene 1,00 válvulas de tipo CHS, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-002 contiene 1,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-003 contiene 2,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-003 contiene 2,00 válvulas de tipo GLB, diámetro 2", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-003 contiene 4,00 válvulas de tipo GLB, diámetro 2,5", rating 300 PSI CWP y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-008 contiene 1,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-009 contiene 1,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-026 contiene 3,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-031 contiene 3,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-0-7-032 contiene 2,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-TIE-IN-048/049 contiene 1,00 válvulas de tipo CHS, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-6"-SCI-TIE-IN-048/049 contiene 1,00 válvulas de tipo GAT, diámetro 6", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-001 contiene 1,00 válvulas de tipo GAT, diámetro 8", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-001 contiene 1,00 válvulas de tipo GLB, diámetro 0,75", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-001 contiene 1,00 válvulas de tipo GLB, diámetro 2", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-007 contiene 1,00 válvulas de tipo GAT, diámetro 0,5", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-007 contiene 1,00 válvulas de tipo GLB, diámetro 0,75", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-0-7-007 contiene 1,00 válvulas de tipo GLB, diámetro 2", rating 150 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-TIE-IN-051/052 contiene 1,00 válvulas de tipo GAT, diámetro 8", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS1SC2-8"-SCI-TIE-IN-055/056 contiene 1,00 válvulas de tipo GAT, diámetro 8", rating 125 y spec CS1SC2.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea 10"-150_M contiene 1,00 válvulas de typo BAL, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-150_M contiene 1,00 válvulas de typo GLB, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-CS1SC2 contiene 1,00 válvulas de typo BAL, diámetro 1", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 3,00 válvulas de typo BAL, diámetro 6", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 3,00 válvulas de typo BAL, diámetro 2", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 2,00 válvulas de typo BAL, diámetro 1", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 3,00 válvulas de typo CHS, diámetro 10", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 11,00 válvulas de typo GAT, diámetro 10", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 3,00 válvulas de typo GAT, diámetro 8", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 10"-FWA-150# contiene 3,00 válvulas de typo GLB, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 14"-FWA-150# contiene 1,00 válvulas de typo GAT, diámetro 14", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 16"-FWA-150# contiene 1,00 válvulas de typo BAL, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 16"-FWA-150# contiene 4,00 válvulas de typo GLB, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 2"-FWA-150# contiene 1,00 válvulas de typo BAL, diámetro 0,5", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 2"-FWA-150# contiene 1,00 válvulas de typo CHS, diámetro 2", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 2"-FWA-150# contiene 1,00 válvulas de typo GAT, diámetro 2", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 2"-FWA-150# contiene 1,00 válvulas de typo GLB, diámetro 0,5", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 3"-150_M contiene 14,00 válvulas de typo BAL, diámetro 3", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 3"-EXP-150# contiene 1,00 válvulas de typo BAL, diámetro 4", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 3"-EXP-150# contiene 1,00 válvulas de typo BAL, diámetro 3", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 3"-EXP-150# contiene 1,00 válvulas de typo GLB, diámetro 0,75", rating 800, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 3"-FWA-150# contiene 2,00 válvulas de typo BAL, diámetro 3", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 4"-EXP-150# contiene 2,00 válvulas de typo BAL, diámetro 3", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 4"-FWA-150# contiene 4,00 válvulas de typo BAL, diámetro 4", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 6"-FWA-150# contiene 4,00 válvulas de typo BAL, diámetro 6", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea 8"-FWA-150# contiene 5,00 válvulas de typo GAT, diámetro 8", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
