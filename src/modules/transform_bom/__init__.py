@@ -6,10 +6,10 @@ from src.modules.transform_bom.transform_autoplant_to_cadworks import transform_
 
 
 def transform_bom():
-    # Generando DF sin columnas y filas vacías
+    # (VALEC17) Generando DF sin columnas y filas vacías
     bom_df = delete_empty_columns_and_rows()
 
-    # Detectar softaware
+    # (VALEC17) Detectar softaware
     cad_software = detect_cad_software(bom_df)
 
     if cad_software == 'cadworks':

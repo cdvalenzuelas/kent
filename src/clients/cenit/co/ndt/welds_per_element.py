@@ -1,4 +1,4 @@
-# Calcular las soldaduras por cada elementos
+# (VALEC17) Calcular las soldaduras por cada elementos
 def welds_per_element(row):
     type_element, type_code, first_size_number, second_size_number, qty = row
 
@@ -24,7 +24,7 @@ def welds_per_element(row):
         return (2*first_size_number + second_size_number)*qty
 
     if type_code in ['SWC', 'SWE']:
-        # OJO DEPENDE DEL FACE
+        # (VALEC17) OJO DEPENDE DEL FACE
         return (first_size_number + second_size_number)*qty
 
     if type_code in ['PE', 'BE']:

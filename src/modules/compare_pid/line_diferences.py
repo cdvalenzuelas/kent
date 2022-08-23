@@ -1,6 +1,6 @@
 def line_diferences(mto_df, pid_df):
 
-    # Comparar si las lineas del P&ID se encuentrabn en el BOM
+    # (VALEC17) Comparar si las lineas del P&ID se encuentrabn en el BOM
     pid_lines = set(pid_df['LINE_NUM'].unique())
 
     bom_lines = set(mto_df['LINE_NUM'].unique())
@@ -8,7 +8,7 @@ def line_diferences(mto_df, pid_df):
     pid_lines_unique = pid_lines - bom_lines
     bom_lines_unique = bom_lines - pid_lines
 
-    # Ver la cantidad de líneas diferentes entre B.O.M y P&ID
+    # (VALEC17) Ver la cantidad de líneas diferentes entre B.O.M y P&ID
     pid_lines_unique_size = len(pid_lines_unique)
     bom_lines_unique_size = len(bom_lines_unique)
 
@@ -16,7 +16,7 @@ def line_diferences(mto_df, pid_df):
         print(
             '❌ HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
 
-        # Escribir en el archivo las línes que existen en un archivo y en el otro no
+        # (VALEC17) Escribir en el archivo las línes que existen en un archivo y en el otro no
         with open('./output/diagnostic_p&id.txt', mode='a') as f:
             if pid_lines_unique_size > 0:
 

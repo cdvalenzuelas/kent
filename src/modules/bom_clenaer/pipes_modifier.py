@@ -1,4 +1,4 @@
-# Definir si la cantidad es la cantidad inicial o la longitud
+# (VALEC17) Definir si la cantidad es la cantidad inicial o la longitud
 def pipe_qty(row):
     length, db_code, qty = row
 

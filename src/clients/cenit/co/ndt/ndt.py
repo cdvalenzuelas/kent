@@ -11,7 +11,7 @@ from src.clients.cenit.co.ndt.ndt_level import ndt_level
 from src.clients.cenit.co.ndt.def_qty import def_qty
 
 
-# Coloca el segundo diámetro corecto (elimina basura)
+# (VALEC17) Coloca el segundo diámetro corecto (elimina basura)
 def def_second_size_number(row):
     type_element, type_code, second_size_number = row
 
@@ -25,72 +25,72 @@ def def_second_size_number(row):
 
 
 def ndt(mto_df, co_df):
-    # Obtener únicamente las columnas innecesarias
+    # (VALEC17) Obtener únicamente las columnas innecesarias
     mto_df = mto_df[['SPEC', 'TYPE', 'TYPE_CODE',
                      'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY', 'FACE']]
 
-    # Deajr únicamente las tuberías y accesorios
+    # (VALEC17) Deajr únicamente las tuberías y accesorios
     mto_df = mto_df[(mto_df['TYPE'] == 'PP') | (
         mto_df['TYPE'] == 'FT') | (mto_df['TYPE'] == 'FL')]
 
-    # Si existen tuberpias y/o accesorios
+    # (VALEC17) Si existen tuberpias y/o accesorios
     if mto_df.shape[0] > 0:
 
-        # Arreglar el segundo diámetro
+        # (VALEC17) Arreglar el segundo diámetro
         mto_df['SECOND_SIZE_NUMBER'] = mto_df[['TYPE', 'TYPE_CODE',
                                                'SECOND_SIZE_NUMBER']].apply(def_second_size_number, axis=1)
 
-        # Ver la cantidad de solduras por cada elemento
+        # (VALEC17) Ver la cantidad de solduras por cada elemento
         mto_df['DIAMETRIC_WELDS'] = mto_df[['TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
                                             'SECOND_SIZE_NUMBER', 'QTY']].apply(welds_per_element, axis=1)
 
-        # Definir las soldaduras BW
+        # (VALEC17) Definir las soldaduras BW
         mto_df['BW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
                                'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_bw, axis=1)
 
-        # Definir las soldaduras SW
+        # (VALEC17) Definir las soldaduras SW
         mto_df['SW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
                                'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_sw, axis=1)
 
-        # Definir las soldaduras SW
+        # (VALEC17) Definir las soldaduras SW
         mto_df['TW'] = mto_df[['FACE', 'TYPE_CODE', 'DIAMETRIC_WELDS',
                                'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'QTY']].apply(def_tw, axis=1)
 
-        # Se eliminan columnas innecesarias
+        # (VALEC17) Se eliminan columnas innecesarias
         mto_df.drop(['DIAMETRIC_WELDS'], inplace=True, axis=1)
 
-        # Se crean las primeras listas de soldaduras
+        # (VALEC17) Se crean las primeras listas de soldaduras
         welds_list_1 = mto_df.groupby(['SPEC', 'TYPE', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
                                       'SECOND_SIZE_NUMBER', 'FACE'], as_index=False)[['QTY', 'BW', 'SW', 'TW']].agg(QTY=('QTY', sum), BW=('BW', sum), SW=('SW', sum), TW=('TW', sum))
 
-        # Se crea la segunda lista de soldaduras
+        # (VALEC17) Se crea la segunda lista de soldaduras
         welds_list_2 = welds_list_1.groupby(['SPEC'], as_index=False)[
             ['BW', 'SW', 'TW']].agg(BW=('BW', sum), SW=('SW', sum), TW=('TW', sum))
 
-        # Definir el porcentaje de ensayos por cada spec
+        # (VALEC17) Definir el porcentaje de ensayos por cada spec
         welds_list_3 = welds_list_2.copy()
 
-        # Definir las pruebas radiográficas
+        # (VALEC17) Definir las pruebas radiográficas
         welds_list_3['RT'] = welds_list_3[[
             'SPEC', 'BW', 'SW', 'TW']].apply(def_rt, axis=1, ndt_dict=ndt_level)
 
-        # Definir las tintas penetrantes
+        # (VALEC17) Definir las tintas penetrantes
         welds_list_3['LP'] = welds_list_3[[
             'SPEC', 'BW', 'SW', 'TW']].apply(def_lp, axis=1, ndt_dict=ndt_level)
 
-        # Sumar todas las soldaduras
+        # (VALEC17) Sumar todas las soldaduras
         rt_total = welds_list_3['RT'].sum()
         lp_total = welds_list_3['LP'].sum()
 
-        # Ver en que celdas las agrego
+        # (VALEC17) Ver en que celdas las agrego
         rt_cell = normalize_string(
             'PRUEBAS RADIOGRAFICAS PARA JUNTA DE TUBERÍA')
         lp_cell = normalize_string(
             'PRUEBA DE TINTAS PENETRANTES PARA JUNTA DE TUBERÍA')
 
-        # Encontral la celda y colocar el valor
+        # (VALEC17) Encontral la celda y colocar el valor
         co_df['QTY'] = co_df[[
             'DESCRIPTION', 'QTY']].apply(def_qty, axis=1, args=(rt_cell, rt_total, lp_cell, lp_total))
 
-    # Guardar el archivo creado
+    # (VALEC17) Guardar el archivo creado
     return co_df

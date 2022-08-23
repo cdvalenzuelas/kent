@@ -1,4 +1,4 @@
-# Definir la cantidad de soldaduras BW
+# (VALEC17) Definir la cantidad de soldaduras BW
 def def_bw(row):
     face, type_code, diametric_welds, first_size_number, second_size_number, qty = row
 

@@ -1,7 +1,7 @@
 from src.utils.normalize_string import normalize_string
 
 
-# Encontral la celda y colocar el valor
+# (VALEC17) Encontral la celda y colocar el valor
 def def_qty(row, rt_cell, rt_total, lp_cell, lp_total):
     description, qty = row
 

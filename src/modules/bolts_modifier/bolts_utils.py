@@ -1,7 +1,7 @@
 import re
 
 
-# Crea una columna comun entre el mto y los bolt
+# (VALEC17) Crea una columna comun entre el mto y los bolt
 def concat_bolt_index(row):
     first_size, rating, face = row
 
@@ -12,7 +12,7 @@ def concat_bolt_index(row):
     return f'{first_size} {rating} {face}'
 
 
-# Definir el Diámetro de los pernos
+# (VALEC17) Definir el Diámetro de los pernos
 def bolts_diameter(row):
     diameter, type_code, first_size = row
 
@@ -22,7 +22,7 @@ def bolts_diameter(row):
         return first_size
 
 
-# Definir el Diámetro de los pernos
+# (VALEC17) Definir el Diámetro de los pernos
 def bolts_diameter_number(row):
     diameter, type_code, first_size_number = row
 
@@ -32,7 +32,7 @@ def bolts_diameter_number(row):
         return first_size_number
 
 
-# Definir longitudes de los pernos
+# (VALEC17) Definir longitudes de los pernos
 def bolts_length(row):
     length, type_code, second_size = row
 
@@ -42,7 +42,7 @@ def bolts_length(row):
         return second_size
 
 
-# Definir longitudes de los pernos
+# (VALEC17) Definir longitudes de los pernos
 def bolts_length_number(row):
     length, type_code, second_size_number = row
 
@@ -52,7 +52,7 @@ def bolts_length_number(row):
         return second_size_number
 
 
-# Borrar ratings de bolts
+# (VALEC17) Borrar ratings de bolts
 def delete_bolts_rating(row):
     code_type, rating = row
 
@@ -62,7 +62,7 @@ def delete_bolts_rating(row):
         return rating
 
 
-# Borrar face de bolts
+# (VALEC17) Borrar face de bolts
 def delete_bolts_face(row):
     code_type, face = row
 
@@ -72,7 +72,7 @@ def delete_bolts_face(row):
         return face
 
 
-# Definir el tamaño de los pernos
+# (VALEC17) Definir el tamaño de los pernos
 def bolts_weight(row):
     type_code, weight, bolt_weight = row
 

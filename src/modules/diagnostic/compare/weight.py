@@ -1,4 +1,4 @@
-# PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
+# (VALEC17) PESOS UNITARIOS diqagnostic (Evidenciar una variación mayor al 5% del peso verdadero)
 def weight(mto_diagnostic_2, type_code, weight_x, weight_y, bolt_weight, qty, length):
     if type_code in ['PE', 'BE', 'TE']:
         length = float(length)

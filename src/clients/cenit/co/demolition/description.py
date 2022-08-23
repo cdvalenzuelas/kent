@@ -1,6 +1,6 @@
 import re
 
-# Definir la descripción de la demolición en función del tipo de elemento
+# (VALEC17) Definir la descripción de la demolición en función del tipo de elemento
 
 
 def def_demolition_description(row, method):
@@ -21,12 +21,12 @@ def def_demolition_description(row, method):
         else:
             return 'DESMANTELAMIENTO DE VÁLVULA CUYO PESO SEA > 6.000 KG (INCLUYE TRANSPORTE Y DISPOSICIÓN FINAL)'
     else:
-        # Si el desmantelamiento se ará con oxicorte se debe modificar la descripción
+        # (VALEC17) Si el desmantelamiento se ará con oxicorte se debe modificar la descripción
         if method == 'hot':
             demolition_description = re.sub(
                 'CORTE EN FRÍO', 'OXICORTE', demolition_description)
 
-        #
+        # (VALEC17)
         if underground:
             demolition_description = re.sub(
                 'AÉREAS', 'ENTERRADAS', demolition_description)

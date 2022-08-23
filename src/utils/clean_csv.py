@@ -11,13 +11,13 @@ def df_round(row):
 
 
 def clean_csv(mto_df, summary_df, mr_df, co_df):
-    # Hacer copias de lod df
+    # (VALEC17) Hacer copias de lod df
     mto_df = mto_df.copy()
     summary_df = summary_df.copy()
     mr_df = mr_df.copy()
     co_df = co_df.copy()
 
-    # Ordenar los dataframes
+    # (VALEC17) Ordenar los dataframes
     summary_df.sort_values(by=['ORDER', 'TYPE_CODE', 'FIRST_SIZE_NUMBER',
                                'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'TAG', 'NOTE'], inplace=True)
 
@@ -31,7 +31,7 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
 
     mr_df.reset_index(inplace=True)
 
-    # Dejar únicamente las columnas necesarias
+    # (VALEC17) Dejar únicamente las columnas necesarias
     mr_df = mr_df[['TAG', 'DESCRIPTION',
                    'FIRST_SIZE_NUMBER', 'QTY', 'UNITS', 'NOTE']]
 
@@ -41,11 +41,11 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     mto_df = mto_df[['LINE_NUM', 'SPEC', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
                      'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'QTY', 'UNITS', 'WEIGHT_PER_UNIT', 'TOTAL_WEIGHT', 'NOTE']]
 
-    # Renombrar columnas
+    # (VALEC17) Renombrar columnas
     mr_df.rename(
         columns={'TAG': 'CODE', 'FIRST_SIZE_NUMBER': 'NOMINAL_SIZE'}, inplace=True)
 
-    # Redondeando los listados
+    # (VALEC17) Redondeando los listados
     mto_df['TOTAL_WEIGHT'] = mto_df[[
         'TOTAL_WEIGHT', 'SPEC']].apply(df_round, axis=1)
     mto_df['WEIGHT_PER_UNIT'] = mto_df[[
@@ -56,11 +56,9 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     summary_df['WEIGHT_PER_UNIT'] = summary_df[['WEIGHT_PER_UNIT', 'TYPE']].apply(
         df_round, axis=1)
 
-    co_df.to_csv('co.csv')
-
     co_df['QTY'] = co_df[['QTY', 'CODE']].apply(df_round, axis=1)
 
-    # Cambiar puntos por comas en todos los archivos de salida
+    # (VALEC17) Cambiar puntos por comas en todos los archivos de salida
     mto_df['FIRST_SIZE_NUMBER'] = mto_df['FIRST_SIZE_NUMBER'].apply(
         replace_dot_by_comma)
     mto_df['SECOND_SIZE_NUMBER'] = mto_df['SECOND_SIZE_NUMBER'].apply(
@@ -84,7 +82,7 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     co_df['QTY'] = co_df['QTY'].apply(
         replace_dot_by_comma)
 
-    # Poner una columna de items (numeración en cada documento)
+    # (VALEC17) Poner una columna de items (numeración en cada documento)
     item = pd.DataFrame({'ITEM': list(range(1, mr_df.shape[0] + 1))})
     mr_df = pd.concat([item, mr_df], axis=1)
 
@@ -94,7 +92,7 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     item = pd.DataFrame({'ITEM': list(range(1, mto_df.shape[0] + 1))})
     mto_df = pd.concat([item, mto_df], axis=1)
 
-    # Crear el archivos
+    # (VALEC17) Crear el archivos
     mr_df.to_excel('./output/mr.xlsx', index=False)
     summary_df.to_excel('./output/summary.xlsx', index=False)
     mto_df.to_excel('./output/mto.xlsx', index=False)

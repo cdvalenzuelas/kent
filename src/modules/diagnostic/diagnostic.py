@@ -5,7 +5,7 @@ import os
 from src.modules.diagnostic.compare.compare import compare
 
 
-# Crea una columna comun entre el mto y los bolt
+# (VALEC17) Crea una columna comun entre el mto y los bolt
 def concat_bolt_index(row):
     first_size, rating, face = row
 
@@ -17,16 +17,16 @@ def concat_bolt_index(row):
 
 
 def diagnostic(mto_df):
-    # Crear un índice artificial
+    # (VALEC17) Crear un índice artificial
     index = pd.DataFrame({'INDEX': list(range(1, mto_df.shape[0] + 1))})
 
-    # lEER EL ARCHIVO DE PERNOS
+    # (VALEC17) lEER EL ARCHIVO DE PERNOS
     bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
 
-    # Unir el indice y el mto en un dataframe
+    # (VALEC17) Unir el indice y el mto en un dataframe
     mto_df = pd.concat([index, mto_df], axis=1)
 
-    # Se crean los indices para los bolts en mto y en bolts
+    # (VALEC17) Se crean los indices para los bolts en mto y en bolts
     mto_df['BOLT_INDEX'] = mto_df[['FIRST_SIZE', 'RATING', 'FACE']].apply(
         concat_bolt_index, axis=1)
 
@@ -35,7 +35,7 @@ def diagnostic(mto_df):
     bolts['BOLT_INDEX'] = bolts[['DIAMETER', 'RATING', 'FACE']].apply(
         concat_bolt_index, axis=1)
 
-    # Hacer un joint con la tabla pernos
+    # (VALEC17) Hacer un joint con la tabla pernos
     mto_df = pd.merge(mto_df, bolts, how='left', on='BOLT_INDEX')
 
     mto_df.fillna('-', inplace=True)

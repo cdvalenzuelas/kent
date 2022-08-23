@@ -1,7 +1,7 @@
 def no_bom_valves(row):
     line_y, qty_y, type_y, size_y, rating_y, spec_y = row
 
-    # Pasar los parámetros de comparación a strings y eliminar lo ',00'
+    # (VALEC17) Pasar los parámetros de comparación a strings y eliminar lo ',00'
     size_y = str(size_y).replace(',00', '')
     rating_y = str(rating_y).replace(',00', '')
 
@@ -11,7 +11,7 @@ La línea {line_y} contiene {qty_y} válvulas de tipo {type_y}, diámetro {size_
 las líneas estén mal nombradas en la maqueta.
         """
 
-    # Escribir el archivo de diagnóstico
+    # (VALEC17) Escribir el archivo de diagnóstico
     with open('./output/diagnostic_p&id.txt', mode='a') as f:
         f.write(diacnostic_str)
 

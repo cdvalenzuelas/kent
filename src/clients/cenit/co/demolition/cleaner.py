@@ -7,86 +7,87 @@ from src.utils.replace_spaces_by_dash import replace_spaces_by_dash
 from src.modules.bolts_modifier.bolts_modifier import bolts_modifier
 
 
-# Crea una columna comun entre el piping class y el bom
+# (VALEC17) Crea una columna comun entre el piping class y el bom
 def concat_colums(row):
     spec, type_code, first_size, second_size, tag = row
     return f'{spec} {type_code} {first_size} {second_size} {tag}'
 
 
-# Arreglar los nombres de de las líneas basdas en si son entrerradas y/o prefabricadas
+# (VALEC17) Arreglar los nombres de de las líneas basdas en si son entrerradas y/o prefabricadas
 def fix_line_num(line_num):
     line_num = line_num.replace('(U)', '').replace('(F)', '')
 
     return line_num
 
 
-# Definir el peso o el volumen de la tubería a desmantelas o a abandonar
+# (VALEC17) Definir si se toma el peso o el volumen de las tuberías para tubería enterrada / abandonada
 def def_weight(row):
-    element_type, weight, qty, underground, forgiven, area = row
+    underground, forgiven, area, type_element, weight, qty, description = row
 
-    if not forgiven:
-        # Si no es tubería olvidada que se cambie su peso
-        return weight * qty
-    else:
+    # (VALEC17) Si la tubería es abandonada se calcule el volumen
+    if forgiven and type_element == 'PP':
+        # (VALEC17) Se le coloca un 20% de más
+        return 1.2 * 0.25 * pi * qty * ((area * 0.001) ** 2)
 
-        if element_type == 'PP':
-            # Un dies porciento más que el volumen de la tubería
-            return 1.1 * 0.25 * pi * qty * ((area * 0.001) ** 2)
-        else:
-            return 0
+    # (VALEC17) Si es un accesorio y se va a abandonar colocarle un volumen de cero
+    if forgiven and type_element != 'PP':
+        return 0
+
+    # (VALEC17) Si no es abandonada que se multiplique el peso unitario
+    return weight * qty
 
 
 def demolition_cleaner(demolition_df, piping_class):
-    # Llenar los N.A con guines
+    # (VALEC17) Llenar los N.A con guines
     demolition_df.fillna('-', inplace=True)
 
-    # Se deja la longitud de los niples como segundo tamaño
+    # (VALEC17) Se deja la longitud de los niples como segundo tamaño
     demolition_df['RED_NOM'] = demolition_df[['LENGTH', 'DB_CODE', 'RED_NOM']].apply(
         nipple_second_size, axis=1)
 
-    # Se deja la longitud de las tuberías como cantidad y se deja en el entero más cercano
+    # (VALEC17) Se deja la longitud de las tuberías como cantidad y se deja en el entero más cercano
     demolition_df['QTY'] = demolition_df[['LENGTH', 'DB_CODE', 'QTY']].apply(
         pipe_qty, axis=1)
 
-    # Se reemplazan los espacios por "guiones" en los tamaños combinados (ejemplo 1 1/2 se convierte en 1-1/2)
+    # (VALEC17) Se reemplazan los espacios por "guiones" en los tamaños combinados (ejemplo 1 1/2 se convierte en 1-1/2)
     demolition_df['MAIN_NOM'] = demolition_df['MAIN_NOM'].apply(
         replace_spaces_by_dash)
     demolition_df['RED_NOM'] = demolition_df['RED_NOM'].apply(
         replace_spaces_by_dash)
 
-    # Eliminar columnas innecesarias
+    # (VALEC17) Eliminar columnas innecesarias
     demolition_df.drop(
         ['MARK', 'THK_NOM', 'SIZE', 'DESCRIPTION'], axis=1, inplace=True)
 
-    # Se crean los índices del BOM y del piping class
+    # (VALEC17) Se crean los índices del BOM y del piping class
     demolition_df['common_index'] = demolition_df[['SPEC_FILE', 'DB_CODE', 'MAIN_NOM',
                                                    'RED_NOM', 'TAG']].apply(concat_colums, axis=1)
 
-    # Se crean los índices del BOM y del piping class
-    # OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
+    # (VALEC17) Se crean los índices del BOM y del piping class
+    # (VALEC17) OJO AQUI SE DEBE PONER ES SHORT DESCRIPTIOOOOOOOOO!!!!!!!! CON ESO SE COMPRUEBAN ERRORES
     piping_class['common_index'] = piping_class[[
         'SPEC', 'TYPE_CODE', 'FIRST_SIZE', 'SECOND_SIZE', 'TAG']].apply(concat_colums, axis=1)
 
-    # Hacer un join entre el bom y el piping class para generar el mto
+    # (VALEC17) Hacer un join entre el bom y el piping class para generar el mto
     demolition_df = pd.merge(demolition_df, piping_class,
                              how='left', on='common_index')
 
-    # Definir si el elemento está enterrado
+    # (VALEC17) Definir si el elemento está enterrado
     demolition_df['UNDERGROUND'] = demolition_df['LINE_NUM'].apply(
         lambda line_num: '(U)' in line_num)
 
-    # Definir si la línea es prefabricada
+    # (VALEC17) Definir si la línea es prefabricada
     demolition_df['FORGIVEN'] = demolition_df['LINE_NUM'].apply(
         lambda line_num: '(F)' in line_num)
 
-    # Arreglar los nombres de línea
+    # (VALEC17) Arreglar los nombres de línea
     demolition_df['LINE_NUM'] = demolition_df['LINE_NUM'].apply(fix_line_num)
 
-    # A las válvulas se les asigna otro item de demolición
+    # (VALEC17) A las válvulas se les asigna otro item de demolición
     demolition_df['DEMOLITION_DESCRIPTION'] = demolition_df.apply(
         lambda x: 'VL' if x['TYPE'] == 'VL' else x['DEMOLITION_DESCRIPTION'], axis=1)
 
-    # Crear registro de items sin identificar
+    # (VALEC17) Crear registro de items sin identificar
     demolition_df_na = demolition_df[(demolition_df['DESCRIPTION'].isnull()) | (
         demolition_df['DESCRIPTION'] == '-') | (demolition_df['DEMOLITION_DESCRIPTION'] == '-')]
 
@@ -100,20 +101,20 @@ def demolition_cleaner(demolition_df, piping_class):
     else:
         print('✅ TODOS LOS ELEMENTOS DEL ARCHIVO demolition.csv TIENEN PROPIEDADES DE DEMOLICIÓN Y ESTÁN EN EL PIPING CLASS\n')
 
-    # Eliminando columnas innecesarias
+    # (VALEC17) Eliminando columnas innecesarias
     demolition_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',
                         'MAIN_NOM', 'RED_NOM', 'TAG_x', 'DESCRIPTION'], axis=1, inplace=True)
 
-    # Renombrando el SHORT_DESCRIPTION como DESCRIPTION
+    # (VALEC17) Renombrando el SHORT_DESCRIPTION como DESCRIPTION
     demolition_df.rename(
         columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
 
     demolition_df.fillna('-', inplace=True)
 
-    # Modificación por pernos
+    # (VALEC17) Modificación por pernos
     demolition_df = bolts_modifier(mto_df=demolition_df)
 
-    # Ver si algunos elementos de la demolición tienen peso cero
+    # (VALEC17) Ver si algunos elementos de la demolición tienen peso cero
     demolition_df_zero_weight = demolition_df[demolition_df['WEIGHT'] == 0]
 
     if demolition_df_zero_weight.shape[0] > 0:
@@ -124,11 +125,12 @@ def demolition_cleaner(demolition_df, piping_class):
     else:
         print('✅ TODOS LOS ELEMENTOS DE DEMOLICIÓN TIENEN UN PESO ASIGNADO.\n')
 
-    # Dejar únicamente las columnas necesarias
+    # (VALEC17) Dejar únicamente las columnas necesarias
     demolition_df = demolition_df[[
         'LINE_NUM', 'TYPE', 'WEIGHT', 'DEMOLITION_DESCRIPTION', 'QTY', 'UNDERGROUND', 'FORGIVEN', 'AREA']]
 
-    demolition_df['WEIGHT'] = demolition_df[['TYPE', 'WEIGHT', 'QTY',
-                                             'UNDERGROUND', 'FORGIVEN', 'AREA']].apply(def_weight, axis=1)
+    # (VALEC17) DEFINIR SI SE CALCULA EL VOLUMEN DE LAS TUBERÍAS O EL PESO
+    demolition_df['WEIGHT'] = demolition_df[[
+        'UNDERGROUND', 'FORGIVEN', 'AREA', 'TYPE', 'WEIGHT', 'QTY', 'DEMOLITION_DESCRIPTION']].apply(def_weight, axis=1)
 
     return demolition_df
