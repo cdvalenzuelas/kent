@@ -7,6 +7,18 @@ from src.modules.compare_pid.valves_diferences.no_pid_valves import no_pid_valve
 from src.modules.compare_pid.valves_diferences.quantity_and_rating_diferences import quantity_and_rating_diferences
 
 
+# (VALEC17) arreglar el rating de las válvulas
+def fix_rating(rating):
+    # (VALEC17) Cambiarlo a un string
+    rating = str(rating)
+
+    # (VALEC17) Eliminr decimales
+    rating = rating.replace('.0', '')
+    rating = rating.replace('.00', '')
+
+    return rating
+
+
 # (VALEC17) Función para hacer un merge
 def common_index(row):
     line, spec, type_code, size, rating, qty, tag = row
@@ -38,6 +50,12 @@ def valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df):
                 '❌ HAY DIFERENCIAS ENTRE LAS VÁLVULAS REPORTADAS POR EL B.O.M Y EL P&ID, EL MTO NO TIENE VÁLVULAS PERO EL P&ID SI LAS CONTEMPLA.\n')
 
         return
+
+    # (VALEC17) Transformar el rating de los dos dataframes en strings
+
+    mto_df['RATING'] = mto_df['RATING'].apply(fix_rating)
+
+    pid_df['RATING'] = pid_df['RATING'].apply(fix_rating)
 
     # (VALEC17) Reemplazar los puntos por comas en el size del p&id
     pid_df['FIRST_SIZE_NUMBER'] = pid_df['FIRST_SIZE_NUMBER'].apply(

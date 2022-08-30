@@ -51,8 +51,6 @@ def valves_tags(mto_df, co_df):
     co_df = pd.merge(
         co_df, mto_df, on='common_index', how='outer')
 
-    co_df.to_csv('tags.csv')
-
     # (VALEC17) Llenar celdas vacías
     co_df.fillna('-', inplace=True)
 
