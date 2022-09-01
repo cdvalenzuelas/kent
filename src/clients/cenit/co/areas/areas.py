@@ -4,7 +4,7 @@ import pandas as pd
 from src.utils.normalize_string import normalize_string
 
 
-# Calcular el área total
+# (VALEC17) Calcular el área total
 def def_total_area(row):
     type_element, qty, area = row
 
@@ -20,7 +20,7 @@ def def_total_area(row):
         return area * qty
 
 
-# Insertar el valor calculado en el documento de cantidades de obra
+# (VALEC17) Insertar el valor calculado en el documento de cantidades de obra
 def def_qty(row, cells_list, total):
     description, qty = row
 
@@ -31,21 +31,21 @@ def def_qty(row, cells_list, total):
 
 
 def areas(mto_df, co_df):
-    # Hacer copias de los dataframes
+    # (VALEC17) Hacer copias de los dataframes
     mto_df = mto_df.copy()
     co_df = co_df.copy()
 
-    # Obtener únicamente las columnas innecesarias
+    # (VALEC17) Obtener únicamente las columnas innecesarias
     mto_df = mto_df[['TYPE', 'TYPE_CODE', 'QTY', 'AREA']]
 
-    # Definir área total
+    # (VALEC17) Definir área total
     mto_df['TOTAL_AREA'] = mto_df[['TYPE', 'QTY', 'AREA']].apply(
         def_total_area, axis=1)
 
-    # Calcular el área total
+    # (VALEC17) Calcular el área total
     total = round(mto_df['TOTAL_AREA'].sum(), 2)
 
-    # Insertar el valor calculado en el documento de cantidades de obra
+    # (VALEC17) Insertar el valor calculado en el documento de cantidades de obra
     cell_1 = normalize_string(
         'LIMPIEZA CON CHORRO DE ABRASIVO GRADO METAL CASI BLANCO SEGÚN NORMA SSPC-SP 10')
     cell_2 = normalize_string(
@@ -55,12 +55,12 @@ def areas(mto_df, co_df):
     cell_4 = normalize_string(
         'SUMINISTRO Y APLICACIÓN DE PINTURA POLIURETANO ALIFÁTICO DE ACABADO E=5–7 MILS')
 
-    # Estos son las celdas en donde se insertará el total de área
+    # (VALEC17) Estos son las celdas en donde se insertará el total de área
     cells_list = [cell_1, cell_2, cell_3, cell_4]
 
-    # Encontral la celda y colocar el valor
+    # (VALEC17) Encontral la celda y colocar el valor
     co_df['QTY'] = co_df[[
         'DESCRIPTION', 'QTY']].apply(def_qty, axis=1, args=(cells_list, total))
 
-    # Guardar el archivo creado
+    # (VALEC17) Guardar el archivo creado
     return co_df

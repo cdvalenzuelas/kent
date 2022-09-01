@@ -7,7 +7,7 @@ cenit_co_conf = {
     'pipes_hidrostatic_test': True,
     'ndt': True,
     'demolition': {
-        'method': 'hot',  # Puede ser 'cold' o 'hot'
+        'method': 'hot',  # (VALEC17) Puede ser 'cold' o 'hot'
         'demolition': True
     },
     'valves_tags': True,

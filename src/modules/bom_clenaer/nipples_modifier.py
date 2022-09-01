@@ -1,4 +1,4 @@
-# Definir la longitud de los niples como segunda longitud
+# (VALEC17) Definir la longitud de los niples como segunda longitud
 def nipple_second_size(row):
     length, db_code, red_nom = row
 
@@ -9,7 +9,7 @@ def nipple_second_size(row):
         return red_nom
 
 
-# Definir la longitud de los niples como segunda longitud
+# (VALEC17) Definir la longitud de los niples como segunda longitud
 def nipple_second_size_number(row):
     length, db_code, red_nom = row
 

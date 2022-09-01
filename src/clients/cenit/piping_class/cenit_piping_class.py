@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-# Extraer el piping class
+# (VALEC17) Extraer el piping class
 def cenit_piping_class():
     CS1SC2 = pd.read_csv('./src/clients/cenit/piping_class/CS1SC2.csv')
     CS2SA1 = pd.read_csv('./src/clients/cenit/piping_class/CS2SA1.csv')

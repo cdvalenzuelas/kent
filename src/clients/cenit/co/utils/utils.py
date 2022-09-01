@@ -1,15 +1,15 @@
 from src.utils.normalize_string import normalize_string
 
 
-# Crea un índice común entre la plantilla y las cantidades de obra calculadas
+# (VALEC17) Crea un índice común entre la plantilla y las cantidades de obra calculadas
 def common_index(description):
-    # Normalizar index. Pasa las cosas a mayúsculas, eliminar comillas, puntos, comas, punto y comas, tildes, guiones y espacio
+    # (VALEC17) Normalizar index. Pasa las cosas a mayúsculas, eliminar comillas, puntos, comas, punto y comas, tildes, guiones y espacio
     index = normalize_string(description)
 
     return index
 
 
-# Definde si un elemento no se encuentra en la plantilla (para el supply)
+# (VALEC17) Definde si un elemento no se encuentra en la plantilla (para el supply)
 def def_note(row):
     area, note = row
 
@@ -20,7 +20,7 @@ def def_note(row):
         return 'NUEVO'
 
 
-# Define la descripción de los elementos nuevos
+# (VALEC17) Define la descripción de los elementos nuevos
 def def_description(row):
     description, supply_description = row
 
@@ -30,7 +30,7 @@ def def_description(row):
         return description
 
 
-# Define la cantidad de los elementos nuevos
+# (VALEC17) Define la cantidad de los elementos nuevos
 def def_qty(row):
     qty_x, qty_y = row
 
@@ -47,7 +47,7 @@ def def_qty(row):
         return qty_y
 
 
-# Define las unidades de los elementos nuevos
+# (VALEC17) Define las unidades de los elementos nuevos
 def def_units(row):
     type_code, unit = row
 

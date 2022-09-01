@@ -6,7 +6,7 @@ from src.clients.cenit.co.utils.utils import common_index
 from src.utils.normalize_string import normalize_string
 
 
-# Definir distancia
+# (VALEC17) Definir distancia
 def def_distance(row, messure, total):
     description, qty = row
 
@@ -27,12 +27,12 @@ def def_distance(row, messure, total):
 
 
 def distance(messure, mto_df, co_df):
-    # Calcular el peso total del proyecto
+    # (VALEC17) Calcular el peso total del proyecto
     total = round(mto_df['TOTAL_WEIGHT'].sum()*messure/1000, 2)
 
-    # Definir la cantidad de TON*KM
+    # (VALEC17) Definir la cantidad de TON*KM
     co_df['QTY'] = co_df[['DESCRIPTION', 'QTY']].apply(
         def_distance, axis=1, messure=messure, total=total)
 
-    # Guardar el archivo creado
+    # (VALEC17) Guardar el archivo creado
     return co_df

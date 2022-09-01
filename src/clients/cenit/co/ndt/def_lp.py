@@ -1,4 +1,4 @@
-# Calcular tintas penetrantes
+# (VALEC17) Calcular tintas penetrantes
 def def_lp(row, ndt_dict):
     spec, bw, sw, tw = row
 

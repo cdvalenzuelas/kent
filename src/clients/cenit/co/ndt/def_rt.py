@@ -1,4 +1,4 @@
-# Calcular pruebas radiográficas
+# (VALEC17) Calcular pruebas radiográficas
 def def_rt(row, ndt_dict):
     spec, bw, sw, tw = row
 

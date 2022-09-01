@@ -1,9 +1,9 @@
 
-La línea CS2SA1-24"-PRO-1-6-012 contiene 1,00 válvulas de typo GAT, diámetro 24", rating 150, y spec CS2SA1.
+La línea CS2SA1-1"-SUM-1-5-004 contiene 1,00 válvulas de typo BAL, diámetro 1", rating 800, y spec CS2SA1.
 Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
 mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
         
-La línea CS2SA1-24"-PRO-1-6-012 contiene 1,00 válvulas de tipo CHS, diámetro 24", rating 150 y spec CS2SA1.
+La línea CS2SA1-3"-SUM-1-5-002 contiene 1,00 válvulas de tipo BAL, diámetro 1", rating 800 y spec CS2SA1.
 Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
 las líneas estén mal nombradas en la maqueta.
         

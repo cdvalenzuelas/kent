@@ -9,14 +9,18 @@ def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch, d
 
     mto_diagnostic = '' if mto_diagnostic == None else mto_diagnostic
 
+    # Si el elemento de tubería tiene sch en el piping class
     if sch != '-':
         schs = re.sub(' ', '', sch).split('x')
 
+        # (VALEC17) Contruir el string sch que no son reductores
         if len(schs) == 1:
             sub_str = f'SCH{schs[0]}'
             real_sch = schs[0]
+
+        # (VALEC17) Contruir el string sch de los reductores
         else:
-            # Los weldolets se tratan de manera distinta
+            # (VALEC17) Los weldolets se tratan de manera distinta
             if type_code == 'WOL':
                 sub_str = f'SCH{schs[1]}'
                 real_sch = schs[1]
@@ -24,18 +28,18 @@ def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch, d
                 sub_str = f'SCH{schs[0]}X{schs[1]}'
                 real_sch = sch
 
-        # Verificar si el schedule existe en el bom y en el piping class
+        # (VALEC17) Verificar si el schedule existe en el bom y en el piping class
         sch_in_bom = sub_str in short_desc_2
         sch_in_piping_class = sub_str in short_description_2
 
-        # Ver diferencias entre el bom y el sch y el piping class y el sch
+        # (VALEC17) Ver diferencias entre el bom y el sch y el piping class y el sch
         sch_diacnostic = sch_diacnostic + \
             f'EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER {real_sch}.\n' if not sch_in_bom else sch_diacnostic
 
         sch_diacnostic = sch_diacnostic + \
             f'EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL PINPING CLASS, ESTE DEBERÍA SER {real_sch}.\n' if not sch_in_piping_class else sch_diacnostic
 
-        # Si hay diferencias retornar el diagnóistico
+        # (VALEC17) Si hay diferencias retornar el diagnóistico
         if sch_diacnostic != '':
             diagnostic_dict['sch_piping'].append(real_sch)
 
