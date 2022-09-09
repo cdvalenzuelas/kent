@@ -2,7 +2,7 @@ import re
 from src.utils.normalize_string import normalize_string
 
 
-def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_code):
+def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_code, diagnostic_dict):
     rating_in_bom = False
     rating_in_piping_class = False
     rating_diacnostic = ''
@@ -25,9 +25,15 @@ def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_c
 
         # (VALEC17) Si hay diferencias retornar el diagnóistico
         if rating_diacnostic != '':
-            return mto_diagnostic + rating_diacnostic
+            diagnostic_dict['rating_piping'].append(rating)
+
+            return (mto_diagnostic + rating_diacnostic, diagnostic_dict)
         else:
-            return mto_diagnostic
+            diagnostic_dict['rating_piping'].append(None)
+
+            return (mto_diagnostic, diagnostic_dict)
 
     else:
-        return mto_diagnostic
+        diagnostic_dict['rating_piping'].append(None)
+
+        return (mto_diagnostic, diagnostic_dict)

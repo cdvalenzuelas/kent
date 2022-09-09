@@ -1,9 +1,45 @@
 
-La línea CS2SA1-3"-SUM-1-5-002 contiene 1,00 válvulas de tipo BAL, diámetro 1", rating 800 y spec CS2SA1.
+Existen 2 líneas en el B.O.M que no existe en el P&ID.
+Es probable que estén símplemente mal nombradas y sea necesario rectificar.
+Estas líneas son: {'3/4"-DRE-150', 'CS2SA1-6"-TIE-IN-001A'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+                
+La línea CS2SA1-3"-ALV-1-5-003 contiene 1,00 válvulas de tipo GLB, diámetro 2", rating 150 y spec CS2SA1.
 Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
 las líneas estén mal nombradas en la maqueta.
         
-La línea CS2SA1-1"-SUM-1-5-004 contiene 1,00 válvulas de typo BAL, diámetro 1", rating 800, y spec CS2SA1.
+La línea CS2SA1-4"-ALV-1-5-005 contiene 1,00 válvulas de tipo CHS, diámetro 4", rating 300 y spec CS3SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-6"-ALV-1-5-006 contiene 1,00 válvulas de tipo BAL, diámetro 6", rating 150 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-6"-ALV-1-5-006 contiene 1,00 válvulas de tipo GAT, diámetro 1,5", rating 800 y spec CS2SA1.
+Éstas válvulas existen en el P&ID pero no en el B.O.M. Es posible que éstas válvulas no se encuentren ruteadas o que
+las líneas estén mal nombradas en la maqueta.
+        
+La línea CS2SA1-3"-ALV-1-5-002 contiene 1,00 válvulas de typo BAL, diámetro 3", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-3"-ALV-1-5-003 contiene 1,00 válvulas de typo BAL, diámetro 2", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-4"-ALV-1-5-005 contiene 1,00 válvulas de typo BAL, diámetro 4", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-4"-ALV-1-5-005 contiene 1,00 válvulas de typo CHS, diámetro 4", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-6"-ALV-1-5-001 contiene 1,00 válvulas de typo BAL, diámetro 6", rating 150, y spec CS2SA1.
+Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
+mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
+        
+La línea CS2SA1-6"-ALV-1-5-006 contiene 1,00 válvulas de typo BAL, diámetro 1,5", rating 800, y spec CS2SA1.
 Éstas válvulas existen en el B.O.M pero no en el P&ID. Contrastar la maqueta con el P&ID. Es posible que la línea esté
 mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diámetro, el rating o el spec con respecto al P&ID. 
         

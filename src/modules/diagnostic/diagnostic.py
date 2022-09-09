@@ -26,6 +26,11 @@ def diagnostic(mto_df):
     # (VALEC17) Unir el indice y el mto en un dataframe
     mto_df = pd.concat([index, mto_df], axis=1)
 
+    # (VALEC17) Rellenar los espacios vacío
+    mto_df.fillna('-', inplace=True)
+
+    bolts.fillna('-', inplace=True)
+
     # (VALEC17) Se crean los indices para los bolts en mto y en bolts
     mto_df['BOLT_INDEX'] = mto_df[['FIRST_SIZE', 'RATING', 'FACE']].apply(
         concat_bolt_index, axis=1)
@@ -40,16 +45,33 @@ def diagnostic(mto_df):
 
     mto_df.fillna('-', inplace=True)
 
-    mto_df = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
-                    'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH']]
+    mto_df = mto_df[['SPEC', 'INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
+                    'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH', 'TAG_y']]
 
-    mto_df['INDEX'] = mto_df[['INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
-                              'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH']].apply(compare, axis=1)
+    # (VALEC17) Crear un diccionario con las diferencias o diagnóstico
+    diagnostic_dict = {
+        'index': [],
+        'description_spec': [],
+        'description_piping': [],
+        'weight_spec': [],
+        'weight_piping': [],
+        'bolt_length_spec': [],
+        'bolt_length_piping': [],
+        'sch_piping': [],
+        'rating_piping': []
+    }
+
+    # (VALEC17) REINICIAR EL INDEX
+
+    mto_df.reset_index(inplace=True)
+
+    mto_df['INDEX'] = mto_df[['SPEC', 'INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
+                              'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH', 'TAG_y']].apply(compare, diagnostic_dict=diagnostic_dict, axis=1, final_index=mto_df.shape[0])
 
     diagnostic_length = 0
 
-    with open('./output/diagnostic.txt', mode='r') as f:
+    with open('./output/design_diagnostic.txt', mode='r') as f:
         diagnostic_length = len(f.readlines())
 
     if diagnostic_length == 0:
-        os.remove('./output/diagnostic.txt')
+        os.remove('./output/design_diagnostic.txt')

@@ -1,7 +1,7 @@
 import re
 
 
-def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch):
+def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch, diagnostic_dict):
     sch_in_bom = False
     sch_in_piping_class = False
     sch_diacnostic = ''
@@ -9,12 +9,16 @@ def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch):
 
     mto_diagnostic = '' if mto_diagnostic == None else mto_diagnostic
 
+    # (VALEC17) Si el elemento de tubería tiene sch en el piping class
     if sch != '-':
         schs = re.sub(' ', '', sch).split('x')
 
+        # (VALEC17) Contruir el string sch que no son reductores
         if len(schs) == 1:
             sub_str = f'SCH{schs[0]}'
             real_sch = schs[0]
+
+        # (VALEC17) Contruir el string sch de los reductores
         else:
             # (VALEC17) Los weldolets se tratan de manera distinta
             if type_code == 'WOL':
@@ -37,9 +41,15 @@ def def_sch(mto_diagnostic, short_desc_2, short_description_2, type_code, sch):
 
         # (VALEC17) Si hay diferencias retornar el diagnóistico
         if sch_diacnostic != '':
-            return mto_diagnostic + sch_diacnostic
+            diagnostic_dict['sch_piping'].append(real_sch)
+
+            return (mto_diagnostic + sch_diacnostic, diagnostic_dict)
         else:
-            return mto_diagnostic
+            diagnostic_dict['sch_piping'].append(None)
+
+            return (mto_diagnostic, diagnostic_dict)
 
     else:
-        return mto_diagnostic
+        diagnostic_dict['sch_piping'].append(None)
+
+        return (mto_diagnostic, diagnostic_dict)
