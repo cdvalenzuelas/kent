@@ -1,0 +1,4 @@
+ITEM 170: CS3SA1-10"-TIE-IN-003 , BLD, 10"
+---------------------------------------
+EL RATING DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 300.
+
