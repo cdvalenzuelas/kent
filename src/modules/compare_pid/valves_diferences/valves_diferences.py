@@ -31,7 +31,7 @@ def common_index_2(row):
     return f'{line} {spec} {type_code} {size} {tag}'
 
 
-def valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df):
+def valves_diferences(mto_df, pid_df):
     # (VALEC17) Hacer una copia de los dataframes
     mto_df = mto_df.copy()
     pid_df = pid_df.copy()

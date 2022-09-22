@@ -4,6 +4,7 @@ from src.modules.compare_pid.line_diferences import line_diferences
 from src.modules.compare_pid.valves_diferences.valves_diferences import valves_diferences
 from src.modules.compare_pid.locking_device import locking_device
 from src.modules.compare_pid.cleaner import cleaner
+from src.modules.compare_pid.elements_difference.elements_difference import elements_difference
 
 
 def compare_pid(mto_df, piping_class):
@@ -14,10 +15,13 @@ def compare_pid(mto_df, piping_class):
     pid_df = cleaner(piping_class)
 
     # (VALEC17) Ver las diferencias entre las líneas del BOM y las líneas del P&D
-    bom_lines_unique, pid_lines_unique = line_diferences(mto_df, pid_df)
+    line_diferences(mto_df, pid_df)
 
     # (VALEC17) Comparar las válvulas
-    valves_diferences(bom_lines_unique, pid_lines_unique, mto_df, pid_df)
+    #valves_diferences(mto_df, pid_df)
+
+    # (VALEC17) Buscar una diferencia entre el P&ID y el MTO
+    elements_difference(mto_df, pid_df)
 
     # (VALEC17) Modificar en el MTO, SUMARIO, MR y HD las válulas que cuenten con locking device
     mto_df = locking_device(mto_df, pid_df)

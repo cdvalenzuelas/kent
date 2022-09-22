@@ -41,5 +41,3 @@ Estas líneas son: {bom_lines_unique}. Es posible que estas líneas estén mal n
     else:
         print(
             '✅ NO HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
-
-    return (bom_lines_unique, pid_lines_unique)
