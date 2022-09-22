@@ -1,0 +1,6 @@
+
+Existen 1 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
+Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
+Estas líneas son: {'CS3SA1-10"-TIE-IN-003'}. Es posible que estas líneas estén mal nombradas en la 
+maqueta o que estas líneas no se encuentren ruteadas.
+                

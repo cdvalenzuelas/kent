@@ -17,7 +17,7 @@ def cleaner(piping_class):
     pid_df.fillna('-', inplace=True)
 
     # (VALEC17) Sumar el pid_df
-    pid_df = pid_df.groupby(['LINE_NUM', 'SPEC', 'TYPE_CODE', 'FIRST_SIZE_NUMBER', 'RATING'], as_index=False)[['CSO', 'CSC', 'NO_LOCKING_DEVICE']].agg(
+    pid_df = pid_df.groupby(['LINE_NUM', 'SPEC', 'TYPE_CODE', 'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'TAG'], as_index=False)[['CSO', 'CSC', 'NO_LOCKING_DEVICE']].agg(
         CSO=('CSO', sum),
         CSC=('CSC', sum),
         NO_LOCKING_DEVICE=('NO_LOCKING_DEVICE', sum))
@@ -26,6 +26,6 @@ def cleaner(piping_class):
     pid_df['QTY'] = pid_df['CSO'] + pid_df['CSC'] + pid_df['NO_LOCKING_DEVICE']
 
     # (VALEC17) Buscar el tag de las válvulas
-    pid_df = search_valve_tag(pid_df, piping_class)
+    # pid_df = search_valve_tag(pid_df, piping_class)
 
     return pid_df

@@ -47,11 +47,11 @@ def locking_device(mto_df, pid_df):
 
     # (VALEC17) Eliminar columnas innecesarias
     mto_df.drop(columns=['LINE_NUM_y', 'SPEC_y',
-                'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'RATING_y', 'QTY_y', 'TAG_y', 'common_index'], inplace=True)
+                'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'QTY_y', 'TAG_y', 'common_index'], inplace=True)
 
     # (VALEC17) Renombrar columnas
     mto_df.rename(columns={'LINE_NUM_x': 'LINE_NUM',
-                  'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER', 'RATING_x': 'RATING', 'TAG_x': 'TAG', 'QTY_x': 'QTY'}, inplace=True)
+                  'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER', 'TAG_x': 'TAG', 'QTY_x': 'QTY', 'SECOND_SIZE_NUMBER_y': 'SECOND_SIZE_NUMBER'}, inplace=True)
 
     # (VALEC17) Iterar todas las filas en busca de las válvulas que tienen locking device
     for index, row in mto_df.iterrows():

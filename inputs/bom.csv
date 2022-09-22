@@ -1,172 +1,168 @@
 MARK,LINE_NUM,SPEC_FILE,DB_CODE,DESCRIPTION,SHORT_DESC,SIZE,MAIN_NOM,RED_NOM,THK_NOM,QTY,TAG,LENGTH,WEIGHT
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BOLT,"Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H","Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H",,"1""",,,4,,38.1,0
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.1,0.907
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",,,1,BAV24G0I1C,,0.4218409041
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,SW,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End","Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"3/4""",,,1,,,0.90718474
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,2,,76,0.06211947507
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,0.907
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,90L,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11","90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,8,,,3.62873896
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",,,1,BAV24G0I1C,,0.635029318
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,SW,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End","Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"1""",,,2,,,2.086524902
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,3,,100,0.1367580996
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,RTE,"Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""","3/4""",,1,,,0.6531730128
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,TEE,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,2,,,1.306346026
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",,,1,,,1.043
-,"CS2SA1-1""-ALV-1-4-012",CS2SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",,,,,8805,0
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.1,0.907
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",,,1,BAV24G0I1C,,0.4218409041
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,SW,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End","Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"3/4""",,,1,,,0.90718474
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,2,,100,0.06211947507
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,0.907
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,90L,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11","90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,6,,,2.72155422
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",,,1,BAV24G0I1C,,0.635029318
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,SW,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End","Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"1""",,,1,,,1.043262451
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,3,,100,0.1367580996
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,RTE,"Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""","3/4""",,1,,,0.6531730128
-,"CS2SA1-1""-ALV-1-4-014",CS2SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",,,,,5926,0
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"1""",,,4,,44.45,0
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,90L,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11","90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,2,,,0.90718474
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",,,2,BAV24G0I1C,,1.270058636
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",,,2,,,0
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,4,,100,0.1823441327
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",,,1,,,0
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",,,,,2949,0
-,"CS2SA1-1""-DRE-1-4-016",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"1""",,,4,,44.45,0
-,"CS2SA1-1""-DRE-1-4-017",CS2SA1,90L,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11","90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,8,,,3.62873896
-,"CS2SA1-1""-DRE-1-4-017",CS2SA1,TEE,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,1,,,0.6531730128
-,"CS2SA1-1""-DRE-1-4-017",CS2SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",,,,,12907,0
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,90L,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11","90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",,,2,,,0.90718474
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",,,2,BAV24G0I1C,,1.270058636
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",,,2,,,0
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,4,,100,0.1823441327
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",,,1,,,0
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",,,,,283,0
-,"CS2SA1-1""-DRE-1-4-017",CS2SA1,SOL,"ASTM A105, Sockolet, MSS SP-97, SW Ends, Branch: 1/2"" - 1 1?2”","ASTM A105, Sockolet, MSS SP-97, SW Ends, Branch: 1/2"" - 1 1?2”",,"2""","1""",,1,,,0.272155422
-,"CS2SA1-1""-DRE-1-4-017",CS2SA1,BE,"Pipe, [401], BE, ASTM-A106 Gr.B, Seamless, ASME B36.10","Pipe, [401], BE, ASTM-A106 Gr.B, Seamless, ASME B36.10",,"2""",,,,,151,0
-,"CS2SA1-1""-DRE-1-4-017",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,1.497
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",,,1,BAV24G0I1C,,0.4218409041
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,1,,,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,2,,100,0.06211947507
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,1.497
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,54.431
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,32,,107.95,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,45L,"ASTM A234 Gr.WPB, 45 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, 45 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,2,,,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,WNK,"ASTM A105, Weldneck Flange, ASME B16.5, RF/BW End","ASTM A105, Weldneck Flange, ASME B16.5, RF/BW End",,"10""",,,1,,,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,5,,,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,2,,,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,54.431
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",,,,,3054,0
-,"CS3SA1-10""-PRO-1-4-001",CS3SA1,TEE,"ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,2,,,69.39963261
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1/2""",,,,,51,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",,,1,BAV24G0I1C,,0.4218409041
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,1,,,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,2,,100,0.06211947507
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,90L,"ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,8,,,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,2,,,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",,,,,19863,0
-,"CS3SA1-10""-PRO-1-4-008",CS3SA1,TEE,"ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,2,,,69.39963261
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,344.73
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,32,,107.95,0
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,90L,"ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,2,,,0
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,4,,,0
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAT,"Gate Valve Flanged Ends, API 600, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.47 Series A, GO","Gate Valve Flanged Ends, API 600, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.47 Series A, GO",,"10""",,,1,GAV22A0B2B,,344.7302012
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,344.73
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,2,,,0
-,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",,,,,1722,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"3/4""",,,,,100,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,139.7,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"12""",,,16,,114.3,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,DBB,"Studbolts, ASTM-A193-B7",,,"3/4""",,,1,MFV22A0I2I,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,2,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,F8,"ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,306.175
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,2,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"12""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"12""","3/4""",,1,,,0.1542214058
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"12""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"12""",,,,,573,0
-,"CS3SA1-12""-PRO-1-4-002",CS3SA1,ERE,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"12""","10""",,1,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,PE,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE","Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"3/4""",,,,,100,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,139.7,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"12""",,,16,,114.3,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,DBB,"Studbolts, ASTM-A193-B7",,,"3/4""",,,1,MFV22A0I2I,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,2,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,F8,"ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria","ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,306.175
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,2,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS2SA1,ERE,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends Reducer Size: 2"" - 20""","ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends Reducer Size: 2"" - 20""",,"12""","10""",,1,,,15.42214058
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"12""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"12""","3/4""",,1,,,0.1542214058
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"12""",,,1,,,0
-,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"12""",,,,,573,0
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.1,0
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,1.497
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",,,2,BAV24G0I1C,,0.8436818082
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,2,,,0
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,5,,100,0.1552986877
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,TEE,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"3/4""",,,1,,,0.3946253619
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,1.497
-,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.1,0
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.1,0
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,1.497
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BAL,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO","Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",,,2,BAV24G0I1C,,0.8436818082
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,2,,,0
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,5,,100,0.1552986877
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,TEE,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11","Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"3/4""",,,1,,,0.3946253619
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,0
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",,,1,,,1.497
-,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",,,1,,100,0.03105973754
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"8""",,,12,,95.25,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,355.163
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,1,,100,0.04558603319
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,DBB,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,,"3/4""",,,1,MFV22A0I2I,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"8""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"8""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,CHS,"Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5","Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5",,"10""",,,1,CKV22A0B2B,,355.1628257
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,ERE,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria","ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria",,"10""","8""",,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,2,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,306.175
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,355.163
-,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",,,,,648,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"8""",,,12,,95.25,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,355.163
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,"Studbolts, ASTM-A193-B7","Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,SW,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore","Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,NIP,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120","Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",,,1,,100,0.04558603319
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"8""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,DBB,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,,"3/4""",,,1,MFV22A0I2I,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"8""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,CHS,"Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5","Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5",,"10""",,,1,CKV22A0B2B,,355.1628257
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,ERE,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria","ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria",,"10""","8""",,1,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,WNK,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match","Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",,,2,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,SOL,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105","Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,0
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,306.175
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS","AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",,,1,,,355.163
-,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BE,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE","Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",,,,,648,0
-,"CS3SA1-10""-TIE-IN-003",CS3SA1,WNK,,,,"10""",,,1,,,0
-,"CS3SA1-10""-TIE-IN-003",CS3SA1,GAS,,,,"10""",,,1,,,0
-,"CS3SA1-10""-TIE-IN-003",CS3SA1,BOLT,,,,"10""",,,16,,100,0
-,"CS3SA1-10""-TIE-IN-003",CS3SA1,BLD,,,,"10""",,,1,,,0
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BOLT,,"Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H",,"3/4""",,,4,,38.10,1.043
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.10,0.907
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,1,BAV24G0I1C,,0.4218409041
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,SW,,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"3/4""",-,,1,,,0.90718474
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,2,,100.00,0.06211947507
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,0.907
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,90L,,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,8,,,3.62873896
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",-,,1,BAV24G0I1C,,0.635029318
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,SW,,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"1""",-,,2,,,2.086524902
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,3,,100.00,0.1367580996
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,RTE,,"Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""","3/4""",,1,,,0.6531730128
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,TEE,,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,2,,,1.306346026
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",-,,1,,,1.043
+,"CS2SA1-1""-ALV-1-4-012",CS2SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",-,,,,8805,0
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.10,0.907
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,1,BAV24G0I1C,,0.4218409041
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,SW,,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"3/4""",-,,1,,,0.90718474
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,2,,100.00,0.06211947507
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,0.907
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,90L,,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,6,,,2.72155422
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",-,,1,BAV24G0I1C,,0.635029318
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,SW,,"Flange, ASTM A105, Socketweld Flange, ASME B16.5, RF/SW End",,"1""",-,,1,,,1.043262451
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,3,,100.00,0.1367580996
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,RTE,,"Reducing branch tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""","3/4""",,1,,,0.6531730128
+,"CS2SA1-1""-ALV-1-4-014",CS2SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",-,,,,5929,0
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"1""",,,4,,44.45,0
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,90L,,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,2,,,0.90718474
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",-,,2,BAV24G0I1C,,1.270058636
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",-,,2,,,0
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,4,,100.00,0.1823441327
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",-,,1,,,0
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",-,,,,2949,0
+,"CS2SA1-1""-DRE-1-4-016",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"1""",,,4,,44.45,0
+,"CS2SA1-1""-DRE-1-4-017",CS2SA1,90L,,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,8,,,3.62873896
+,"CS2SA1-1""-DRE-1-4-017",CS2SA1,TEE,,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,1,,,0.6531730128
+,"CS2SA1-1""-DRE-1-4-017",CS2SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",-,,,,12907,0
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,90L,,"90 deg elbow, CL3000, SWE, ASTM-A105, ASME-B16.11",,"1""",-,,2,,,0.90718474
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"1""",-,,2,BAV24G0I1C,,1.270058636
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",-,,2,,,0
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,4,,100.00,0.1823441327
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"1""",-,,1,,,0
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1""",-,,,,283.00,0
+,"CS2SA1-1""-DRE-1-4-017",CS2SA1,SOL,,"ASTM A105, Sockolet, MSS SP-97, SW Ends, Branch: 1/2"" - 1 1?2”",,"1""","1""",,1,,,0.272155422
+,"CS2SA1-1""-DRE-1-4-017",CS2SA1,BE,,"Pipe, [401], BE, ASTM-A106 Gr.B, Seamless, ASME B36.10",,"1""",-,,,,151.00,0
+,"CS2SA1-1""-DRE-1-4-017",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,1.497
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,1,BAV24G0I1C,,0.4218409041
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,1,,,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,2,,100.00,0.06211947507
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,1.497
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,54.431
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,32,,107.95,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,45L,,"ASTM A234 Gr.WPB, 45 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,2,,,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,WNK,,"ASTM A105, Weldneck Flange, ASME B16.5, RF/BW End",,"10""",-,,1,,,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,5,,,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,2,,,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,54.431
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",-,,,,3054,0
+,"CS3SA1-10""-PRO-1-4-001",CS3SA1,TEE,,"ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,2,,,69.39963261
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"1/2""",-,,,,51.00,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,1,BAV24G0I1C,,0.4218409041
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,1,,,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,2,,100.00,0.06211947507
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,90L,,"ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,8,,,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,2,,,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",-,,,,19863,0
+,"CS3SA1-10""-PRO-1-4-008",CS3SA1,TEE,,"ASTM A234 Gr.WPB, Equal tee, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,2,,,69.39963261
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,344.73
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,32,,107.95,0
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,90L,,"ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,2,,,0
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,4,,,0
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAT,,"Gate Valve Flanged Ends, API 600, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.47 Series A, GO",,"10""",-,,1,GAV22A0B2B,,344.7302012
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,344.73
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,2,,,0
+,"CS3SA1-10""-PRO-1-4-009",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",-,,,,1722,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"3/4""",-,,,,100.00,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,139.70,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"12""",,,16,,114.30,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BAL,,"Ball Valve Flanged Ends, Reduced Bore, Long Pattern, Trunnion Ball, API 608, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.5, GO",,"10""",-,,1,BAV22A0F1C,,306.1748498
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,2,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,F8,,"ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,306.175
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,2,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"12""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"12""","3/4""",,1,,,0.1542214058
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"12""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"12""",-,,,,573.00,0
+,"CS3SA1-12""-PRO-1-4-002",CS3SA1,ERE,,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"12""","10""",,1,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,PE,,"Pipe, ASTM A106 Gr.B, S-80, Seamless, ASME B36.10, PE",,"3/4""",-,,,,100.00,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,139.70,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"12""",,,16,,114.30,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BAL,,"Ball Valve Flanged Ends, Reduced Bore, Long Pattern, Trunnion Ball, API 608, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.5, GO",,"10""",-,,1,BAV22A0F1C,,306.1748498
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,2,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,F8,,"ASTM A516 Gr.70 + S5, Spectacle Blank Fig.8, ASME B16.48, Between RF Flanges, as per ASME B16.5, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For Acceptance Criteria",,"10""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,306.175
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,2,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS2SA1,ERE,,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends Reducer Size: 2"" - 20""",,"12""","10""",,1,,,15.42214058
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"12""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"12""","3/4""",,1,,,0.1542214058
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"12""",-,,1,,,0
+,"CS3SA1-12""-PRO-1-4-005",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"12""",-,,,,573.00,0
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,38.10,0
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"3/4""",,,4,,44.45,1.497
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,2,BAV24G0I1C,,0.8436818082
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,2,,,0
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,5,,100.00,0.1552986877
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,TEE,,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"3/4""",-,,1,,,0.3946253619
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,1.497
+,"CS3SA1-3/4""-PRO-1-4-011",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"1/2""",,,4,,38.10,0
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,0.625,,,4,,38.10,0
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,0.625,,,4,,44.45,1.497
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,BAL,,"Ball Valve with integral welded 2 Nipples, Reduced Bore, Floating Ball, API 608, Seat Leakage as per API 598, ASTM A105, Class 800, SW Ends w/ 2 PE Nipples, LO",,"3/4""",-,,2,BAV24G0I1C,,0.8436818082
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,2,,,0
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,5,,100.00,0.1552986877
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,TEE,,"Tee, CL3000, SWE, ASTM-A105, ASME-B16.11",,"3/4""",-,,1,,,0.3946253619
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,0
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"3/4""",-,,1,,,1.497
+,"CS3SA1-3/4""-PRO-1-4-013",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"3/4""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"3/4""",-,,1,,100.00,0.03105973754
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"8""",,,12,,95.25,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,355.163
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,1,,100.00,0.04558603319
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"8""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"8""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BAL,,"Ball Valve Flanged Ends, Reduced Bore, Long Pattern, Trunnion Ball, API 608, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.5, GO",,"10""",-,,1,BAV22A0F1C,,306.1748498
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,CHS,,"Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5",,"10""",-,,1,CKV22A0B2B,,355.1628257
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,ERE,,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria",,"10""","8""",,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,2,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","3/4""",,1,,,0.1542214058
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,306.175
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,355.163
+,"CS3SA1-8""-PRO-1-4-003",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",-,,,,648.00,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"1""",,,12,,95.25,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,306.175
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,355.163
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BOLT,,"Studbolts, ASTM-A193-B7",,"10""",,,16,,107.95,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,SW,,"Flange, CL300, RFFE/SWE, ASTM-A182-F304L, ASME-B16.5, SW, S-80S bore",,"1""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,NIP,,"Nipple, PE, [403], 3"" long, ASTM-D1785 PVC 1120",,"1""",-,,1,,100.00,0.04558603319
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"8""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"8""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BAL,,"Ball Valve Flanged Ends, Reduced Bore, Long Pattern, Trunnion Ball, API 608, ASTM A216 Gr.WCB, Class 300, RF, Ends as per ASME B16.5, GO",,"10""",-,,1,BAV22A0F1C,,306.1748498
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,CHS,,"Swing Check Valve Flanged Ends, API 594, Seat Leakage as per API 598, ASTM A216 Gr.WCB, Class 300, Installation: Horizontal or Vertical, RF, Ends as per ASME B16.5",,"10""",-,,1,CKV22A0B2B,,355.1628257
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,ERE,,"ASTM A234 Gr.WPB, Eccentric reducer, Seamless, ASME B16.9, BW Ends, Impact Test At 32°F According to Para 423.2.3 of ASME B31.4 For  Acceptance Criteria",,"10""","8""",,1,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,WNK,,"Flange, CL300, RFFE/BE, ASTM-B166-600, ASME-B16.5, WN, [409]bore to match",,"10""",-,,2,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,SOL,,"Sockolet, CL3000, BE/SWE, sockolet, ASTM-A105",,"10""","1""",,1,,,0.272155422
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,0
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,306.175
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,GAS,,"AISI 304/Graphite, Spiral Wound Gasket, ASME B16.20, RF as per ASME B16.5, Thk=1/8in, Inner AISI 304/Outer CS",,"10""",-,,1,,,355.163
+,"CS3SA1-8""-PRO-1-4-006",CS3SA1,BE,,"Pipe, API 5L Gr.B, S-20, Seamless, ASME B36.10, PSL2, BE",,"10""",-,,,,648.00,0
