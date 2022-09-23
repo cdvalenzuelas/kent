@@ -78,8 +78,14 @@ def bom_cleaner(bom, piping_class, piping_class_valves_weights):
         mto_df['WEIGHT_y'] = mto_df[['WEIGHT_x', 'WEIGHT_y',
                                      'TYPE', 'QTY']].apply(valves_weight, axis=1)
 
+    # (VALEC17) Diagnosticar únicamente a los items que aparecen en el piping class
+    mto_df_diagnostic = mto_df.copy()
+
+    mto_df_diagnostic = mto_df_diagnostic[(
+        mto_df_diagnostic['DESCRIPTION'].notnull())]
+
     # (VALEC17) OJO EL DEFINE DIGANOSTIC DEBERÍA COJER UN ARCHIVO LIMPIO Y LLENARLO CON TODAD LAS FICIONES (BORRAR LOS ARCHIVOS DE INPUTS CADA VEZ QUE SE CORRA LA INFORMACIÓN)
-    diagnostic(mto_df)
+    diagnostic(mto_df_diagnostic)
 
     # (VALEC17) Eliminando columnas innecesarias
     mto_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',

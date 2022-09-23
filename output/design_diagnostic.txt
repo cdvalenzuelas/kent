@@ -1,0 +1,4 @@
+ITEM 163: CS3SA1-8"-PRO-1-4-006 , BE, 10"
+---------------------------------------
+EL SCH DEL ELEMENTO NO SE ENCUENTRA EN EL B.O.M, ESTE DEBERÍA SER 20.
+
