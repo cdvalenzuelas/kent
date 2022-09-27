@@ -32,13 +32,13 @@ def clean_csv(mto_df, summary_df, mr_df, co_df):
     mr_df.reset_index(inplace=True)
 
     # (VALEC17) Dejar únicamente las columnas necesarias
-    mr_df = mr_df[['TAG', 'DESCRIPTION',
+    mr_df = mr_df[['Catalogacion', 'TAG', 'DESCRIPTION',
                    'FIRST_SIZE_NUMBER', 'QTY', 'UNITS', 'NOTE']]
 
-    summary_df = summary_df[['TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
+    summary_df = summary_df[['Catalogacion', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
                              'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'QTY', 'UNITS', 'WEIGHT_PER_UNIT', 'TOTAL_WEIGHT', 'NOTE']]
 
-    mto_df = mto_df[['LINE_NUM', 'SPEC', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
+    mto_df = mto_df[['Catalogacion', 'LINE_NUM', 'SPEC', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE_NUMBER',
                      'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING', 'QTY', 'UNITS', 'WEIGHT_PER_UNIT', 'TOTAL_WEIGHT', 'NOTE']]
 
     # (VALEC17) Renombrar columnas

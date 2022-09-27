@@ -2,9 +2,9 @@ import pandas as pd
 
 
 def common_index(row):
-    line, spec, type_code, size, tag = row
+    line, spec, type_code, size, second_size, tag = row
 
-    return f'{line} {spec} {type_code} {size} {tag}'
+    return f'{line} {spec} {type_code} {size} {second_size} {tag}'
 
 
 # (VALEC17) Definir las notas
@@ -16,27 +16,28 @@ def note(line_y):
 
 
 def locking_device(mto_df, pid_df):
-    # (VALEC17) Eliminar las filas que no tienen válvulas o que las válvulas que no se hayan encontrado
-    pid_df = pid_df[(pid_df['QTY'] > 0) & (pid_df['TAG'] != 'error')]
+    # (VALEC17) Hacer una copia del df
+    pid_df = pid_df.copy()
 
-    # (VALEC17) Eliminar las filas que no tienen cantidad o que no tienen locking device (no son relevantes para el análisis)
-    pid_df_locking_device_only = pid_df[(pid_df['QTY'] > 0) & (
-        pid_df['QTY'] > pid_df['NO_LOCKING_DEVICE'])]
+    # (VALEC17) Dejar únicamente las válvulas que tienen locking device
+    pid_df = pid_df[pid_df['QTY'] > 0]
+
+    pid_df = pid_df[pid_df['QTY'] > pid_df['NO_LOCKING_DEVICE']]
 
     # (VALEC17) Se crea la columna Note en el MTO
     mto_df['NOTE'] = '-'
 
-    if pid_df_locking_device_only.shape[0] == 0:
+    if pid_df.shape[0] == 0:
         return mto_df.copy()
 
-    pid_df_locking_device_only = pid_df_locking_device_only.copy()
+    pid_df_locking_device_only = pid_df.copy()
 
     # (VALEC17) Crear índices comunes entre el MTO y el P&ID
     mto_df['common_index'] = mto_df[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                     'FIRST_SIZE_NUMBER', 'TAG']].apply(common_index, axis=1)
+                                     'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'TAG']].apply(common_index, axis=1)
 
     pid_df_locking_device_only['common_index'] = pid_df_locking_device_only[['LINE_NUM', 'SPEC', 'TYPE_CODE',
-                                                                             'FIRST_SIZE_NUMBER', 'TAG']].apply(common_index, axis=1)
+                                                                             'FIRST_SIZE_NUMBER', 'SECOND_SIZE_NUMBER', 'TAG']].apply(common_index, axis=1)
 
     # (VALEC17) Hacer un merge entre MTO y P&ID
     mto_df = pd.merge(mto_df, pid_df_locking_device_only,
@@ -47,11 +48,11 @@ def locking_device(mto_df, pid_df):
 
     # (VALEC17) Eliminar columnas innecesarias
     mto_df.drop(columns=['LINE_NUM_y', 'SPEC_y',
-                'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'QTY_y', 'TAG_y', 'common_index'], inplace=True)
+                'TYPE_CODE_y', 'FIRST_SIZE_NUMBER_y', 'SECOND_SIZE_NUMBER_y', 'QTY_y', 'TAG_y', 'common_index'], inplace=True)
 
     # (VALEC17) Renombrar columnas
     mto_df.rename(columns={'LINE_NUM_x': 'LINE_NUM',
-                  'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER', 'TAG_x': 'TAG', 'QTY_x': 'QTY', 'SECOND_SIZE_NUMBER_y': 'SECOND_SIZE_NUMBER'}, inplace=True)
+                  'SPEC_x': 'SPEC', 'TYPE_CODE_x': 'TYPE_CODE', 'FIRST_SIZE_NUMBER_x': 'FIRST_SIZE_NUMBER', 'TAG_x': 'TAG', 'QTY_x': 'QTY', 'SECOND_SIZE_NUMBER_x': 'SECOND_SIZE_NUMBER'}, inplace=True)
 
     # (VALEC17) Iterar todas las filas en busca de las válvulas que tienen locking device
     for index, row in mto_df.iterrows():

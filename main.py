@@ -45,7 +45,7 @@ if __name__ == '__main__':
             bom_df, piping_class, piping_class_valves_weights)
 
         # (VALEC17) Comparar con la info del P&ID con el MTO
-        mto_df = compare_pid(mto_df, piping_class)
+        mto_df = compare_pid(mto_df)
 
         # (VALEC17) Se crea la HD
         hd(mto_df)

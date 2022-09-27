@@ -63,7 +63,7 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
     # (VALEC17) Agrupar y sumar por cantidad peso y area
     mto_df = mto_df.groupby(['LINE_NUM', 'SPEC', 'ORDER', 'TYPE', 'TYPE_CODE', 'DESCRIPTION', 'FIRST_SIZE',
                              'FIRST_SIZE_NUMBER', 'SECOND_SIZE', 'SECOND_SIZE_NUMBER', 'SCH', 'FACE', 'RATING',
-                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
+                             'UNITS', 'TAG', 'WEIGHT_PER_UNIT', 'Catalogacion'], as_index=False)[['QTY', 'WEIGHT', 'AREA']].agg(
         TOTAL_WEIGHT=('WEIGHT', sum),
         AREA=('AREA', sum),
         QTY=('QTY', sum))
