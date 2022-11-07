@@ -37,8 +37,24 @@ def fix_line_num(line_num):
     return line_num
 
 
+# (VALEC17) CAMBIARLE MONENTÁNEAMENTE EL TAG A LOS PERNOS
+def change_bolt_tag(row):
+    type_code, tag = row
+
+    if type_code == 'BOLT':
+        return '-'
+
+    return tag
+
+
 # (VALEC17) Dejar los pesos que vienen en el BOM
 def bom_cleaner(bom, piping_class, piping_class_valves_weights):
+    # (VALEC17) conservar los tags del MTO
+    bom['TAG_2'] = bom['TAG']
+
+    # (VALEC17) CAMBIAR LOS TAGS DE LOS PERNOS
+    bom['TAG'] = bom[['DB_CODE', 'TAG']].apply(change_bolt_tag, axis=1)
+
     # (VALEC17) Llenar los pesos y longitudes vacías con 0
     bom['LENGTH'].fillna(0, inplace=True)
     bom['WEIGHT'].fillna(0, inplace=True)
@@ -73,6 +89,12 @@ def bom_cleaner(bom, piping_class, piping_class_valves_weights):
     # (VALEC17) Hacer un join entre el bom y el piping class para generar el mto
     mto_df = pd.merge(bom, piping_class, how='left', on='common_index')
 
+    # (VALEC17) RECUPERANDO LOS TAGS DE LOS PERNOS
+    mto_df['TAG'] = bom['TAG_2']
+
+    # (VALEC17) Eliminando columnas innecesarias
+    mto_df.drop(['TAG_2', 'TAG_x', 'TAG_y'], axis=1, inplace=True)
+
     # (VALEC17) Corregir el peso de válvulas
     if not piping_class_valves_weights:
         mto_df['WEIGHT_y'] = mto_df[['WEIGHT_x', 'WEIGHT_y',
@@ -89,11 +111,11 @@ def bom_cleaner(bom, piping_class, piping_class_valves_weights):
 
     # (VALEC17) Eliminando columnas innecesarias
     mto_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',
-                'MAIN_NOM', 'RED_NOM', 'TAG_x', 'DESCRIPTION'], axis=1, inplace=True)
+                'MAIN_NOM', 'RED_NOM', 'DESCRIPTION'], axis=1, inplace=True)
 
     # (VALEC17) Renombrando el SHORT_DESCRIPTION como DESCRIPTION
     mto_df.rename(
-        columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
+        columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
 
     # (VALEC17) Creando la columna units
     mto_df['UNITS'] = mto_df['TYPE'].apply(units)

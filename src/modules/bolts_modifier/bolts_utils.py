@@ -3,13 +3,13 @@ import re
 
 # (VALEC17) Crea una columna comun entre el mto y los bolt
 def concat_bolt_index(row):
-    first_size, rating, face = row
+    type_code, first_size, rating, face, tag = row
 
     rating = str(rating)
 
     rating = re.sub('[.]0', '', rating)
 
-    return f'{first_size} {rating} {face}'
+    return f'{type_code} {first_size} {rating} {face} {tag}'
 
 
 # (VALEC17) Definir el Diámetro de los pernos

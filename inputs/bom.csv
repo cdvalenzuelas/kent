@@ -1,5 +1,5 @@
 MARK,LINE_NUM,SPEC_FILE,DB_CODE,DESCRIPTION,SHORT_DESC,SIZE,MAIN_NOM,RED_NOM,THK_NOM,QTY,TAG,LENGTH,WEIGHT
-1,"CS1SC2-12""-SCI-1-7-150",CS1SC2,BOLT,"Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H","Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H",-,"8""",-,-,8,-,69.85,
+1,"CS1SC2-12""-SCI-1-7-150",CS1SC2,BOLT,"Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H","Stud bolt with 2 heavy hexagonal nuts, Full Length Threaded, ASME B1.1/ASME B18.2.2, A193 Gr.B7/A194 Gr.2H",-,"8""",-,-,8,F8,69.85,
 2,"CS1SC2-12""-SCI-1-7-150",CS1SC2,WNK,"Flange, ASTM A105, Weldneck Flange, ASME B16.5, FF/BW End","Flange, ASTM A105, Weldneck Flange, ASME B16.5, FF/BW End",-,"8""",-,-,1,-,-,
 3,"CS1SC2-12""-SCI-1-7-150",CS1SC2,GAS,"Aramid Fiber Reinforced NBR, Nonmetallic Flat Gasket, ASME B16.21, FF as per ASME B16.5, Thk=1/8in","Aramid Fiber Reinforced NBR, Nonmetallic Flat Gasket, ASME B16.21, FF as per ASME B16.5, Thk=1/8in",-,"8""",-,-,1,-,-,
 4,"CS1SC2-12""-SCI-1-7-150",CS1SC2,90L,"ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends","ASTM A234 Gr.WPB, 90 Degree elbow Long Radius (R=1.5D), Seamless, ASME B16.9, BW Ends",-,"12""",-,-,1,-,-,0

@@ -17,6 +17,7 @@ def concat_bolt_index(row):
 
 
 def diagnostic(mto_df):
+
     # (VALEC17) Resetear el índice del mto
     mto_df.reset_index(inplace=True)
 

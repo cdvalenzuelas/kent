@@ -37,6 +37,14 @@ def def_weight(row):
     return weight * qty
 
 
+# (VALEC17) Define el tipo de unidades para cada tipo de elemento
+def units(TYPE):
+    if TYPE == 'PP':
+        return 'm'
+    else:
+        return 'e.a'
+
+
 def demolition_cleaner(demolition_df, piping_class):
     # (VALEC17) Llenar los N.A con guines
     demolition_df.fillna('-', inplace=True)
@@ -114,6 +122,9 @@ def demolition_cleaner(demolition_df, piping_class):
         columns={'SHORT_DESCRIPTION': 'DESCRIPTION', 'TAG_y': 'TAG', 'WEIGHT_y': 'WEIGHT'}, inplace=True)
 
     demolition_df.fillna('-', inplace=True)
+
+    # (VALEC17) Creando la columna units
+    demolition_df['UNITS'] = demolition_df['TYPE'].apply(units)
 
     # (VALEC17) Modificación por pernos
     demolition_df = bolts_modifier(mto_df=demolition_df)

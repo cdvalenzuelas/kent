@@ -114,7 +114,6 @@ def compare(row, diagnostic_dict, final_index):
 
     # (VALEC17) SI YA SE HAN ANALIZADO TODOS LOS ITEMS ES NECESARIO GENERAR EL DF
     if item == final_index:
-        print(diagnostic)
 
         # (VALEC17) CONVERTIR EL DICCIONARIO EN UN DATAFRAME
         diagnostic_df = pd.DataFrame(diagnostic_dict)

@@ -3,6 +3,12 @@ def find_tag(row, piping_class):
 
     description = description.upper()
 
+    # (VALEC17) TAGS PARA LOS PERNOS
+    if type_code == 'BOLT' and tag in ['-', 'F8', 'BTY']:
+        return tag
+    elif type_code == 'BOLT' and tag not in ['-', 'F8', 'BTY']:
+        return 'ERROR'
+
     # (VALEC17) SI SON NIPLES O COUPLIGS TIENEN SU TAG EN SU FACE
     if type_code in ['NIP', 'CPL'] and tag not in ['PExTE', 'SWxTHD', 'BExTE', 'PE', 'TE', 'SW', 'THD']:
         if ' PEXTE,' in description or ' PEXTE' in description or '/PEXTE' in description:

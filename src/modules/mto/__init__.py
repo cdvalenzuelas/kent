@@ -20,7 +20,6 @@ def def_total_area(row):
 
 
 def mto(bom_df, piping_class, piping_class_valves_weights):
-
     # (VALEC17) Creación del mto limpio incluyendo la información del piping class
     mto_df = bom_cleaner(bom_df, piping_class, piping_class_valves_weights)
 
@@ -44,6 +43,8 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
 
     # (VALEC17) Modificación por pernos
     mto_df = bolts_modifier(mto_df=mto_df)
+
+    mto_df.to_excel('temp.xlsx')
 
     # (VALEC17) Creando la columna weight per unit
     mto_df['WEIGHT_PER_UNIT'] = mto_df['WEIGHT']

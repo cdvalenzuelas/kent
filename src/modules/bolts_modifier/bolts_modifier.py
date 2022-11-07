@@ -5,24 +5,41 @@ from src.modules.bolts_modifier.bolts_utils import concat_bolt_index, bolts_diam
 
 # (VALEC17) Esta es la función que modifica el dataframe con respecto a los bolts
 def bolts_modifier(mto_df):
-    # (VALEC17) lEER EL ARCHIVO DE PERNOS
-    bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
+    # (VALEC17) SEPARAR LOS PERNOS AL INTYERIOR DEL MTO
 
-    # (VALEC17) Se crean los indices para los bolts en mto y en bolts
-    mto_df['BOLT_INDEX'] = mto_df[['FIRST_SIZE', 'RATING', 'FACE']].apply(
-        concat_bolt_index, axis=1)
+    mto_df_bolts = mto_df[mto_df['TYPE_CODE'] == 'BOLT']
 
-    bolts['BOLT_INDEX'] = bolts[['DIAMETER', 'RATING', 'FACE']].apply(
-        concat_bolt_index, axis=1)
+    mto_df_no_bolts = mto_df[mto_df['TYPE_CODE'] != 'BOLT']
 
-    # (VALEC17) Hacer un join entre el mto y los bolts para completar el MTO
-    mto_df = pd.merge(mto_df, bolts, how='left', on='BOLT_INDEX')
+    mto_df_bolts = mto_df.copy()
+
+    mto_df_no_bolts = mto_df.copy()
+
+    # (VALEC17) SI HAY PERNOS CALCULARLE EL INDICE
+    if len(mto_df_bolts) > 0:
+        # (VALEC17) lEER EL ARCHIVO DE PERNOS
+        bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
+
+        # (VALEC17) POR CONVENIRNCIA SE LE COLOCA TYPE CODE A LA TABLA DE PERNOS
+        bolts['TYPE_CODE'] = 'BOLT'
+
+        bolts['BOLT_INDEX'] = bolts[['TYPE_CODE', 'DIAMETER', 'RATING', 'FACE', 'TAG']].apply(
+            concat_bolt_index, axis=1)
+
+        # (VALEC17) Se crean los indices para los bolts en mto y en bolts
+        mto_df_bolts['BOLT_INDEX'] = mto_df_bolts[['TYPE_CODE', 'FIRST_SIZE', 'RATING', 'FACE', 'TAG']].apply(
+            concat_bolt_index, axis=1)
+
+        # (VALEC17) Hacer un join entre el mto y los bolts para completar el MTO
+        mto_df = pd.merge(mto_df_bolts, bolts, how='left', on='BOLT_INDEX')
+    else:
+        return mto_df
 
     mto_df.fillna('-', inplace=True)
 
     # (VALEC17) Renombrando columnas
     mto_df.rename(columns={'RATING_x': 'RATING',
-                  'FACE_x': 'FACE', 'TAG_x': 'TAG'}, inplace=True)
+                  'FACE_x': 'FACE', 'TAG_x': 'TAG', 'TYPE_CODE_x': 'TYPE_CODE'}, inplace=True)
 
     # (VALEC17) Generar el primer tamaño de los pernos (diámetro)
     mto_df['FIRST_SIZE'] = mto_df[['BOLT_DIAMETER', 'TYPE_CODE',
@@ -54,5 +71,9 @@ def bolts_modifier(mto_df):
     # (VALEC17) Eliminando columnas innecesarias
     mto_df.drop(['BOLT_DIAMETER', 'QUANTITY', 'BOLT_LENGTH', 'RATING_y',
                 'FACE_y', 'BOLT_INDEX', 'DIAMETER', 'DIAMETER_NUMBER', 'TAG_y'], axis=1, inplace=True)
+
+    # (VALEC17)
+    mto_df = pd.concat(
+        [mto_df, mto_df_no_bolts])
 
     return mto_df
