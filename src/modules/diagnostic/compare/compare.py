@@ -45,37 +45,36 @@ def compare(row, diagnostic_dict, final_index):
 
     # (VALEC17) Empezar a crear el diagnóstico
     diagnostic = ''
-    diagnostic_2 = ''
 
     # (VALEC17) Crear indice
     diagnostic_dict['index'].append(
         f'{spec} {type_code} {first_size} {second_size} {tag}')
 
     # (VALEC17) Ver diferencias en descripciones
-    diagnostic_2, diagnostic_dict = description(diagnostic_2, short_desc_2,
-                                                short_description_2, short_desc, short_description, diagnostic_dict)
+    diagnostic_dict = description(
+        short_desc_2, short_description_2, short_desc, short_description, diagnostic_dict)
 
     # (VALEC17) diferencias en pesos
-    diagnostic_2, diagnostic_dict = weight(diagnostic_2, type_code,
-                                           weight_x, weight_y, bolt_weight, qty, length, diagnostic_dict)
+    diagnostic_dict = weight(type_code,
+                             weight_x, weight_y, bolt_weight, qty, length, diagnostic_dict)
 
     # (VALEC17) bolts length
-    diagnostic, diagnostic_dict = def_bolt_length(
-        diagnostic, type_code, length, bolt_length, diagnostic_dict)
+    diagnostic_dict = def_bolt_length(
+        type_code, length, bolt_length, diagnostic_dict)
 
     # (VALEC17) nipple option
-    diagnostic = nipple_option(diagnostic, type_code, length)
+    diagnostic = nipple_option(item, line_num, type_code, first_size, length)
 
     # (VALEC17) wafer_bolts
-    diagnostic = wafer_bolts(diagnostic, type_code)
+    diagnostic = wafer_bolts(item, line_num, first_size, type_code)
 
     # (VALEC17) Comparar sch
-    diagnostic, diagnostic_dict = def_sch(diagnostic, short_desc_2,
-                                          short_description_2, type_code, shc, diagnostic_dict)
+    diagnostic_dict = def_sch(
+        short_desc_2, short_description_2, type_code, shc, diagnostic_dict)
 
     # (VALEC17) Comparar el rating
-    diagnostic, diagnostic_dict = def_rating(diagnostic, short_desc_2,
-                                             short_description_2, rating, type_code, diagnostic_dict)
+    diagnostic_dict = def_rating(
+        short_desc_2, short_description_2, rating, type_code, diagnostic_dict)
 
     # (VALEC17) print(diagnostic_dict)
 
@@ -115,6 +114,7 @@ def compare(row, diagnostic_dict, final_index):
 
     # (VALEC17) SI YA SE HAN ANALIZADO TODOS LOS ITEMS ES NECESARIO GENERAR EL DF
     if item == final_index:
+        print(diagnostic)
 
         # (VALEC17) CONVERTIR EL DICCIONARIO EN UN DATAFRAME
         diagnostic_df = pd.DataFrame(diagnostic_dict)
@@ -135,10 +135,6 @@ def compare(row, diagnostic_dict, final_index):
         diagnostic_df.drop(columns=['difference'], inplace=True)
 
         # (VALEC17) GENERAR EL ARCHIVO DE DIFERENCIAS EN PESOS, DESCRIPCIONES, RATINGS SCHEDULES ETC
-        diagnostic_df.to_csv('./diacnostic/diagnostic.csv')
-
-        # (VALEC17) Escribir el diagnístico de diseño
-        main_diacnostic(diagnostic, short_description, item,
-                        line_num, type_code, first_size, second_size)
+        diagnostic_df.to_csv('./diacnostic/8.difference_spec.csv')
 
     return item

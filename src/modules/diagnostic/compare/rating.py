@@ -2,12 +2,10 @@ import re
 from src.utils.normalize_string import normalize_string
 
 
-def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_code, diagnostic_dict):
+def def_rating(short_desc_2, short_description_2, rating, type_code, diagnostic_dict):
     rating_in_bom = False
     rating_in_piping_class = False
     rating_diacnostic = ''
-
-    mto_diagnostic = '' if mto_diagnostic == None else mto_diagnostic
 
     if rating != '-' and type_code != 'BOLT':
         sub_str = normalize_string(rating)
@@ -27,13 +25,13 @@ def def_rating(mto_diagnostic, short_desc_2, short_description_2, rating, type_c
         if rating_diacnostic != '':
             diagnostic_dict['rating_piping'].append(rating)
 
-            return (mto_diagnostic + rating_diacnostic, diagnostic_dict)
+            return diagnostic_dict
         else:
             diagnostic_dict['rating_piping'].append(None)
 
-            return (mto_diagnostic, diagnostic_dict)
+            return diagnostic_dict
 
     else:
         diagnostic_dict['rating_piping'].append(None)
 
-        return (mto_diagnostic, diagnostic_dict)
+        return diagnostic_dict

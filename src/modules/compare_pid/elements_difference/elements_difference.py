@@ -83,4 +83,4 @@ def elements_difference(mto_df, pid_df):
     merge_df.sort_values(by=['LINE_NUM', 'SPEC', 'TYPE_CODE'], inplace=True)
 
     # (VALEC17) Generar el archivo
-    merge_df.to_csv('./diacnostic/elements_difference.csv', index=False)
+    merge_df.to_csv('./diacnostic/4.difference_elements.csv', index=False)

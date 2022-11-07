@@ -47,4 +47,4 @@ def co_temp(co_df):
         print(
             '❌  EXISTEN ELEMENTOS DEL B.O.M QUE NO TIENEN RELACIONADAS CANTIDADES DE OBRA\n')
         # (VALEC17) Guardar el archivo
-        co_df.to_csv('./diacnostic/co_temp.csv', index=False)
+        co_df.to_csv('./diacnostic/5.temp_co.csv', index=False)

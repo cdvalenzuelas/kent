@@ -12,7 +12,7 @@ mal nombrada en la maqueta, esté mal seleccionado el tipo de válvula, el diám
         """
 
     # (VALEC17) Escribir el archivo de diagnóstico
-    with open('./diacnostic/lines_difference.txt', mode='a') as f:
+    with open('./diacnostic/1.difference_lines.txt', mode='a') as f:
         f.write(diacnostic_str)
 
     return 'difference'

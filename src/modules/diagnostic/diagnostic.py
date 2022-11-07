@@ -20,14 +20,8 @@ def diagnostic(mto_df):
     # (VALEC17) Resetear el índice del mto
     mto_df.reset_index(inplace=True)
 
-    # (VALEC17) Crear un índice artificial
-    index = pd.DataFrame({'INDEX': list(range(1, mto_df.shape[0] + 1))})
-
     # (VALEC17) lEER EL ARCHIVO DE PERNOS
     bolts = pd.read_csv('./src/clients/cenit/elements/bolts_kent.csv')
-
-    # (VALEC17) Unir el indice y el mto en un dataframe
-    mto_df = pd.concat([index, mto_df], axis=1)
 
     # (VALEC17) Rellenar los espacios vacío
     mto_df.fillna('-', inplace=True)
@@ -47,6 +41,12 @@ def diagnostic(mto_df):
     mto_df = pd.merge(mto_df, bolts, how='left', on='BOLT_INDEX')
 
     mto_df.fillna('-', inplace=True)
+
+    # (VALEC17) Crear un índice artificial
+    index = pd.DataFrame({'INDEX': list(range(1, mto_df.shape[0] + 1))})
+
+    # (VALEC17) Unir el indice y el mto en un dataframe
+    mto_df = pd.concat([index, mto_df], axis=1)
 
     mto_df = mto_df[['SPEC', 'INDEX', 'LINE_NUM', 'TYPE_CODE', 'SHORT_DESC', 'SHORT_DESCRIPTION', 'WEIGHT_x',
                     'WEIGHT_y', 'LENGTH', 'BOLT_LENGTH', 'QTY', 'BOLT_WEIGHT', 'FIRST_SIZE', 'BOLT_DIAMETER', 'SECOND_SIZE', 'RATING_x', 'SCH', 'TAG_y']]
@@ -74,10 +74,10 @@ def diagnostic(mto_df):
     diagnostic_length = 0
 
     try:
-        with open('./diacnostic/design_diagnostic.txt', mode='r') as f:
+        with open('./diacnostic/3.difference_design.txt', mode='r') as f:
             diagnostic_length = len(f.readlines())
 
         if diagnostic_length == 0:
-            os.remove('./diacnostic/design_diagnostic.txt')
+            os.remove('./diacnostic/3.difference_design.txt')
     except:
         pass
