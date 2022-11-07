@@ -1,0 +1,10 @@
+
+Existen 9 líneas en el P&ID que no existe en el B.O.M y por tanto en la maqueta.
+Revisar el P&ID con el objetivo de que todas las líneas nuevas estén incluidas en la maqueta.
+Estas líneas son: {'CS2SA1-6"-ALV-1-5-001', 'CS2SA1-3"-ALV-1-5-003', 'CS2SA1-1/2"-SUM-1-5-007', 'CS2SA1-6"-ALV-1-5-006', 'CS2SA1-3"-ALV-1-5-004', 'CS2SA1-3"-ALV-1-5-002', 'CS2SA1-1/2"-SUM-1-5-008', 'CS2SA1-SPOOL TEMOPORAL PRUEBA', 'CS2SA1-4"-ALV-1-5-005'}. Es posible que estas líneas estén mal nombradas en la 
+maqueta o que estas líneas no se encuentren ruteadas.
+                
+Existen 45 líneas en el B.O.M que no existe en el P&ID.
+Es probable que estén símplemente mal nombradas y sea necesario rectificar.
+Estas líneas son: {'CS1SC2-6"-SCI-1-7-164', 'CS1SC2-2 1/2"-SCI-1-7-162', 'CS1SC2-14"-SCI-1-7-135', 'CS1SC2-14"-SCI-1-7-145', 'CS2SA1-24"-PRO-1-6-012', 'CS1SC2-16"-SCI-1-7-136', 'CS1SC2-4"-SCI-1-7-165', 'CS1SC2-14"-SCI-1-7-144', 'CS2SA1-8"-PRO-1-9-020', 'CS2SA1-24"-PRO-1-6-013', 'CS1SC2-14"-SCI-1-7-140', 'TUBERIA-PAQUETE-BA-06', 'CS1SC2-12"-SCI-1-7-153', 'CS1SC2-14"-SCI-1-7-148', 'CS1SC2-6"-SCI-1-7-149', 'CS1SC2-14"-SCI-1-7-138', 'CS1SC2-14"-SCI-1-7-139', 'CS2SA1-4"-PRO-1-6-017', 'TUBERIA-PAQUETE-BA-07', 'CS1SC2-6"-SCI-1-7-158', 'CS2SA1-24"-PRO-1-6-011', 'CS1SC2-12"-SCI-1-7-150', 'CS1SC2-16"-SCI-1-7-141', 'CS1SC2-4"-SCI-1-7-161', 'TRIM-TK-0707', 'CS1SC2-14"-SCI-1-7-143', 'CS1SC2-16"-SCI-1-7-147', 'CS2SA1-8"-PRO-1-9-022', 'CS1SC2-6"-SCI-1-7-163', 'CS1SC2-12"-SCI-1-7-152', 'CS1SC2-12"-SCI-1-7-151', 'CS1SC2-14"-SCI-1-7-146', 'CS2SA1-10"-PRO-1-6-015', 'TUBERIA-PAQUETE-BA-05', 'CS1SC2-14"-SCI-1-7-134', 'CS1SC2-16"-SCI-1-7-131', 'CS2SA1-10"-PRO-1-6-016', 'CS1SC2-14"-SCI-1-7-133', 'CS1SC2-16"-SCI-1-7-130', 'CS1SC2-4"-SCI-1-7-160', 'CS1SC2-4"-SCI-1-7-159', 'CS2SA1-6"-SUM-1-6-027', 'CS2SA1-3"-SUM-1-6-021', 'CS2SA1-1"-ALV-1-5-018', 'CS1SC2-6"-SCI-1-7-157'}. Es posible que estas líneas estén mal nombradas en la maqueta.
+                

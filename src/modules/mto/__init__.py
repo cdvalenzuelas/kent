@@ -36,7 +36,7 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
 
         mto_df_na = mto_df_na[['LINE_NUM', 'QTY', 'common_index']]
 
-        mto_df_na.to_csv('./output/mto_temp.csv', index=True)
+        mto_df_na.to_csv('./diacnostic/mto_temp.csv', index=True)
 
     # (VALEC17) Limpiar el mto
 

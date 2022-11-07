@@ -21,6 +21,9 @@ def weight(mto_diagnostic_2, type_code, weight_x, weight_y, bolt_weight, qty, le
 
     # (VALEC17) SI NO SE TRATA DE PERNO NI TUBERÍAS PERO HAY DIFERENCIA EN PESOS
     qty = float(qty)
+    weight_y = float(weight_y)
+    weight_x = float(weight_x)
+
     if weight_x/qty >= 1.05*float(weight_y) or weight_x/qty <= 0.95*float(weight_y):
         diagnostic_dict['weight_spec'].append(weight_x/qty)
         diagnostic_dict['weight_piping'].append(weight_y)

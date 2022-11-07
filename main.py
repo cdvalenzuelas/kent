@@ -23,6 +23,14 @@ if __name__ == '__main__':
     except:
         pass
 
+    # (VALEC17) Eliminar los archivos de la carpeta diacnostic
+    try:
+        shutil.rmtree('diacnostic')
+
+        os.mkdir('diacnostic')
+    except:
+        pass
+
     # (VALEC17) Definir el cliente
     client = 'cenit'
 
@@ -36,7 +44,10 @@ if __name__ == '__main__':
         piping_class = cenit_piping_class()
 
     # (VALEC17) Se trensforma el bom a un formato standard sin importar el programa de diseño utilizado
-    (bom_is_correct, bom_df) = transform_bom()
+    (bom_is_correct, bom_df) = transform_bom(piping_class)
+
+    # (VALEC17) CREAR EL ARCHIVO DE BOM ARREGLADO
+    bom_df.to_excel('./inputs/bom_fixed.xlsx', index=False)
 
     # (VALEC17) Si se reconoce algún
     if bom_is_correct:

@@ -22,7 +22,7 @@ def bolts_modifier(mto_df):
 
     # (VALEC17) Renombrando columnas
     mto_df.rename(columns={'RATING_x': 'RATING',
-                  'FACE_x': 'FACE'}, inplace=True)
+                  'FACE_x': 'FACE', 'TAG_x': 'TAG'}, inplace=True)
 
     # (VALEC17) Generar el primer tamaño de los pernos (diámetro)
     mto_df['FIRST_SIZE'] = mto_df[['BOLT_DIAMETER', 'TYPE_CODE',
@@ -53,6 +53,6 @@ def bolts_modifier(mto_df):
 
     # (VALEC17) Eliminando columnas innecesarias
     mto_df.drop(['BOLT_DIAMETER', 'QUANTITY', 'BOLT_LENGTH', 'RATING_y',
-                'FACE_y', 'BOLT_INDEX', 'DIAMETER', 'DIAMETER_NUMBER'], axis=1, inplace=True)
+                'FACE_y', 'BOLT_INDEX', 'DIAMETER', 'DIAMETER_NUMBER', 'TAG_y'], axis=1, inplace=True)
 
     return mto_df

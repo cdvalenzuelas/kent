@@ -5,7 +5,7 @@ import pandas as pd
 def areas(row):
     area, type_element = row
 
-    if type_element in ['VL', 'GS', 'BL', 'MS']:
+    if type_element in ['VL', 'GS', 'BL', 'MS', 'ST']:
         return 1
     else:
         return area
@@ -47,4 +47,4 @@ def co_temp(co_df):
         print(
             '❌  EXISTEN ELEMENTOS DEL B.O.M QUE NO TIENEN RELACIONADAS CANTIDADES DE OBRA\n')
         # (VALEC17) Guardar el archivo
-        co_df.to_csv('./output/co_temp.csv', index=False)
+        co_df.to_csv('./diacnostic/co_temp.csv', index=False)

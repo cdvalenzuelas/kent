@@ -95,11 +95,14 @@ def demolition_cleaner(demolition_df, piping_class):
         demolition_df_na = demolition_df_na[[
             'LINE_NUM', 'QTY', 'common_index']]
 
-        demolition_df_na.to_csv('./output/demolition_temp.csv', index=True)
+        demolition_df_na.to_csv('./diacnostic/demolition_temp.csv', index=True)
 
         print('❌ HAY ELEMENTOS DEL ARCHIVO demolition.csv NO TIENEN PROPIEDADES DE DEMOLICIÓN O NO ESTÁN EN EL PIPING CLASS\n')
     else:
         print('✅ TODOS LOS ELEMENTOS DEL ARCHIVO demolition.csv TIENEN PROPIEDADES DE DEMOLICIÓN Y ESTÁN EN EL PIPING CLASS\n')
+
+    # (VALEC17) DEJAR ÚNICAMENTE LOS ELEMENTOS QUE SE ENCUENTREN EN EL PIPING CLASS
+    demolition_df = demolition_df[demolition_df['DESCRIPTION'].notnull()]
 
     # (VALEC17) Eliminando columnas innecesarias
     demolition_df.drop(['WEIGHT_x', 'LENGTH', 'SHORT_DESC', 'SPEC_FILE', 'DB_CODE',
@@ -119,7 +122,7 @@ def demolition_cleaner(demolition_df, piping_class):
 
     if demolition_df_zero_weight.shape[0] > 0:
         demolition_df_zero_weight.to_csv(
-            './output/demolition_df_zero_weight.csv', index=True)
+            './diacnostic/demolition_df_zero_weight.csv', index=True)
 
         print('❌ HAY ELEMENTOS DE DEMOLICIÓN QUE NO TIENEN PESO ASIGNADO.\n')
     else:

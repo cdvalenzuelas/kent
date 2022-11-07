@@ -6,4 +6,4 @@ def pipe_qty(row):
         length = float(length)
         return int(length/1000) + 1
     else:
-        return qty
+        return int(qty)

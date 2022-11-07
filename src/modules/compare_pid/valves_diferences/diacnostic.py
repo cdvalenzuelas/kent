@@ -56,7 +56,7 @@ Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidade
     # (VALEC17) Si hay una diferencia escribirla
     if diacnostic_str != '':
         # (VALEC17) Escribir en el archivo las línes que existen en un archivo y en el otro no
-        with open('./output/diagnostic_p&id.txt', mode='a') as f:
+        with open('./diacnostic/lines_difference.txt', mode='a') as f:
             f.write(diacnostic_str)
 
         return 'difference'

@@ -17,7 +17,7 @@ def line_diferences(mto_df, pid_df):
             '❌ HAY DIFERENCIAS ENTRE LAS LÍNEAS REPORTADAS POR EL B.O.M Y EL P&ID\n')
 
         # (VALEC17) Escribir en el archivo las línes que existen en un archivo y en el otro no
-        with open('./output/diagnostic_p&id.txt', mode='a') as f:
+        with open('./diacnostic/lines_difference.txt', mode='a') as f:
             if pid_lines_unique_size > 0:
 
                 pid_lines_unique_diacnostic = f"""

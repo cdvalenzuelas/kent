@@ -135,7 +135,7 @@ def compare(row, diagnostic_dict, final_index):
         diagnostic_df.drop(columns=['difference'], inplace=True)
 
         # (VALEC17) GENERAR EL ARCHIVO DE DIFERENCIAS EN PESOS, DESCRIPCIONES, RATINGS SCHEDULES ETC
-        diagnostic_df.to_csv('./output/diagnostic.csv')
+        diagnostic_df.to_csv('./diacnostic/diagnostic.csv')
 
         # (VALEC17) Escribir el diagnístico de diseño
         main_diacnostic(diagnostic, short_description, item,

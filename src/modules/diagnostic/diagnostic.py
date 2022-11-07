@@ -73,8 +73,11 @@ def diagnostic(mto_df):
 
     diagnostic_length = 0
 
-    with open('./output/design_diagnostic.txt', mode='r') as f:
-        diagnostic_length = len(f.readlines())
+    try:
+        with open('./diacnostic/design_diagnostic.txt', mode='r') as f:
+            diagnostic_length = len(f.readlines())
 
-    if diagnostic_length == 0:
-        os.remove('./output/design_diagnostic.txt')
+        if diagnostic_length == 0:
+            os.remove('./diacnostic/design_diagnostic.txt')
+    except:
+        pass

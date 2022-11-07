@@ -35,7 +35,7 @@ Las válvulas mensionadas anteriormente tienen diferencias en rating o cantidade
             diacnostic_str = diacnostic_str + qty_diff + '\n'
 
             # (VALEC17) Escribir el archivo de diagnóstico
-        with open('./output/diagnostic_p&id.txt', mode='a') as f:
+        with open('./diacnostic/lines_difference.txt', mode='a') as f:
             f.write(diacnostic_str)
 
         return 'difference'
