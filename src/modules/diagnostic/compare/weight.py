@@ -13,6 +13,7 @@ def weight(type_code, weight_x, weight_y, bolt_weight, qty, length, diagnostic_d
     # (VALEC17) VER SI SON PERNOS Y HAY UNA DIFERENCIA DE MÁS O MENOS 5% EN PESO
     if type_code == 'BOLT':
         qty = float(qty)
+        weight_x = float(weight_x)
         if weight_x/qty >= 1.05*float(bolt_weight) or weight_x/qty <= 0.95*float(bolt_weight):
             diagnostic_dict['weight_spec'].append(weight_x/qty)
             diagnostic_dict['weight_piping'].append(bolt_weight)

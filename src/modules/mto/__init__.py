@@ -38,7 +38,6 @@ def mto(bom_df, piping_class, piping_class_valves_weights):
         mto_df_na.to_csv('./diacnostic/2.temp_mto.csv', index=True)
 
     # (VALEC17) Limpiar el mto
-
     mto_df = mto_df[mto_df['DESCRIPTION'] != '-']
 
     # (VALEC17) Modificación por pernos

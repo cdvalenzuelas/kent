@@ -1,60 +1,52 @@
-ITEM 214: CS1SC2-6"-SCI-1-7-157 , BE, 6"
----------------------------------------------
-* La longitud de la tubería es muy corta (94mm), podría ser un niple. Revisar si se puede cambiar
-
-ITEM 387: CS2SA1-24"-PRO-1-6-013 , PE, 1"
----------------------------------------------
-* La longitud de la tubería es muy corta (25mm), podría ser un niple. Revisar si se puede cambiar
-
-ITEM 406: CS2SA1-24"-PRO-1-6-013 , BE, 2"
+ITEM 424: CS2SA1-24"-PRO-1-6-013 , BE, 2"
 ---------------------------------------------
 * La longitud de la tubería es muy corta (4mm), podría ser un niple. Revisar si se puede cambiar
 
-ITEM 563: CS2SA1-8"-PRO-1-9-020 , F8, 8"
+ITEM 585: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 564: CS2SA1-8"-PRO-1-9-020 , F8, 8"
+ITEM 586: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 565: CS2SA1-8"-PRO-1-9-020 , F8, 8"
+ITEM 587: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 609: CS2SA1-8"-PRO-1-9-022 , F8, 6"
+ITEM 637: CS2SA1-8"-PRO-1-9-020 , F8, 6"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 610: CS2SA1-8"-PRO-1-9-022 , F8, 6"
+ITEM 638: CS2SA1-8"-PRO-1-9-020 , F8, 6"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 611: CS2SA1-8"-PRO-1-9-022 , F8, 6"
+ITEM 639: CS2SA1-8"-PRO-1-9-020 , F8, 6"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 627: CS2SA1-8"-PRO-1-9-022 , F8, 8"
+ITEM 655: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 628: CS2SA1-8"-PRO-1-9-022 , F8, 8"
+ITEM 656: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 629: CS2SA1-8"-PRO-1-9-022 , F8, 8"
+ITEM 657: CS2SA1-8"-PRO-1-9-020 , F8, 8"
 ---------------------------------------------
 * Existe una figura en 8. Modificar el tag de lo pernos para modificar su longitud.
 
-ITEM 665: TUBERIA-PAQUETE-BA-05 , BE, 8"
+ITEM 697: TUBERIA-PAQUETE-BA-05 , BE, 8"
 ---------------------------------------------
 * La longitud de la tubería es muy corta (3mm), podría ser un niple. Revisar si se puede cambiar
 
-ITEM 720: TUBERIA-PAQUETE-BA-06 , BE, 8"
+ITEM 752: TUBERIA-PAQUETE-BA-06 , BE, 8"
 ---------------------------------------------
 * La longitud de la tubería es muy corta (3mm), podría ser un niple. Revisar si se puede cambiar
 
-ITEM 775: TUBERIA-PAQUETE-BA-07 , BE, 8"
+ITEM 807: TUBERIA-PAQUETE-BA-07 , BE, 8"
 ---------------------------------------------
 * La longitud de la tubería es muy corta (3mm), podría ser un niple. Revisar si se puede cambiar
 

@@ -11,9 +11,9 @@ def bolts_modifier(mto_df):
 
     mto_df_no_bolts = mto_df[mto_df['TYPE_CODE'] != 'BOLT']
 
-    mto_df_bolts = mto_df.copy()
+    mto_df_bolts = mto_df_bolts.copy()
 
-    mto_df_no_bolts = mto_df.copy()
+    mto_df_no_bolts = mto_df_no_bolts.copy()
 
     # (VALEC17) SI HAY PERNOS CALCULARLE EL INDICE
     if len(mto_df_bolts) > 0:
@@ -32,6 +32,9 @@ def bolts_modifier(mto_df):
 
         # (VALEC17) Hacer un join entre el mto y los bolts para completar el MTO
         mto_df = pd.merge(mto_df_bolts, bolts, how='left', on='BOLT_INDEX')
+
+        # (VALEC17) Eliminar los elementos basura (los que no tienen type_code)
+        mto_df = mto_df[(mto_df['TYPE_CODE_y'].notnull())]
     else:
         return mto_df
 

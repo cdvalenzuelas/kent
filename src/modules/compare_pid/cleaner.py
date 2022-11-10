@@ -1,10 +1,9 @@
 import pandas as pd
 
+from src.modules.compare_pid.bolts_qty import bolts_qty
 
-from src.modules.compare_pid.search_valve_tag import search_valve_tag
 
-
-def cleaner():
+def cleaner(piping_class):
     # (VALEC17) Leer el archivo de P&ID
     pid_df = pd.read_csv('./inputs/p&id.csv')
 
@@ -14,6 +13,9 @@ def cleaner():
     pid_df['CSO'].fillna(0, inplace=True)
     pid_df['CSC'].fillna(0, inplace=True)
     pid_df['NO_LOCKING_DEVICE'].fillna(0, inplace=True)
+
+    # (VALEC17) Buscar la cantidad correcta de pernos
+    pid_df = bolts_qty(pid_df, piping_class)
 
     # (VALEC17) Llenar los espacios vacíos con '-'
     pid_df.fillna('-', inplace=True)

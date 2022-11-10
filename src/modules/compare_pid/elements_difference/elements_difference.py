@@ -4,6 +4,17 @@ import pandas as pd
 # (VALEC17) Función para hacer un merge
 def common_index(row):
     line, spec, type_code, first_size, second_size, tag = row
+
+    first_size = str(first_size)
+
+    first_size = first_size if not first_size.endswith(
+        '.0') else first_size.replace('.0', '')
+
+    second_size = str(second_size)
+
+    second_size = second_size if not second_size.endswith(
+        '.0') else second_size.replace('.0', '')
+
     return f'{line} {spec} {type_code} {tag} {first_size} {second_size}'
 
 
@@ -22,11 +33,12 @@ def change_data(row):
 def elements_difference(mto_df, pid_df):
     # (VALEC17) Hacer una copia de los dataframes
     mto_df = mto_df.copy()
+
     pid_df = pid_df.copy()
 
     # (VALEC17) Sacar únicamente elementos importantes
     mto_df = mto_df[~mto_df['TYPE_CODE'].isin([
-        'BE', 'PE', 'TE', '45L', '90L', 'CPL'])]
+        'BE', 'PE', 'TE', '45L', '90L', 'CPL', 'NIP'])]
 
     # (VALEC17) Traer únicamente los elementos importantes
     pid_df = pid_df[pid_df['QTY'] != 0]

@@ -84,7 +84,4 @@ def def_bolted_conection(row, piping_class, bom_df):
 
         return str(intersections)
 
-    # print(len(bolts))
-    print('--------------------------')
-
     return f'{bolt_diameter} WRONG'
